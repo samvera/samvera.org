@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+// from https://gregrickaby.blog/article/nextjs-github-pages
+const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = nextConfig
+module.exports = {
+  assetPrefix: isProd ? '/samvera.org/' : ''
+}
