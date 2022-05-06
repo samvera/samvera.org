@@ -1,16 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Fontin Sans Regular";
+  src: url("/fonts/FontinSans_49/Fontin_Sans_R_45b.otf");
 }
-
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Fontin Sans Bold";
+  src: url("/fonts/FontinSans_49/Fontin_Sans_B_45b.otf");
+}
+@font-face {
+  font-family: "Cooper Hewitt Book";
+  src: url("/fonts/cooper-hewitt/CooperHewitt-Book.otf");
 }
