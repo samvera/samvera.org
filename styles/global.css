@@ -1,3 +1,4 @@
+<<<<<<< HEAD:styles/global.css
 html,
 body {
   padding: 0;
@@ -6,10 +7,23 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-}
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Fontin Sans Regular";
+  src: url("/fonts/FontinSans_49/Fontin_Sans_R_45b.otf");
+>>>>>>> 4f8a51acab140ba113cb44c27a6199ff4593e0cd:styles/globals.css
+}
+@font-face {
+  font-family: "Fontin Sans Bold";
+  src: url("/fonts/FontinSans_49/Fontin_Sans_B_45b.otf");
+}
+@font-face {
+  font-family: "Cooper Hewitt Book";
+  src: url("/fonts/cooper-hewitt/CooperHewitt-Book.otf");
 }
 
 a {
