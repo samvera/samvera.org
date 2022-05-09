@@ -1,10 +1,6 @@
-// from https://gregrickaby.blog/article/nextjs-github-pages
-const isProd = process.env.NODE_ENV === 'production'
-
+/** @type {import('next').NextConfig} */
 module.exports = {
-  basePath: '/samvera.org',
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
-}
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  reactStrictMode: true,
+};

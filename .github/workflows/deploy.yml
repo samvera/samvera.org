@@ -1,33 +1,38 @@
-# based on https://raw.githubusercontent.com/gregrickaby/nextjs-github-pages/main/.github/workflows/deploy.yml
-name: Deploy to Github Pages
+# Pulled from this guide:
+# https://www.linkedin.com/pulse/deploy-nextjs-app-github-pages-federico-antu%C3%B1a/
+
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - nextjs
-
-  workflow_dispatch:
+    branches: [nextjs]
 
 jobs:
-  deployment:
+  build:
     runs-on: ubuntu-latest
 
+    env:
+      NEXT_PUBLIC_BASE_PATH: /samvera.org
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: Get files
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-          node-version: "lts/*"
-          cache: "npm"
-
-      - name: Build
-        run: |
-          npm i
-          npm run build
-
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+        run: npm ci
+      - name: Export static files
+        run: npm run build
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          branch: gh-pages
+          folder: out
