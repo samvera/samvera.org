@@ -14,19 +14,16 @@ jobs:
     env:
       NEXT_PUBLIC_BASE_PATH: "/samvera.org"
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
       - name: Get files
         uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: "lts/*"
+          cache: npm
       - name: Install packages
-        run: npm install
+        run: npm i
       - name: Export static files
         run: npm run build
       - name: Add .nojekyll file
