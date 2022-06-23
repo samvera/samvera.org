@@ -1,14 +1,25 @@
-import React from "react";
-import Layout from "../components/Layout";
-import Main from "../components/Main";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Layout from "../components/layout/Layout";
+import Main from "../components/layout/Main";
+import Sidebar from "../components/layout/Sidebar";
 
 export default function About() {
   return (
     <Layout>
       <Main>
-        <h1 className="font-fontin text-3xl uppercase text-darkRed">
-          Samvera is Community Sourced Software for Repository Solutions
-        </h1>
+        <Breadcrumbs
+          items={[
+            {
+              href: "/",
+              label: "Home",
+            },
+            {
+              label: "About",
+            },
+          ]}
+        />
+
+        <h1>Samvera is Community Sourced Software for Repository Solutions</h1>
         <p>
           Samvera is a vibrant and welcoming community of information and
           technology professionals who share challenges, build expertise, and
@@ -28,6 +39,12 @@ export default function About() {
           term development and viability.
         </p>
       </Main>
+      <Sidebar>
+        <h2>About Samvera</h2>
+        Samvera is Community Sourced Software for Repository Solutions
+        Governance and Philosophy Samvera Code of Conduct and Anti-Harassment
+        Policy FAQ Samvera Privacy Policy Licensing Samvera 2021 Annual Report
+      </Sidebar>
     </Layout>
   );
 }

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
   return (
@@ -13,13 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div>
-          <a href="https://samvera.org">
+        <div className="h-96">
+          {/* <a href="https://samvera.org">
             <img
               src="https://samvera.org/wp-content/uploads/2017/06/samvera-logo-tm.svg"
               alt="Samvera Repository"
             />
-          </a>
+          </a> */}
         </div>
       </Layout>
     </>

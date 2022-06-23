@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         samBlueLight: "#e9eef3",
+        samBlue: "#a9bcd0",
         samDarkRed: "#8f2704",
         samGrey: "#383d3b",
         samGreyDark: "#333",
