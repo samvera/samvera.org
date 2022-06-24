@@ -1,10 +1,4 @@
-import Breadcrumbs from "../../components/Breadcrumbs";
-import Layout from "../../components/layout/Layout";
-import Main from "../../components/layout/Main";
-import MarkdownContent from "../../components/MarkdownContent";
-import Sidebar from "../../components/sidebar/Sidebar";
-import fs from "fs";
-import matter from "gray-matter";
+import DynamicPage from "../../components/layout/DynamicPage";
 import {
   getMarkdownPageContent,
   getSideNav,
@@ -16,38 +10,19 @@ const config = {
   parentDirLabel: "About Samvera",
 };
 
-export default function AboutPage({ content, frontmatter, sideNav }) {
+export default function WhatIsSamveraPage({ content, frontmatter, sideNav }) {
   return (
-    <Layout>
-      <Main>
-        <Breadcrumbs
-          items={[
-            {
-              href: "/",
-              label: config.parentDirLabel,
-            },
-            {
-              label: frontmatter.title,
-            },
-          ]}
-        />
-
-        <h1>{frontmatter.title}</h1>
-        <MarkdownContent content={content} />
-      </Main>
-      <Sidebar
-        title={config.parentDirLabel}
-        parentDir={config.parentDir}
-        sideNav={sideNav}
-      />
-    </Layout>
+    <DynamicPage
+      config={config}
+      content={content}
+      frontmatter={frontmatter}
+      sideNav={sideNav}
+    />
   );
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(`markdown/${config.parentDir}`);
-  const paths = getPaths(files);
-
+  const paths = getPaths(`markdown/${config.parentDir}`);
   return {
     paths,
     fallback: false,
@@ -55,28 +30,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(
-    `markdown/${config.parentDir}/${slug}.md`,
-    "utf-8"
+  const { content, frontmatter } = getMarkdownPageContent(
+    `markdown/${config.parentDir}/${slug}.md`
   );
-  const { content, frontmatter } = getMarkdownPageContent(fileName);
-  const files = fs.readdirSync(`markdown/${config.parentDir}`);
-  const sideNav = files.map((file) => {
-    const slug = file.replace(".md", "");
-    const readFile = fs.readFileSync(
-      `markdown/${config.parentDir}/${file}`,
-      "utf-8"
-    );
-    const { data } = matter(readFile);
-
-    return {
-      slug,
-      title: data.title,
-    };
-  });
-
-  console.log("frontmatter", frontmatter);
-
+  const { sideNav } = getSideNav(`markdown/${config.parentDir}`);
   return {
     props: {
       content,
