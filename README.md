@@ -1,40 +1,51 @@
 # Samvera Community Website
 
-## Branding guidelines
+This is a NextJS framework application which creates a static
+website powered by Markdown files for primary site content
 
-#### Headlines
+## Top level app overview
 
-Font Family: "FontinSans500"
+`/components`
+This is where React components live, which construct the building blocks of the UI.
 
-### Colors
+`/markdown`
+All primary page content is stored in Markdown files in this directory. These directories represent the organization of site content. Currently the site has main navigation links for:
 
-## NextJS info
+- About Samvera
+- What is Samvera?
+- Why Use Samvera?
+  ....etc.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+...so there will be organized folders like:
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+```
+/markdown/about
+/markdown/what-is-samvera
+/markdown/why-use-samvera
+...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+and the `.md` files are contained within the folders:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+/markdown/about/samvera-community-sourced-software.md
+/markdown/about/faq.md
+/markdown/about/governance.md
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`/pages`
+This directory is a NextJS convention which will autogenerate app routes. These folders should mirror the directory structure of `/markdown`, and that's how content and routes will be dynamically created as part of the static site build.
 
-## Learn More
+Within each child directory (ie. `pages/about`), is a file called `[slug].jsx`. This is a React component wired up to display dynamic content pulled in from the Markdown files mentioned above. In each `[slug].jsx` file, you'll make it unique by updating a `CONFIG` variable defined in the component. For example in the "About" folder:
 
-To learn more about Next.js, take a look at the following resources:
+```
+const CONFIG = {
+  parentDir: "about",
+  parentDirLabel: "About Samvera",
+};
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Branding guidelines
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+...coming soon

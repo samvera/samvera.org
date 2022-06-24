@@ -5,7 +5,10 @@ import {
   getPaths,
 } from "../../lib/markdown-helpers";
 
-const config = {
+/**
+ * Customize this info per dynamic page
+ */
+const CONFIG = {
   parentDir: "about",
   parentDirLabel: "About Samvera",
 };
@@ -13,7 +16,7 @@ const config = {
 export default function WhatIsSamveraPage({ content, frontmatter, sideNav }) {
   return (
     <DynamicPage
-      config={config}
+      config={CONFIG}
       content={content}
       frontmatter={frontmatter}
       sideNav={sideNav}
@@ -22,7 +25,7 @@ export default function WhatIsSamveraPage({ content, frontmatter, sideNav }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getPaths(`markdown/${config.parentDir}`);
+  const paths = getPaths(`markdown/${CONFIG.parentDir}`);
   return {
     paths,
     fallback: false,
@@ -31,9 +34,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const { content, frontmatter } = getMarkdownPageContent(
-    `markdown/${config.parentDir}/${slug}.md`
+    `markdown/${CONFIG.parentDir}/${slug}.md`
   );
-  const { sideNav } = getSideNav(`markdown/${config.parentDir}`);
+  const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
   return {
     props: {
       content,
