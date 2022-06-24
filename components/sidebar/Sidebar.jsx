@@ -9,7 +9,7 @@ export default function Sidebar({ title, parentDir, sideNav }) {
       <h2>{title}</h2>
       <ul>
         {sideNav.map((item) => (
-          <li>
+          <li key={item.slug}>
             <Link href={`/${parentDir}/${item.slug}`}>
               <a>{item.title}</a>
             </Link>

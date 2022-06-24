@@ -12,11 +12,11 @@ import {
 } from "../../lib/markdown-helpers";
 
 const config = {
-  parentDir: "about",
-  parentDirLabel: "About Samvera",
+  parentDir: "what-is-samvera",
+  parentDirLabel: "Yo dude",
 };
 
-export default function AboutPage({ content, frontmatter, sideNav }) {
+export default function FooPage({ content, frontmatter, sideNav }) {
   return (
     <Layout>
       <Main>
