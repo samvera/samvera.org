@@ -7,6 +7,7 @@ const Breadcrumbs = ({ items }) => {
     <ul className="mt-8 mb-6 flex">
       {items.map((item, index) => (
         <li
+          key={index}
           className={`font-fontin ${
             index !== 0 ? "before:content-['»'] before:px-2" : ""
           }`}
@@ -24,10 +25,12 @@ const Breadcrumbs = ({ items }) => {
 };
 
 Breadcrumbs.propTypes = {
-  items: PropTypes.arrayOf({
-    href: PropTypes.string,
-    label: PropTypes.string.isRequired,
-  }),
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string,
+      label: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Breadcrumbs;

@@ -14,7 +14,9 @@
   font-family: "Cooper Hewitt Book";
   src: url("/fonts/cooper-hewitt/CooperHewitt-Book.otf");
 }
-
+a {
+  @apply transition-all duration-300 ease-in-out;
+}
 button {
   @apply inline-block font-fontinBold uppercase bg-samBlue text-samGreyDark text-center py-3 px-8;
 }
@@ -39,8 +41,24 @@ h4 {
   @apply text-lg;
 }
 p {
+  @apply mb-4 leading-loose;
+}
+.sidebar a:hover {
+  @apply text-samDarkRed;
+}
+.sidebar h2 {
+  @apply text-samDarkRed font-fontinBold;
+}
+.sidebar hr {
+  @apply my-8;
+}
+.sidebar li {
   @apply mb-4;
 }
+.sidebar p {
+  @apply leading-snug;
+}
+
 .title {
   @apply text-3xl;
 }

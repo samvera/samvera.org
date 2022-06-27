@@ -1,23 +1,8 @@
-/* This example requires Tailwind CSS v2.0+ */
-
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
-const navigation = [
-  { name: "About Samvera", href: "/about", current: true },
-  { name: "What is Samvera?", href: "/what-is-samvera", current: false },
-  { name: "Why Use Samvera?", href: "/why-use-samvera", current: false },
-  { name: "Who Uses Samvera?", href: "/who-uses-samvera", current: false },
-  { name: "Getting Started", href: "/getting-started", current: false },
-  { name: "Who Uses Samvera?", href: "/who-uses-samvera", current: false },
-  { name: "News and Events", href: "/news-and-events", current: false },
-  // {
-  //   name: "Donate to the Julie Allinson Award Fund",
-  //   href: "/julie-alinson-fund",
-  //   current: false,
-  // },
-];
+import React from "react";
+import { primaryNavigation } from "../../app-config";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -31,6 +16,8 @@ function navItemsStyle(item) {
 }
 
 export default function Example() {
+  const [navigation, setNavigation] = React.useState(primaryNavigation);
+
   return (
     <Disclosure as="nav" className="border-b-2 border-samDarkRed">
       {({ open }) => (
@@ -54,7 +41,7 @@ export default function Example() {
                     <a>
                       <img
                         className="h-16 w-auto"
-                        src="images/samvera-logo-tm.svg"
+                        src={`/images/samvera-logo-tm.svg`}
                         alt="Samvera Logo"
                       />
                     </a>
