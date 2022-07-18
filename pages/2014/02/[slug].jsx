@@ -9,11 +9,15 @@ import {
  * Customize this info per dynamic page
  */
 const CONFIG = {
-  parentDir: "about",
-  parentDirLabel: "About Samvera",
+  parentDir: "2014/02",
+  parentDirLabel: "2014 February Posts",
 };
 
-export default function WhatIsSamveraPage({ content, frontmatter, sideNav }) {
+export default function TwentyFourteen02Page({
+  content,
+  frontmatter,
+  sideNav,
+}) {
   return (
     <DynamicPage
       config={CONFIG}
