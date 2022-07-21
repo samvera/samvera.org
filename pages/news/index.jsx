@@ -1,6 +1,7 @@
 import { getNewsPreviews, getSideNav } from "lib/markdown-helpers";
 import Breadcrumbs from "components/Breadcrumbs";
 import Layout from "components/layout/Layout";
+import Link from "next/link";
 import Main from "components/layout/Main";
 import MarkdownContent from "components/MarkdownContent";
 import NewsMeta from "components/news/Meta";
@@ -32,10 +33,15 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
           const {
             content,
             frontmatter: { categories, date, title },
+            slug,
           } = preview;
           return (
             <article>
-              <h2>{title}</h2>
+              <h2>
+                <Link href={`/news/${slug}`}>
+                  <a>{title}</a>
+                </Link>
+              </h2>
               <NewsMeta categories={categories} date={date} />
             </article>
           );
