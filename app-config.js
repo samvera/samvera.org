@@ -7,7 +7,7 @@ export const primaryNavigation = [
   { name: "Why Use Samvera?", href: "/why-use-samvera" },
   { name: "Who Uses Samvera?", href: "/who-uses-samvera" },
   { name: "Getting Started", href: "/getting-started" },
-  { name: "News and Events", href: "/news-and-events" },
+  { name: "News and Events", href: "/news" },
 ];
 
 export const sideBarLinks = [

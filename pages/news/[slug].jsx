@@ -1,4 +1,4 @@
-import DynamicPage from "components/layout/DynamicPage";
+import DynamicNewsContent from "components/layout/DynamicNewsContent";
 import {
   getMarkdownPageContent,
   getSideNav,
@@ -9,17 +9,13 @@ import {
  * Customize this info per dynamic page
  */
 const CONFIG = {
-  parentDir: "2014/02",
-  parentDirLabel: "2014 February Posts",
+  parentDir: "news",
+  parentDirLabel: "News and Events",
 };
 
-export default function TwentyFourteen02Page({
-  content,
-  frontmatter,
-  sideNav,
-}) {
+export default function NewsPage({ content, frontmatter, sideNav }) {
   return (
-    <DynamicPage
+    <DynamicNewsContent
       config={CONFIG}
       content={content}
       frontmatter={frontmatter}
