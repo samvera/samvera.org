@@ -5,6 +5,13 @@ website powered by Markdown files for primary site content
 
 ## Top level app overview
 
+`/app-config.js`
+This is a top level configuration file for the app. Common items are listed here and the app will wire the data into appropriate places in the UI. It currently contains:
+
+- Primary Navigation
+- "Links" section in the common sidebar
+- Samvera Partners list
+
 `/components`
 This is where React components live, which construct the building blocks of the UI.
 

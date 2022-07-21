@@ -10,6 +10,21 @@ export const primaryNavigation = [
   { name: "News and Events", href: "/news" },
 ];
 
+export const SAMVERA_PARTNERS = [
+  {
+    label: "Boston Public Library",
+    href: "#",
+  },
+  {
+    label: "Columbia University",
+    href: "#",
+  },
+  {
+    label: "Cornell University",
+    href: "#",
+  },
+];
+
 export const sideBarLinks = [
   {
     href: "contact-us",
