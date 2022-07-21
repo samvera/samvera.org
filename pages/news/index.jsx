@@ -23,7 +23,7 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
               label: "Home",
             },
             {
-              href: CONFIG.parentDir,
+              href: `/${CONFIG.parentDir}`,
               label: CONFIG.parentDirLabel,
             },
           ]}
@@ -31,18 +31,22 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
         <h1 className="mb-6">News &amp; Events</h1>
         {previews.map((preview) => {
           const {
-            content,
+            excerpt,
             frontmatter: { categories, date, title },
             slug,
           } = preview;
+
           return (
-            <article>
+            <article key={title} className="mb-12">
               <h2>
                 <Link href={`/news/${slug}`}>
-                  <a>{title}</a>
+                  <a className="text-samGreyDark normal-case hover:text-samDarkRed">
+                    {title}
+                  </a>
                 </Link>
               </h2>
               <NewsMeta categories={categories} date={date} />
+              <MarkdownContent content={excerpt} />
             </article>
           );
         })}

@@ -40,6 +40,9 @@ h3 {
 h4 {
   @apply text-lg;
 }
+main a {
+  @apply text-samDarkRed hover:text-samOrange;
+}
 p {
   @apply mb-4 leading-loose;
 }
