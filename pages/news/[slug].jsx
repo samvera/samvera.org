@@ -13,13 +13,19 @@ const CONFIG = {
   parentDirLabel: "News and Events",
 };
 
-export default function NewsPage({ content, frontmatter, sideNav }) {
+export default function NewsPage({
+  content,
+  frontmatter,
+  sideNav,
+  sideNewsAndEvents,
+}) {
   return (
     <DynamicNewsContent
       config={CONFIG}
       content={content}
       frontmatter={frontmatter}
       sideNav={sideNav}
+      sideNewsAndEvents={sideNewsAndEvents}
     />
   );
 }
@@ -37,11 +43,13 @@ export async function getStaticProps({ params: { slug } }) {
     `markdown/${CONFIG.parentDir}/${slug}.md`
   );
   const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
+  const { sideNav: sideNewsAndEvents } = getSideNav(`markdown/news`);
   return {
     props: {
       content,
       frontmatter,
       sideNav,
+      sideNewsAndEvents,
     },
   };
 }

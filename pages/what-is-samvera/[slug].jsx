@@ -1,9 +1,9 @@
-import DynamicPage from "../../components/layout/DynamicPage";
+import DynamicPage from "components/layout/DynamicPage";
 import {
   getMarkdownPageContent,
   getSideNav,
   getPaths,
-} from "../../lib/markdown-helpers";
+} from "lib/markdown-helpers";
 
 /**
  * This is where the magic happens.
@@ -20,13 +20,19 @@ const CONFIG = {
   parentDirLabel: "What is Samvera?",
 };
 
-export default function WhatIsSamveraPage({ content, frontmatter, sideNav }) {
+export default function WhatIsSamveraPage({
+  content,
+  frontmatter,
+  sideNav,
+  sideNewsAndEvents,
+}) {
   return (
     <DynamicPage
       config={CONFIG}
       content={content}
       frontmatter={frontmatter}
       sideNav={sideNav}
+      sideNewsAndEvents={sideNewsAndEvents}
     />
   );
 }
@@ -44,11 +50,14 @@ export async function getStaticProps({ params: { slug } }) {
     `markdown/${CONFIG.parentDir}/${slug}.md`
   );
   const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
+  const { sideNav: sideNewsAndEvents } = getSideNav(`markdown/news`);
+
   return {
     props: {
       content,
       frontmatter,
       sideNav,
+      sideNewsAndEvents,
     },
   };
 }

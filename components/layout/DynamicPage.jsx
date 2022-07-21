@@ -4,7 +4,13 @@ import Main from "./Main";
 import MarkdownContent from "../MarkdownContent";
 import Sidebar from "../sidebar/Sidebar";
 
-export default function DynamicPage({ config, content, frontmatter, sideNav }) {
+export default function DynamicPage({
+  config,
+  content,
+  frontmatter,
+  sideNav,
+  sideNewsAndEvents,
+}) {
   return (
     <Layout>
       <Main>
@@ -27,6 +33,7 @@ export default function DynamicPage({ config, content, frontmatter, sideNav }) {
         title={config.parentDirLabel}
         parentDir={config.parentDir}
         sideNav={sideNav}
+        sideNewsAndEvents={sideNewsAndEvents}
       />
     </Layout>
   );

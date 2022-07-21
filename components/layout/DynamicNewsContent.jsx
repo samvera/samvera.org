@@ -9,6 +9,7 @@ export default function DynamicNewsPage({
   content,
   frontmatter,
   sideNav,
+  sideNewsAndEvents,
 }) {
   const { categories, date, title } = frontmatter;
 
@@ -41,6 +42,7 @@ export default function DynamicNewsPage({
         title={config.parentDirLabel}
         parentDir={config.parentDir}
         sideNav={sideNav}
+        sideNewsAndEvents={sideNewsAndEvents}
       />
     </Layout>
   );
