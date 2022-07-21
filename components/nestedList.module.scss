@@ -1,0 +1,42 @@
+@mixin hover() {
+    &:hover {
+      text-decoration: none;
+      color: #ff0066;
+    }
+  }
+  
+  .folderLabel {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 1.2rem;
+    @include hover();
+  }
+  
+  .folder {
+    padding-left: 10px;
+    .folder .folderLabel {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .label {
+    color: #666;
+    @include hover();
+  }
+  .folderContents {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #f0f0f0;
+  }
+  
+  .file {
+    font-size: 1rem;
+  }
+  
+  .slugpath {
+    font-size: 0.7rem;
+    color: #999;
+    padding-bottom: 10px;
+  }

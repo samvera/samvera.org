@@ -1,0 +1,35 @@
+# Pulled from this guide:
+# https://www.linkedin.com/pulse/deploy-nextjs-app-github-pages-federico-antu%C3%B1a/
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [nextjs]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      NEXT_PUBLIC_BASE_PATH: "/samvera.org"
+
+    steps:
+      - name: Get files
+        uses: actions/checkout@v2
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+          cache: npm
+      - name: Install packages
+        run: npm i
+      - name: Export static files
+        run: npm run build
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: out
