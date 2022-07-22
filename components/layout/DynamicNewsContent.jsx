@@ -4,13 +4,15 @@ import Main from "./Main";
 import MarkdownContent from "../MarkdownContent";
 import Sidebar from "../sidebar/Sidebar";
 
-export default function DynamicPage({
+export default function DynamicNewsPage({
   config,
   content,
   frontmatter,
   sideNav,
   sideNewsAndEvents,
 }) {
+  const { categories, date, title } = frontmatter;
+
   return (
     <Layout>
       <Main>
@@ -21,12 +23,19 @@ export default function DynamicPage({
               label: config.parentDirLabel,
             },
             {
-              label: frontmatter.title,
+              label: title,
             },
           ]}
         />
-
-        <h1>{frontmatter.title}</h1>
+        <h1 className="mb-6">{title}</h1>
+        <p className="mb-6">
+          Posted on {date}{" "}
+          {
+            <span className="capitalize">
+              {categories && ` - ${categories?.join(", ")}`}
+            </span>
+          }
+        </p>
         <MarkdownContent content={content} />
       </Main>
       <Sidebar
