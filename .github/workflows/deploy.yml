@@ -5,7 +5,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [nextjs]
+    branches: [main]
 
 jobs:
   build:
