@@ -17,8 +17,13 @@
 a {
   @apply transition-all duration-300 ease-in-out;
 }
-main button {
-  @apply inline-block font-fontinBold uppercase bg-samBlue text-samGreyDark text-center py-3 px-8;
+main button,
+.button {
+  /* @apply inline-block font-fontinBold uppercase bg-samBlue text-samGreyDark text-center py-3 px-8; */
+  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent font-fontinBold rounded-md text-samGreyDark hover:text-white bg-samBlue hover:bg-samDarkRed md:py-4 md:text-lg md:px-10;
+}
+.button-inverted {
+  @apply button bg-white hover:text-gray-500 !important;
 }
 h1,
 h2,
