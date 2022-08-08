@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "build-site-nav": "node lib/build-nav.js",
     "start": "next start",
     "lint": "next lint"
   },
