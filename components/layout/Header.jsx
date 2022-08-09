@@ -6,8 +6,6 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import NavItem from "components/nav/NavItem";
 import { siteNavigation } from "site-navigation";
 
-console.log("siteNavigation", siteNavigation);
-
 const newsNavigation = [
   {
     label: "News and Events",

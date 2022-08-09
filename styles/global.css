@@ -51,6 +51,17 @@ main a {
 p {
   @apply mb-4 leading-loose;
 }
+ul {
+  @apply list-disc ml-4;
+}
+li {
+  @apply pb-2;
+}
+
+.section-title {
+  @apply mt-3 mr-0 mb-7 uppercase text-center md:text-3xl xl:text-4xl;
+}
+
 .sidebar a:hover {
   @apply text-samDarkRed;
 }
