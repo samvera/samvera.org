@@ -3,12 +3,21 @@
 This is a NextJS framework application which creates a static
 website powered by Markdown files for primary site content
 
+## App commands
+
+### Build primary navigation
+
+```
+npm run build-site-nav
+```
+
+This command executes a NodeJS script which will read the `/markdown` directory in the project, and dynamically create a site navigation file, `/site-navigation.js`. This navigation file is used by the application to create Primary Navigation.
+
 ## Top level app overview
 
 `/app-config.js`
 This is a top level configuration file for the app. Common items are listed here and the app will wire the data into appropriate places in the UI. It currently contains:
 
-- Primary Navigation
 - "Links" section in the common sidebar
 - Samvera Partners list
 
