@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "benefit-how":
+          "linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(143, 39, 4) 50%, rgb(143, 39, 4) 100%)",
+      },
       colors: {
         samBlueLight: "#e9eef3",
         samBlue: "#a9bcd0",

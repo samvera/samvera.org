@@ -9,7 +9,9 @@ export default function BannerPartners() {
         {SAMVERA_PARTNERS.map((partner) => (
           <li key={partner.label} className="px-4 md:px-8 lg:px-10">
             <Link href={partner.href}>
-              <a>{partner.label}</a>
+              <a className="text-samGreyDark hover:text-samGrey">
+                {partner.label}
+              </a>
             </Link>
           </li>
         ))}

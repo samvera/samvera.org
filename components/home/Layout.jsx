@@ -9,10 +9,12 @@ export default function HomeLayout({ children }) {
   return (
     <div className="text-samGrey font-cooperBook bg-white">
       <Header />
-      {children}
-      <BannerContact />
-      <BannerPartners />
-      <BannerLicense />
+      <main>
+        {children}
+        <BannerContact />
+        <BannerPartners />
+        <BannerLicense />
+      </main>
       <Footer />
     </div>
   );

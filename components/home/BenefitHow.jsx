@@ -2,15 +2,10 @@ import React from "react";
 
 export default function BenefitHow() {
   return (
-    <section
-      style={{
-        backgroundImage:
-          "linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(143, 39, 4) 50%, rgb(143, 39, 4) 100%)",
-      }}
-    >
-      <div className="container">
-        <div className="grid grid-cols-2 gap-12">
-          <div className="py-10">
+    <section className="bg-none md:bg-benefit-how">
+      <div className="container px-0 md:px-4 max-w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="p-10">
             <h2 className="section-title">Benefits of Samvera</h2>
             <p>
               We believe that no single system can&nbsp;provide the full range
@@ -28,7 +23,7 @@ export default function BenefitHow() {
               Apache 2 license.
             </p>
           </div>
-          <div className="py-10 pl-6 text-white">
+          <div className="p-10 text-white bg-samDarkRed">
             <h2 className="section-title">How it Works</h2>
             <p>
               Samvera maintains a set of Ruby on Rails components (Ruby gems)
@@ -43,18 +38,28 @@ export default function BenefitHow() {
               Samvera does not work in isolation and relies on a number of
               external open source components, including:
             </p>
-            <ul>
+            <ul className="ul-disc">
               <li>
-                <a href="https://duraspace.org/fedora/">Fedora</a> – a durable
-                repository layer for persisting and managing digital objects.
+                <a className="text-white" href="https://duraspace.org/fedora/">
+                  Fedora
+                </a>{" "}
+                – a durable repository layer for persisting and managing digital
+                objects.
               </li>
               <li>
-                <a href="https://lucene.apache.org/solr/">Apache Solr</a> – a
-                fast and performant search platform
+                <a
+                  className="text-white"
+                  href="https://lucene.apache.org/solr/"
+                >
+                  Apache Solr
+                </a>{" "}
+                – a fast and performant search platform
               </li>
               <li>
-                <a href="http://projectblacklight.org/">Blacklight</a> – a
-                discovery platform built on Solr
+                <a className="text-white" href="http://projectblacklight.org/">
+                  Blacklight
+                </a>{" "}
+                – a discovery platform built on Solr
               </li>
             </ul>
           </div>
