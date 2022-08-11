@@ -13,7 +13,7 @@ export default function Sidebar({
   const router = useRouter();
 
   return (
-    <aside className="sidebar bg-white -mt-4 p-8 border-t-4 border-samDarkRed col-span-1 md:col-span-4 text-center">
+    <aside className="sidebar bg-white -mt-4 p-8 border-t-4 border-samDarkRed col-span-1 md:col-span-4 text-center z-10">
       {/* Only display parent / child links if NOT on News & Events page */}
       {router.pathname !== "/news/[slug]" && (
         <SidebarGeneric items={sideNav} parentDir={parentDir} title={title} />

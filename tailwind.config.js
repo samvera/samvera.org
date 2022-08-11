@@ -6,7 +6,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        // sm: "2rem",
+        // lg: "4rem",
+        // xl: "5rem",
+        // "2xl": "6rem",
+      },
+    },
     extend: {
+      backgroundImage: {
+        "benefit-how":
+          "linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(143, 39, 4) 50%, rgb(143, 39, 4) 100%)",
+      },
       colors: {
         samBlueLight: "#e9eef3",
         samBlue: "#a9bcd0",

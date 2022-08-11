@@ -1,3 +1,5 @@
+import Applications from "components/home/Applications";
+import BenefitHow from "components/home/BenefitHow";
 import Head from "next/head";
 import HomeLayout from "components/home/Layout";
 import HomeHero from "components/home/Hero";
@@ -15,6 +17,8 @@ export default function Home() {
       </Head>
       <HomeLayout>
         <HomeHero />
+        <BenefitHow />
+        <Applications />
       </HomeLayout>
     </>
   );
