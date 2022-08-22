@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
-import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+
+SwiperCore.use([Navigation]);
 
 // Import Swiper styles
 import "swiper/css";
