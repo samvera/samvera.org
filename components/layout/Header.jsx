@@ -29,7 +29,7 @@ const newsNavigation = [
   },
 ];
 
-export default function Example() {
+export default function Header() {
   return (
     <Popover className="relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -53,7 +53,7 @@ export default function Example() {
           </div>
           <Popover.Group
             as="nav"
-            className="hidden md:flex space-x-10 font-fontinBold lowercase"
+            className="z-30 hidden md:flex space-x-10 font-fontinBold lowercase"
           >
             {siteNavigation &&
               siteNavigation.map((navItem) => (

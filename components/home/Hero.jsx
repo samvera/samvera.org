@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function HomeHero() {
   return (
@@ -21,14 +22,14 @@ export default function HomeHero() {
 
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
-              <a href="#" className="button">
-                Get started
-              </a>
+              <Link href="/getting-started/getting-started">
+                <a className="button">Get started</a>
+              </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a href="#" className="button-inverted">
-                Learn more
-              </a>
+              <Link href="/what-is-samvera/applications-demos">
+                <a className="button-inverted">Learn more</a>
+              </Link>
             </div>
           </div>
         </div>

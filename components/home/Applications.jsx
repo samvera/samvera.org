@@ -27,7 +27,7 @@ export default function Applications() {
   return (
     <section
       style={{ backgroundImage: "url(/images/applications-bg.jpeg)" }}
-      className="py-16"
+      className="py-16 bg-fixed"
     >
       <div className="max-w-4xl mx-auto">
         <Swiper

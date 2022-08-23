@@ -31,6 +31,7 @@ module.exports = {
       },
       fontFamily: {
         cooperBook: ["Cooper Hewitt Book", "Helvitica"],
+        cooperBold: ["Cooper Hewitt Bold", "Helvitica"],
         fontin: ["Fontin Sans Regular", "sans-serif"],
         fontinBold: ["Fontin Sans Bold", "sans-serif"],
       },

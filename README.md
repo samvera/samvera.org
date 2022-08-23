@@ -5,13 +5,15 @@ website powered by Markdown files for primary site content
 
 ## App commands
 
-### Build primary navigation
+### Build site navigation
 
 ```
 npm run build-site-nav
 ```
 
-This command executes a NodeJS script which will read the `/markdown` directory in the project, and dynamically create a site navigation file, `/site-navigation.js`. This navigation file is used by the application to create Primary Navigation.
+Site navigation and linking can be automated using the following script. Essentially it reads the contents of the project's `/markdown` directory to know about News items, and pages tucked under "parent" pages for primary site navigation.
+
+The command below executes a NodeJS script which will read the `/markdown` directory in the project, and dynamically create a site navigation file, `/site-navigation.js`. This navigation file is used by the application to create Primary Navigation.
 
 ## Top level app overview
 

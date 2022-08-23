@@ -23,6 +23,34 @@ export const SAMVERA_PARTNERS = [
     label: "Cornell University",
     href: "#",
   },
+  {
+    label: "CoSector, University of London",
+    href: "#",
+  },
+  {
+    label: "Data Curation Experts",
+    href: "#",
+  },
+  {
+    label: "Digital Repository of Ireland",
+    href: "#",
+  },
+  {
+    label: "Duke University",
+    href: "#",
+  },
+  {
+    label: "El Colegio de México",
+    href: "#",
+  },
+  {
+    label: "Emory University",
+    href: "#",
+  },
+  {
+    label: "Hyku for Consortia (PALNI & PALCI)",
+    href: "#",
+  },
 ];
 
 export const sideBarLinks = [
