@@ -23,7 +23,7 @@ jobs:
           node-version: "lts/*"
           cache: npm
       - name: Install packages
-        run: npm i
+        run: npm ci
       - name: Build Site Navigation
         run: npm run build-site-nav
       - name: Export static files
@@ -31,7 +31,7 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
