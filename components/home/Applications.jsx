@@ -1,6 +1,6 @@
-import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
+import { prefix } from "prefix";
 
 SwiperCore.use([Navigation]);
 
@@ -26,7 +26,7 @@ const SlideContent = ({ children }) => (
 export default function Applications() {
   return (
     <section
-      style={{ backgroundImage: "url(/images/applications-bg.jpeg)" }}
+      style={{ backgroundImage: `url(${prefix}/images/applications-bg.jpeg)` }}
       className="py-16 bg-fixed"
     >
       <div className="max-w-4xl mx-auto">

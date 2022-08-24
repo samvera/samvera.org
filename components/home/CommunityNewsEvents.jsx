@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { prefix } from "prefix";
 
 export default function CommunityNewsEvents({ items }) {
   return (
@@ -34,7 +35,7 @@ export default function CommunityNewsEvents({ items }) {
           </div>
           <div
             className="p-10 md:col-span-1"
-            style={{ backgroundImage: "url(/images/news-bg.jpeg)" }}
+            style={{ backgroundImage: `url(${prefix}/images/news-bg.jpeg)` }}
           >
             <h2 className="section-title">News &amp; Events</h2>
             <ul>
