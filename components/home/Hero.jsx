@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { prefix } from "prefix";
 
 export default function HomeHero() {
   return (
@@ -37,7 +38,7 @@ export default function HomeHero() {
       <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
         <img
           className="absolute inset-0 w-full h-full object-cover"
-          src="/images/washu-samvera-group.jpeg"
+          src={`${prefix}/images/washu-samvera-group.jpeg`}
           alt=""
         />
       </div>

@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import React from "react";
+import { prefix } from "prefix";
 import { primaryNavigation } from "../../app-config";
 
 function classNames(...classes) {
@@ -41,7 +42,7 @@ export default function Example() {
                     <a>
                       <img
                         className="h-16 w-auto"
-                        src={`/images/samvera-logo-tm.svg`}
+                        src={`${prefix}/images/samvera-logo-tm.svg`}
                         alt="Samvera Logo"
                       />
                     </a>

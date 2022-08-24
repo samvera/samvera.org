@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import NavItem from "components/nav/NavItem";
+import { prefix } from "prefix";
 import { siteNavigation } from "site-navigation";
 
 const newsNavigation = [
@@ -39,7 +40,7 @@ export default function Header() {
               <a>
                 <img
                   className="h-16 w-auto"
-                  src={`/images/samvera-logo-tm.svg`}
+                  src={`${prefix}/images/samvera-logo-tm.svg`}
                   alt="Samvera Logo"
                 />
               </a>
@@ -85,7 +86,7 @@ export default function Header() {
                 <div>
                   <img
                     className="h-12 w-auto"
-                    src={`/images/samvera-logo-tm.svg`}
+                    src={`${prefix}/images/samvera-logo-tm.svg`}
                     alt="Samvera Logo"
                   />
                 </div>
