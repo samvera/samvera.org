@@ -1,8 +1,8 @@
 # Samvera Community Website
 
-This is a NextJS framework application which creates a static website powered by Markdown documents.
+This is a [NextJS framework](https://nextjs.org/) application which creates a static website powered by [markdown](https://www.markdownguide.org/getting-started/) files.
 
-## How do I use this?
+How do I use this app / code repository / website?
 
 ## Content managers
 
@@ -12,7 +12,8 @@ If you are adding or updating content on the Samvera.org website, you'll only ne
 
 This folder's content resembles the shape of the website's information architecture. Sub folders (like `/about`, `/what-is-samvera`, etc) match the primary navigation links.
 
-[ screen shot here ]
+![image](https://user-images.githubusercontent.com/3020266/186482460-51e7e89f-2ca5-4824-ba0a-22d41144a6ae.png)
+
 
 Within each subfolder you'll find markdown files, which contain page content.
 
@@ -45,17 +46,24 @@ Adjust these to taste.
 
 Say we want to update the FAQ page. Navigate to the file location `markdown/about/faq.md`, and click the "edit" icon
 
-[ screen shot here ]
+![image](https://user-images.githubusercontent.com/3020266/186482791-22546553-7ece-49e7-80b1-8d4084b1f87c.png)
+
 
 Make whatever updates you want, and when finished we'll commit the changes. Best practice is to create a new branch (from the `main` branch) and create a PR (Pull request).
 
-[ screen shot here ]
+![image](https://user-images.githubusercontent.com/3020266/186483252-62d0d302-eb83-4f48-abda-046ebcc7ce94.png)
+
 
 Once a pull request is opened, a reviewer will review. When approved, merge your branch back into `main`. All commits to the `main` branch (our production branch), will trigger a new build of the website. Github Actions will also automatically deploy a public version of the website to: https://samvera-labs.github.io/samvera.org/
 
 ### Updating Samvera Partners
 
-There are some pieces of site information not easily updated via markdown files. Samvera Partners for one. Do make updates to the list of Samvera Partners, open the file `/app-config.js` and you'll see a list of Samvera Partners and associated info.
+There are some pieces of site information not easily updated via markdown files. Samvera Partners for one. 
+
+![image](https://user-images.githubusercontent.com/3020266/186483776-96d3580c-49ba-4fda-96e7-d659ea832beb.png)
+
+
+To make updates to the list of Samvera Partners, open the file `/app-config.js` and you'll see a list of Samvera Partners and associated info.
 
 ## Developers
 
