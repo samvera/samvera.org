@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Fontin Sans Regular";
   src: url("/fonts/FontinSans_49/Fontin_Sans_R_45b.otf");
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Cooper Hewitt Bold";
   src: url("/fonts/cooper-hewitt/CooperHewitt-Bold.otf");
-}
+} */
 a {
   @apply transition-all duration-300 ease-in-out;
 }

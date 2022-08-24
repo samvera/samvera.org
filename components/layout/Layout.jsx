@@ -5,7 +5,6 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import OuterWrapper from "./OuterWrapper";
-import NavBar from "../nav/NavBar";
 
 export default function Layout({ children }) {
   return (
