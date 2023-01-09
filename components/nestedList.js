@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import styles from './nestedList.module.scss';
+import React from "react";
+import Link from "next/link";
+import styles from "./nestedList.module.scss";
 
 export default function NestedList({ dirData }) {
   return (
@@ -13,9 +13,9 @@ export default function NestedList({ dirData }) {
 function File({ file }) {
   return (
     <div className={styles.file}>
-      <Link href={`/docs/${file.id}`}>
+      <Link legacyBehavior href={`/docs/${file.id}`}>
         <a className={styles.label}>
-          {file.matter.title}{' '}
+          {file.matter.title}{" "}
           <div className={styles.slugpath}>{`/docs/${file.id}`}</div>
         </a>
       </Link>
@@ -26,9 +26,9 @@ function File({ file }) {
 function Folder({ folder, children }) {
   return (
     <div className={styles.folder}>
-      <Link href={`/docs/${folder.id}`}>
+      <Link legacyBehavior href={`/docs/${folder.id}`}>
         <a className={styles.folderLabel}>
-          {folder.matter.title}{' '}
+          {folder.matter.title}{" "}
           <div className={styles.slugpath}>{`/docs/${folder.id}`}</div>
         </a>
       </Link>
@@ -39,11 +39,11 @@ function Folder({ folder, children }) {
 
 const TreeRecursive = ({ data }) => {
   return data.map((item) => {
-    if (item.type === 'file') {
+    if (item.type === "file") {
       return <File file={item} key={`item-/docs/${item.id}`} />;
     }
 
-    if (item.type === 'folder') {
+    if (item.type === "folder") {
       return (
         <Folder folder={item} key={`item-/docs/${item.id}`}>
           <TreeRecursive data={item.files} />

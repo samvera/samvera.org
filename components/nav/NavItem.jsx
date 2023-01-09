@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -38,12 +38,12 @@ export default function NavItem({ navItem }) {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-72 transform px-2 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div className="relative grid gap-6 bg-white px-5 py-6 sm:p-8">
+            <Popover.Panel className="absolute z-10 px-2 mt-3 -ml-4 transform w-72 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                <div className="relative grid gap-6 px-5 py-6 bg-white sm:p-8">
                   {navItem.items.map((item) => (
-                    <Link key={item.slug} href={item.href}>
-                      <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 hover:text-samOrange">
+                    <Link legacyBehavior key={item.slug} href={item.href}>
+                      <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50 hover:text-samOrange">
                         {item.label}
                       </a>
                     </Link>

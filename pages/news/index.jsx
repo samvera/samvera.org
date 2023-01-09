@@ -39,7 +39,7 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
           return (
             <article key={title} className="mb-12">
               <h2>
-                <Link href={`/news/${slug}`}>
+                <Link legacyBehavior href={`/news/${slug}`}>
                   <a className="text-samGreyDark normal-case hover:text-samDarkRed">
                     {title}
                   </a>

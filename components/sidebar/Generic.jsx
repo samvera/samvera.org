@@ -7,7 +7,7 @@ export default function Generic({ items = [], parentDir, title }) {
       <ul>
         {items.map((item) => (
           <li key={item.slug}>
-            <Link href={`/${parentDir}/${item.slug}`}>
+            <Link legacyBehavior href={`/${parentDir}/${item.slug}`}>
               <a>{item.title}</a>
             </Link>
           </li>

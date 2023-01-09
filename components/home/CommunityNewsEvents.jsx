@@ -28,7 +28,7 @@ export default function CommunityNewsEvents({ items }) {
               bundles.
             </p>
             <div className="flex justify-around pt-5">
-              <Link href="/getting-started/getting-started">
+              <Link legacyBehavior href="/getting-started/getting-started">
                 <a className="button">Getting started</a>
               </Link>
             </div>
@@ -41,7 +41,7 @@ export default function CommunityNewsEvents({ items }) {
             <ul>
               {items.map((item) => (
                 <li key={item.slug} className="mb-3">
-                  <Link href={`/news/${item.slug}`}>
+                  <Link legacyBehavior href={`/news/${item.slug}`}>
                     <a className="text-samGreyDark font-cooperBold">
                       {item.title}
                     </a>
@@ -49,7 +49,7 @@ export default function CommunityNewsEvents({ items }) {
                 </li>
               ))}
             </ul>
-            <Link href="/news">
+            <Link legacyBehavior href="/news">
               <a className="button">View all news</a>
             </Link>
           </div>

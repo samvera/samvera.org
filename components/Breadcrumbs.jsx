@@ -13,7 +13,7 @@ const Breadcrumbs = ({ items }) => {
           }`}
         >
           {item.href && (
-            <Link href={item.href}>
+            <Link legacyBehavior href={item.href}>
               <a className=" text-samDarkRed">{item.label}</a>
             </Link>
           )}
