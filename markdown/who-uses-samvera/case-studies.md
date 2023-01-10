@@ -48,15 +48,15 @@ Prior to migrating to the Hyrax-based application, development at Emory Librarie
 
 Old Homepage
 
-![Screenshot of Emory's old homepage](/images/emory-old-homepage-1024x503.png)
+![Screenshot of Emory's old homepage](./images/emory-old-homepage-1024x503.png)
 
 New Homepage
 
-![Screenshot of Emory's new homepage](/images/emory-new-homepage-1024x491.png)
+![Screenshot of Emory's new homepage](../images/emory-new-homepage-1024x491.png)
 
 Old ETD
 
-![Screenshot of Emory's old ETD page](/images/emory-old-etd-1024x553.png)
+![Screenshot of Emory's old ETD page](images/emory-old-etd-1024x553.png)
 
 New ETD
 
