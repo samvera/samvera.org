@@ -52,12 +52,12 @@ Old Homepage
 
 New Homepage
 
-![Screenshot of Emory's new homepage](images/emory-new-homepage-1024x491.png)
+![Screenshot of Emory's new homepage](/images/emory-new-homepage-1024x491.png)
 
 Old ETD
 
-![Screenshot of Emory's old ETD page](images/emory-old-etd-1024x553.png)
+![Screenshot of Emory's old ETD page](/images/emory-old-etd-1024x553.png)
 
 New ETD
 
-![Screenshot of Emory's new ETD page](images/emory-new-etd-1024x692.png)
+![Screenshot of Emory's new ETD page](/images/emory-new-etd-1024x692.png)

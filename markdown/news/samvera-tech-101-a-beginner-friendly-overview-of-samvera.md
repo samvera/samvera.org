@@ -1,11 +1,11 @@
 ---
 title: "Samvera Tech 101: A Beginner-Friendly Overview of Samvera"
 date: "2020-11-25"
-categories: 
+categories:
   - "news"
 ---
 
-![a vertical diagram of the components of the Samvera technology stack](images/26.jpg "Samvera tech stack diagram")
+![a vertical diagram of the components of the Samvera technology stack](/images/26.jpg "Samvera tech stack diagram")
 
 [https://www.notch8.com/samvera-tech-101/](https://www.notch8.com/samvera-tech-101/)
 

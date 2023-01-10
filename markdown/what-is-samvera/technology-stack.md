@@ -5,9 +5,9 @@ date: "2016-10-07"
 
 A Samvera repository solution provides functionality for the full range of CRUD services (create, read, update, delete).  To do this it employs a number of Ruby on Rails based components (or "gems") in conjunction with three other "best of breed" open source software products: Fedora, Solr and Blacklight.
 
-![Samvera technology stack diagram](images/Samvera-Components-Diagram.png)
+![Samvera technology stack diagram](/images/Samvera-Components-Diagram.png)
 
- 
+
 
 At the top of our architecture diagram is "Samvera Applications." Broadly, these are [Ruby on Rails](http://rubyonrails.org/) based applications that follow Samvera conventions. We are focusing our development efforts here on [Hyrax](http://hyr.ax/about/) as a Samvera application. These Samvera applications generally use a number of plugins to provide specific, additional functionality.
 
@@ -19,7 +19,7 @@ In the centre of our architecture diagram is a range of "middleware" components.
 
 _hydra-head_: [Hydra-Head](https://github.com/projecthydra/hydra-head) is a Ruby-on-Rails gem containing the core code for a web application using the full stack of Samvera building blocks.
 
-[](https://github.com/projecthydra/projecthydra.github.io/blob/refactor_docs/pages/hydra/1_new_start_here/our_technology_stack.md#active_fedora)_active\_fedora_: Ruby on Rails usually follows the [Active Record](http://guides.rubyonrails.org/active_record_basics.html) pattern to persist objects to a database. We instead use [ActiveFedora](https://github.com/projecthydra/active_fedora) to persist objects to Fedora.
+[](https://github.com/projecthydra/projecthydra.github.io/blob/refactor_docs/pages/hydra/1_new_start_here/our_technology_stack.md#active_fedora)_active_fedora_: Ruby on Rails usually follows the [Active Record](http://guides.rubyonrails.org/active_record_basics.html) pattern to persist objects to a database. We instead use [ActiveFedora](https://github.com/projecthydra/active_fedora) to persist objects to Fedora.
 
 [](https://github.com/projecthydra/projecthydra.github.io/blob/refactor_docs/pages/hydra/1_new_start_here/our_technology_stack.md#ldp)_ldp_: We use a ruby gem called [ldp](https://github.com/projecthydra/ldp) to implement the LDP ([Linked Data Platform](http://www.dataversity.net/introduction-linked-data-platform/)) interaction patterns for interaction with Fedora 4.
 
