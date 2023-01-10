@@ -14,7 +14,6 @@ This folder's content resembles the shape of the website's information architect
 
 ![image](https://user-images.githubusercontent.com/3020266/186482460-51e7e89f-2ca5-4824-ba0a-22d41144a6ae.png)
 
-
 Within each subfolder you'll find markdown files, which contain page content.
 
 To add a new page to the website, locate the folder (main nav link), where you want the new page to live, and create a new markdown file titled something which follows suit on sibling files. Ie. `/about/my-new-page.md`.
@@ -48,20 +47,17 @@ Say we want to update the FAQ page. Navigate to the file location `markdown/abou
 
 ![image](https://user-images.githubusercontent.com/3020266/186482791-22546553-7ece-49e7-80b1-8d4084b1f87c.png)
 
-
 Make whatever updates you want, and when finished we'll commit the changes. Best practice is to create a new branch (from the `main` branch) and create a PR (Pull request).
 
 ![image](https://user-images.githubusercontent.com/3020266/186483252-62d0d302-eb83-4f48-abda-046ebcc7ce94.png)
-
 
 Once a pull request is opened, a reviewer will review. When approved, merge your branch back into `main`. All commits to the `main` branch (our production branch), will trigger a new build of the website. Github Actions will also automatically deploy a public version of the website to: https://samvera-labs.github.io/samvera.org/
 
 ### Updating Samvera Partners
 
-There are some pieces of site information not easily updated via markdown files. Samvera Partners for one. 
+There are some pieces of site information not easily updated via markdown files. Samvera Partners for one.
 
 ![image](https://user-images.githubusercontent.com/3020266/186483776-96d3580c-49ba-4fda-96e7-d659ea832beb.png)
-
 
 To make updates to the list of Samvera Partners, open the file `/app-config.js` and you'll see a list of Samvera Partners and associated info.
 
@@ -98,6 +94,30 @@ const CONFIG = {
   parentDirLabel: "About Samvera",
 };
 ```
+
+## Building a static version of the site
+
+In Github, Github Actions will run a static build of the site on every merge into the `/main` code branch.
+
+### Local building
+
+If you're curious to see how the static site will build, run the following commands.
+
+```bash
+# See more info below
+npm run build-site-nav
+
+# Build a static version of the site to an /out directory
+npm run build
+
+# Assuming you are currently in the project root. Find your way to the /out directory
+cd out
+
+# Start a local web server
+npx serve
+```
+
+`serve` should output a url for you. Follow the link and you'll be able to see the static build.
 
 ### Build site navigation
 
