@@ -5,9 +5,7 @@ date: "2016-10-07"
 
 A Samvera repository solution provides functionality for the full range of CRUD services (create, read, update, delete).  To do this it employs a number of Ruby on Rails based components (or "gems") in conjunction with three other "best of breed" open source software products: Fedora, Solr and Blacklight.
 
-![Samvera technology stack diagram](/images/Samvera-Components-Diagram.png)
-
-
+![Samvera technology stack diagram](../images/Samvera-Components-Diagram.png)
 
 At the top of our architecture diagram is "Samvera Applications." Broadly, these are [Ruby on Rails](http://rubyonrails.org/) based applications that follow Samvera conventions. We are focusing our development efforts here on [Hyrax](http://hyr.ax/about/) as a Samvera application. These Samvera applications generally use a number of plugins to provide specific, additional functionality.
 

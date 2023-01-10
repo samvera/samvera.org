@@ -53,4 +53,4 @@ In short, Samvera with Avalon components integrated, may provide users with a ro
 
 _Physical AV resources in the stacks_
 
-##### ![Storage of physical AV resources](/images/AV_stacks_13-1024x876.jpg)
+##### ![Storage of physical AV resources](../images/AV_stacks_13-1024x876.jpg)
