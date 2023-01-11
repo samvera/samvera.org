@@ -9,8 +9,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const SlideWrapper = ({ children }) => (
-  <div className="bg-white text-center py-10 px-12">
-    <div className="lowercase mb-4 font-fontinBold">Applications</div>
+  <div className="px-12 py-10 text-center bg-white">
+    <div className="mb-4 lowercase font-fontinBold">Applications</div>
     {children}
   </div>
 );
@@ -20,7 +20,7 @@ const SlideTitle = ({ children }) => (
 );
 
 const SlideContent = ({ children }) => (
-  <div className="text-left px-5">{children}</div>
+  <div className="px-5 text-left">{children}</div>
 );
 
 export default function Applications() {
@@ -36,8 +36,6 @@ export default function Applications() {
           navigation
           spaceBetween={50}
           slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <SlideWrapper>
