@@ -3,7 +3,8 @@ title: "FAQ"
 date: "2016-12-05"
 ---
 
-[**What is Samvera?**](#01)
+<h3 id ="01">What is Samvera?</h3>
+<h3 id ="02">Why use Samvera?</h3>
 
 [**Why use Samvera?**](#02)
 
