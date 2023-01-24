@@ -9,7 +9,7 @@ The Samvera framework uses the best of current repository, search, and user-inte
 
 Within the Samvera framework, one "body" -- the digital repository -- supports multiple "heads" or tailored, content type-specific applications.
 
-\[caption id="attachment_751" align="aligncenter" width="600"\]![Samvera repository structure](../images/HydraContentStructure4.gif) Where other repository systems may be tailored to a specific format or medium, requiring specific systems and expertise, the Samvera framework is flexible enough to serve multiple needs.\[/caption\]
+![Samvera repository structure](../images/HydraContentStructure4.gif) Where other repository systems may be tailored to a specific format or medium, requiring specific systems and expertise, the Samvera framework is flexible enough to serve multiple needs.
 
 #### Extensible
 
