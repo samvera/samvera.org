@@ -16,7 +16,7 @@ export default function Home({ sideNav }) {
           software tools
         </title>
         <meta name="description" content="Samvera is cool" />
-        <link rel="icon" href={`${prefix}/favicon.ico`} />
+        <link rel="icon" href={`${prefix}/images/favicon.ico`} />
       </Head>
       <HomeLayout>
         <HomeHero />

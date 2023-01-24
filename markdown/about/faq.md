@@ -36,7 +36,7 @@ date: "2016-12-05"
 
 [**What does Samvera offer that DSpace, EPrints, ContentDM, Islandora, etc. do not? What makes the Samvera approach to repositories stand out?**](#what-does-samvera-offer-that-dspace-eprints-contentdm-islandora-etc-do-not-what-makes-the-samvera-approach-to-repositories-stand-out)
 
-* * *
+---
 
 # What is Samvera?
 
@@ -51,17 +51,17 @@ Samvera software is free and open source, available under an Apache 2 license. �
 
 The combination of the components is consciously modular to enable individual solutions to make use of alternatives if they so wish. The Samvera community has worked together to develop and sustain a number of “solution bundles” — applications designed to solve a common need in a generalized yet customizable way with minimal development effort required — including the Avalon Media System, for managing and providing access to large collections of digital audio and video, and Hyrax, a front-end enabling common digital collections management and institutional repository features including creation of repository object types on demand, deposit of content via multiple configurable workflows, and description of content with flexible metadata.
 
-* * *
+---
 
 # Why use Samvera?
 
-We believe that no single repository system can provide the full range of repository-based solutions for a given institution’s needs; likewise, no single institution can resource the development of a full range of solutions on its own.  Samvera is an open-source repository solution built collaboratively to address a broad range of repository needs. Rather than being one-size-fits-all, Samvera leverages an ecosystem of components that lets institutions assemble and deploy robust and durable repository applications that are tailored to their users' needs and workflows. 
+We believe that no single repository system can provide the full range of repository-based solutions for a given institution’s needs; likewise, no single institution can resource the development of a full range of solutions on its own.  Samvera is an open-source repository solution built collaboratively to address a broad range of repository needs. Rather than being one-size-fits-all, Samvera leverages an ecosystem of components that lets institutions assemble and deploy robust and durable repository applications that are tailored to their users' needs and workflows.
 
-Drawing on hard lessons learned in the past about developing software locally rather than working with others, the Samvera Community ensures that multiple hands are in play to keep the software growing and improving.  While many systems offer specific abilities to deposit, manage, deliver or preserve digital content, the Samvera Community looks to provide effective combination of these tasks to enable flexible, extensible solutions that can contribute to a wider content management and preservation environment.  Managing digital collections in this way provides the content with its context and value over time and reduces the work and cost of maintaining it. We could create our own individual stand-alone systems, but we'd be doing them by ourselves. The expense of maintaining something custom in the long-run, would, we believe, outstrip the costs of participating in the Samvera Community effort.  
+Drawing on hard lessons learned in the past about developing software locally rather than working with others, the Samvera Community ensures that multiple hands are in play to keep the software growing and improving.  While many systems offer specific abilities to deposit, manage, deliver or preserve digital content, the Samvera Community looks to provide effective combination of these tasks to enable flexible, extensible solutions that can contribute to a wider content management and preservation environment.  Managing digital collections in this way provides the content with its context and value over time and reduces the work and cost of maintaining it. We could create our own individual stand-alone systems, but we'd be doing them by ourselves. The expense of maintaining something custom in the long-run, would, we believe, outstrip the costs of participating in the Samvera Community effort.
 
 As a grass-roots, open-source software producer, the Samvera Community is accountable only to its users, which ensures its sustainability.  This is in part a response to concerns raised about commercial software producers, which are liable to alter or even eliminate products based on profitability rather than the values of the cultural heritage and research communities.
 
-* * *
+---
 
 # Who uses Samvera, and what for?
 
@@ -73,7 +73,7 @@ Read about [implementations of Samvera](https://samvera.atlassian.net/wiki/space
 
 For more details about Samvera use cases and links out to current Samvera applications, visit [our Applications & Demos](http://samvera.org/samvera-open-source-repository-framework/applications-demos/) page.
 
-* * *
+---
 
 # How is the Samvera Community governed?
 
@@ -83,7 +83,7 @@ The Samvera Board is an elected body of nine members of the Samvera Partners, wi
 
 All technical work is carried out according to the [Samvera Community Principles](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211354/Samvera+Community+Principles).
 
-* * *
+---
 
 # What do you mean when you say you are part of a community?  How does that work?
 
@@ -91,19 +91,19 @@ The people involved in developing ideas and software within the Samvera Communit
 
 Contributing to the community is not a one-way street—what we invest in terms of staff time and resources we also take out, in terms of the combined work of the community on a shared set of repository solutions meeting ever more complex needs.
 
-* * *
+---
 
 # How can I connect with the Samvera Community and stay up to date on events and developments?
 
 There are several ways to connect with the Samvera Community, and you can find them all on our [Getting Started wiki page](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211682/Getting+Started+in+the+Samvera+Community).  Newcomers to the community are encouraged to join the [Samvera Community Google Group](https://groups.google.com/g/samvera-community) and participate in Samvera on Slack.  Samvera Partner institutions are encouraged to join the [Samvera Partners Google Group](https://groups.google.com/g/samvera-partners). Samvera channels on Slack are open for anyone to follow.  Slack #general covers issues pertinent to the community at large, whilst for developers there is Slack #dev.  There is also a specific channel for those interested in attending our annual Samvera Connect conference, Slack #connect.  The [Samvera wiki](https://samvera.atlassian.net/wiki/spaces/samvera/overview?mode=global) provides a lot of additional detailed information on Samvera Community activity and its '[Get in touch!](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211682/Get+in+touch)' page contains a fuller list of our communication channels .
 
-* * *
+---
 
 # What is the purpose of Samvera Connect and other in-person meetings of the Samvera Community?
 
 Face-to-face community events maximize the value of participation in Samvera by providing opportunities for Adopters to share local efforts and benefit from the vast experience and expertise of others in shared knowledge and practice.  In-person community events are staff development, training, and networking opportunities all rolled into one. By investing in staff attendance at Samvera Connect and other meetings, an organization can be assured that staff members are supported to learn skills and gain expertise that directly impacts the development and delivery of their Samvera-based repository.  We really do go further together.
 
-* * *
+---
 
 # How do you ensure that everyone can participate in the Samvera Community?
 
@@ -111,13 +111,13 @@ The Samvera Community takes the inclusion of everyone who wishes to participate 
 
 The continuing need to find ways of enabling under-represented groups within our wider sector to participate in Samvera’s work is an ongoing responsibility of the Samvera Partners.
 
-* * *
+---
 
 # Where can I download and try Samvera?
 
 All the software is available through the Samvera Community's [Github](https://github.com/samvera).  Documentation is available at [http://samvera.github.io/](http://samvera.github.io/).  A test instance of the Hyrax implementation of the Samvera framework is made available by Data Curation Experts (DCE) at [https://nurax.curationexperts.com/](https://nurax.curationexperts.com/).
 
-* * *
+---
 
 # Why did Samvera choose the specific components that Samvera repository solutions are based on?
 
@@ -125,7 +125,7 @@ The components that form the basis of Samvera’s solutions (Fedora, Blacklight,
 
 The Samvera architecture was always designed to allow for individual components to be replaced with new or preferred technologies.  For example, the Valkyrie initiative is designing a means through which alternatives to Fedora can be used if desired.
 
-* * *
+---
 
 # What does it cost to implement Samvera?
 
@@ -137,19 +137,19 @@ Samvera software is free and open-source, but of course, this is free in the sam
 
 Most adopting institutions have a minimum of one developer, one metadata librarian, and one manager investing significant time in the Samvera instance.
 
-Devoting resources to development using Ruby on Rails is a requirement, whether that be provided in-house or through one of the [service providers](http://samvera.org/communication/service-providers/) that support Samvera, in order to capitalise on the flexibility that Samvera offers.  
+Devoting resources to development using Ruby on Rails is a requirement, whether that be provided in-house or through one of the [service providers](http://samvera.org/communication/service-providers/) that support Samvera, in order to capitalise on the flexibility that Samvera offers.
 
-Implementing Samvera represents a valuable investment in the durability of your digital collections, and this comes with a commitment to the work involved in building the solution that’s right for you.  
+Implementing Samvera represents a valuable investment in the durability of your digital collections, and this comes with a commitment to the work involved in building the solution that’s right for you.
 
 Implementing Samvera is also an important investment in the future of sustainable, values-driven, open-source technology for scholarly communication and cultural heritage.  Learn more about [getting started with Samvera](http://samvera.org/communication/getting-started/) on our website.  Follow [News & Events](http://samvera.org/news-events/) to keep in the loop about learning and training opportunities.
 
-* * *
+---
 
 # I have developed code that could be of use to Samvera.  How can I share this with others?
 
 Firstly, thank you for considering sharing your work with Samvera, it’s very much appreciated.  There is guidance on making technical contributions to Samvera available on our [Documentation](https://samvera.github.io/tag_community.html) site.  Please also note that we require all contributions to be licensed via a completed [Contributor Licensing Agreement](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211651/Samvera+Community+Intellectual+Property+Licensing+and+Ownership) to ensure clarity in how Samvera can continue to make use of code you created.
 
-* * *
+---
 
 # How do we know Samvera will be around in 5 or 10 years?
 
@@ -157,13 +157,13 @@ Samvera leverages the convening power of institutions, which outlasts the ebb an
 
 These investments, in addition to the steadily growing number of Samvera Adopters, testify to the durability of Samvera as an avenue toward the future of accessible, open-access scholarly communications and digital preservation of our cultural heritage. The goal of the Samvera community is to be a more sustainable long-term solution than commercial options.
 
-* * *
+---
 
 # Is there an exit strategy for me when I need to move to a different technology?
 
 We know that nothing lasts forever and that some of our community will probably wish to move on to other, non-Samvera solutions in time.  In keeping with Samvera’s use of open source components, it is important that the content being managed should be openly transferable to facilitate its management over time regardless of the software being used.  To support this Samvera is developing bulk import and export capability: the latter will allow the contents of a Samvera repository to be exported in a way that might be migrated to other platforms.
 
-* * *
+---
 
 # I have heard the terms Hydra, Hyrax, Hyku, and HyBox associated with Samvera what do they all mean?
 
@@ -173,13 +173,13 @@ Hyrax utilizes the Samvera framework to provide Adopters and Partners with a bas
 
 Hyku is the product release from the Hydra-in-a-Box (HyBox) project and it is built using Hyrax as its basis.  Hyku is designed to reduce barriers to effective asset management and preservation for collections and content types of many kinds, and is of particular interest to hosted service providers and consortia. The [Hyku Interest Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/419533203/Samvera+Hyku+Interest+Group) has a group of service providers and institutions exploring how Hyku can be utilized to serve a range of repository service needs.
 
-* * *
+---
 
 # My institution is moving more and more into the cloud.  Can I have Samvera in the cloud?
 
 Hyku was created specifically to work in the cloud as a multi-tenanted solution for delivering repository solutions.  Several Samvera repositories are also deployed or partially deployed via Amazon Web Services (AWS). Amazon Machine Images (AMIs), docker storage, and other cloud-friendly technologies are being used to support Samvera deployment and components of Samvera solution bundles.  For example: the [Avalon](http://www.avalonmediasystem.org/project) Media System, an implementation of the Samvera framework focused on media content, is fully deployable in AWS and uses AWS transcoding to create multiple bitrate versions of uploaded content.
 
-* * *
+---
 
 # What does Samvera offer that DSpace, EPrints, ContentDM, Islandora, etc. do not? What makes the Samvera approach to repositories stand out?
 
