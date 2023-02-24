@@ -3,12 +3,27 @@ import BannerLicense from "../BannerLicense";
 import BannerPartners from "../BannerPartners";
 import React from "react";
 import Footer from "./Footer";
+import Head from "next/head";
 import Header from "./Header";
 import OuterWrapper from "./OuterWrapper";
+import { prefix } from "prefix";
 
-export default function Layout({ children }) {
+const description =
+  "Samvera™ is a vibrant and welcoming community of information and technology professionals who share challenges, build expertise, and create sustainable, best-in-class solutions, making the world’s digital collections accessible now and into the future. Samvera’s suite of repository software tools offers flexible and rich user interfaces tailored to distinct content types on top of a robust back end – giving adopters the best of both worlds.";
+
+export default function Layout({ children, title }) {
   return (
-    <div className="text-samGrey font-cooperBook bg-white">
+    <div className="bg-white text-samGrey font-cooperBook">
+      <Head>
+        <Head>
+          <title>{title}</title>
+          <meta name="description" content={description} />
+          <meta name="theme-color" content="#121212" />
+          <link rel="icon" href={`${prefix}/images/favicon.ico`} />
+          <link rel="canonical" href="https://samvera.org/" />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
+      </Head>
       <Header />
       <OuterWrapper>{children}</OuterWrapper>
       <BannerContact />

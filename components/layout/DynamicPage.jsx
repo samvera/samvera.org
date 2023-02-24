@@ -12,7 +12,7 @@ export default function DynamicPage({
   sideNewsAndEvents,
 }) {
   return (
-    <Layout>
+    <Layout title={`${frontmatter.title} - ${config.parentDirLabel} - Samvera`}>
       <Main>
         <Breadcrumbs
           items={[

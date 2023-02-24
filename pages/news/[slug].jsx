@@ -44,10 +44,18 @@ export async function getStaticProps({ params: { slug } }) {
   );
   const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
   const { sideNav: sideNewsAndEvents } = getSideNav(`markdown/news`);
+
+  const openGraphData = buildWorkOpenGraphData(
+    CONFIG.parentDirLabel,
+    frontmatter.title,
+    `${CONFIG.parentDir}/${slug}`
+  );
+
   return {
     props: {
       content,
       frontmatter,
+      openGraphData,
       sideNav,
       sideNewsAndEvents,
     },
