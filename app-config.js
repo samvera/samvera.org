@@ -51,11 +51,11 @@ export const SAMVERA_PARTNERS = [
     label: "Hyku for Consortia (PALNI & PALCI)",
     href: "#",
   },
-   {
+  {
     label: "Indiana University",
     href: "#",
   },
-   {
+  {
     label: "Lafayette College",
     href: "#",
   },
@@ -63,83 +63,83 @@ export const SAMVERA_PARTNERS = [
     label: "Northwestern University",
     href: "#",
   },
-   {
+  {
     label: "Oregon State University",
     href: "#",
   },
-   {
+  {
     label: "Penn State University",
     href: "#",
   },
-   {
+  {
     label: "Princeton University",
     href: "#",
   },
-   {
+  {
     label: "Software Services by Scientist.com",
     href: "#",
   },
-   {
+  {
     label: "Stanford University",
     href: "#",
   },
-   {
+  {
     label: "Tufts University",
     href: "#",
   },
-   {
+  {
     label: "Ubiquity Press",
     href: "#",
   },
-   {
+  {
     label: "University of California, Santa Barbara",
     href: "#",
   },
-   {
+  {
     label: "University of California, San Diego",
     href: "#",
   },
-   {
+  {
     label: "University of Cincinnati",
     href: "#",
   },
-   {
+  {
     label: "University of Houston",
     href: "#",
   },
-   {
+  {
     label: "University of Hull",
     href: "#",
   },
-   {
+  {
     label: "University of Michigan",
     href: "#",
   },
-   {
+  {
     label: "University of Notre Dame",
     href: "#",
   },
-   {
+  {
     label: "University of Oregon",
     href: "#",
   },
-   {
+  {
     label: "University of Utah",
     href: "#",
   },
-   {
+  {
     label: "University of Virginia",
     href: "#",
   },
-   {
+  {
     label: "Washington University in St. Louis",
     href: "#",
   },
-   {
+  {
     label: "WGBH Boston",
     href: "#",
   },
-   {
+  {
     label: "Yale University",
     href: "#",
   },
@@ -147,7 +147,7 @@ export const SAMVERA_PARTNERS = [
 
 export const sideBarLinks = [
   {
-    href: "contact-us",
+    href: "/contact-us",
     label: "Contact Us",
   },
   {
