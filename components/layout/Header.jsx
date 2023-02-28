@@ -1,10 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavItem from "components/nav/NavItem";
+import Link from "next/link";
 import { prefix } from "prefix";
+import { Fragment } from "react";
 import { siteNavigation } from "site-navigation";
 
 const newsNavigation = [
