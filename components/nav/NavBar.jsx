@@ -1,8 +1,9 @@
 import { Disclosure } from "@headlessui/react";
-import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { prefix } from "prefix";
+import React from "react";
 import { primaryNavigation } from "../../app-config";
 
 function classNames(...classes) {
@@ -40,8 +41,7 @@ export default function Example() {
                 <div className="flex items-center flex-shrink-0">
                   <Link legacyBehavior href="/">
                     <a>
-                      <img
-                        className="w-auto h-16"
+                      <Image
                         src={`${prefix}/images/samvera-logo-tm.svg`}
                         alt="Samvera Logo"
                       />

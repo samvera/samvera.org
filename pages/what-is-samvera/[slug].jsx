@@ -1,9 +1,10 @@
 import DynamicPage from "components/layout/DynamicPage";
 import {
   getMarkdownPageContent,
-  getSideNav,
   getPaths,
+  getSideNav,
 } from "lib/markdown-helpers";
+import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
  * This is where the magic happens.

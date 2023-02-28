@@ -1,11 +1,11 @@
-import { getNewsPreviews, getSideNav } from "lib/markdown-helpers";
 import Breadcrumbs from "components/Breadcrumbs";
 import Layout from "components/layout/Layout";
-import Link from "next/link";
 import Main from "components/layout/Main";
 import MarkdownContent from "components/MarkdownContent";
 import NewsMeta from "components/news/Meta";
 import Sidebar from "components/sidebar/Sidebar";
+import { getNewsPreviews, getSideNav } from "lib/markdown-helpers";
+import Link from "next/link";
 
 const CONFIG = {
   parentDir: "news",
@@ -63,12 +63,6 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
 export async function getStaticProps() {
   const { previews } = getNewsPreviews();
   const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
-
-  const openGraphData = buildWorkOpenGraphData(
-    "News",
-    frontmatter.title,
-    `${CONFIG.parentDir}`
-  );
 
   return {
     props: { previews, sideNav },
