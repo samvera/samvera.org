@@ -40,7 +40,7 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
             <article key={title} className="mb-12">
               <h2>
                 <Link legacyBehavior href={`/news/${slug}`}>
-                  <a className="text-samGreyDark normal-case hover:text-samDarkRed">
+                  <a className="normal-case text-samGreyDark hover:text-samDarkRed">
                     {title}
                   </a>
                 </Link>
@@ -63,6 +63,12 @@ export default function NewsAndEventsPage({ previews, sideNav }) {
 export async function getStaticProps() {
   const { previews } = getNewsPreviews();
   const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
+
+  const openGraphData = buildWorkOpenGraphData(
+    "News",
+    frontmatter.title,
+    `${CONFIG.parentDir}`
+  );
 
   return {
     props: { previews, sideNav },
