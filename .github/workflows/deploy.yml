@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: "/samvera.org"
+      NEXT_PUBLIC_BASE_PATH: ""
 
     steps:
       - name: Get files
