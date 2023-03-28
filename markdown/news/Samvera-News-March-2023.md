@@ -23,7 +23,7 @@ We are pleased to open the call for presentation proposals for Samvera Virtual C
 
 
 * **“New to Samvera” experiences:** you or your institution joined Samvera recently and this is how the journey has been so far
-* **Challenges: **We can all from each other’s failures, pilot projects, performance tuning, and integration challenges
+* **Challenges:** We can all from each other’s failures, pilot projects, performance tuning, and integration challenges
 * **Adaptation:** are working on or have implemented something adapted from another organization in the community?
 * **Hot takes:** “Hear me out, I think we should try this and here’s why…”
 * **Integration:** How have you integrated Samvera technology with other software and services? How are you integrating the digital repository into the wider institutional community?
