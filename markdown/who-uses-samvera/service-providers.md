@@ -23,20 +23,20 @@ The Research Technologies Team have been hosting and developing OS repositories 
 
 Samvera projects include working with the University of Hull, in partnership with Cottage Labs, to deliver a digital archive for the Hull City of Culture, using Hyrax and Archivematica, and integrating with Blacklight and CALM.
 
-In June 2018 we launched the [King’s Fund Digital Archive](https://web.archive.org/web/20210813201925/https://archive.kingsfund.org.uk/). A hosted Hyku repository showcasing digitised archive material The content of this repository was migrated from an existing EPrints instance. The implementation of this repository also included enhancing the Hyku Universal view integration.
+In June 2018 we launched the [King’s Fund Digital Archive](https://archive.kingsfund.org.uk/). A hosted Hyku repository showcasing digitised archive material The content of this repository was migrated from an existing EPrints instance. The implementation of this repository also included enhancing the Hyku Universal view integration.
 
 Since October 2018 we have been working with the Warburg Institute to set up a Hyrax based offprints repository.
 
 We are available to provide repository hosting as well as bespoke development of repository features and stand-alone solutions. We can also provide repository-related consultancy, including organisational workflow analysis, needs assessment, upgrade assistance and troubleshooting.
 
-[CoSector](https://web.archive.org/web/20210813201925/http://www.cosector.com/research-technologies), University of London \
-Contact: [researchtech@cosector.com](https://web.archive.org/web/20210813201925/mailto:researchtech@cosector.com)
+[CoSector](https://www.cosector.com/what-we-do/digital-research), University of London 
+Contact: [researchtech@cosector.com](mailto:researchtech@cosector.com)
 
 
 * * *
 
 #### Cottage Labs 
-[https://cottagelabs.com/](https://web.archive.org/web/20210813201925/https://cottagelabs.com/)
+[https://cottagelabs.com/](https://cottagelabs.com/)
 
 UK-based but has worked with Partners in the UK and the US.
 
@@ -46,14 +46,14 @@ Services provided:
 * system maintenance
 * Samvera as a hosted cloud service (“Willow” – coming)
 
-Contact: Richard Jones ([richard@cottagelabs.com](https://web.archive.org/web/20210813201925/mailto:richard@cottagelabs.com))
+Contact: Richard Jones [richard@cottagelabs.com](mailto:richard@cottagelabs.com)
 
 
 * * *
 
 #### Data Curation Experts
 
-[https://curationexperts.com/](https://web.archive.org/web/20210813201925/https://curationexperts.com/)
+[https://curationexperts.com/](https://curationexperts.com/)
 
 US-based but has worked with Partners in the US and the UK.
 
@@ -64,7 +64,7 @@ Services provided:
 * training
 * Samvera as a hosted cloud service (coming)
 
-Contact: Mark Bussey ([mark@curationexperts.com](https://web.archive.org/web/20210813201925/mailto:mark@curationexperts.com))
+Contact: Mark Bussey [mark@curationexperts.com](mailto:mark@curationexperts.com)
 
 
 * * *
@@ -97,18 +97,18 @@ US Department of Transportation
 
 SoftServ is a Samvera Partner, and we are passionate participants in this community. Our services include full application development; devops support; hosting, maintenance, and support packages; Rails upgrades; and specialized contracts for Samvera consulting.
 
-Contact: Kevin Kochanski (softserv@scientist.com)
+Contact: Kevin Kochanski [softserv@scientist.com](mailto:softserv@scientist.com)
 
 * * *
 
 #### Ubiquity
 
-[https://www.ubiquitypress.com/](https://web.archive.org/web/20210813201925/https://www.ubiquitypress.com/)
+[https://www.ubiquitypress.com/](https://www.ubiquitypress.com/)
 
 Ubiquity is a provider of open publishing services and infrastructure to libraries and institutions.
 
-[Ubiquity repositories](https://web.archive.org/web/20210813201925/https://www.u-repo.io/) are based on Samvera Hyku and are professionally supported, cloud hosted and open source, with no lock-in. Suitable for both large and small institutions, they provide high-quality hosting of publications, special collections, theses, Open Educational Resources and research data all in one place. Ubiquity provides full support for migration from existing repositories.
+[Ubiquity repositories](https://ubiquity.pub/repositories/) are based on Samvera Hyku and are professionally supported, cloud hosted and open source, with no lock-in. Suitable for both large and small institutions, they provide high-quality hosting of publications, special collections, theses, Open Educational Resources and research data all in one place. Ubiquity provides full support for migration from existing repositories.
 
-An example of a multi-tenant installation of the platform is the [Shared Research Repository ](https://web.archive.org/web/20210813201925/https://iro.bl.uk/)hosted for the British Library. Ubiquity is also actively engaged in further enhancing the Hyku platform with the [Advancing Hyku](https://web.archive.org/web/20210813201925/https://advancinghyku.io/) project.
+An example of a multi-tenant installation of the platform is the [Shared Research Repository ](https://iro.bl.uk/)hosted for the British Library. Ubiquity is also actively engaged in further enhancing the Hyku platform with the [Advancing Hyku](https://advancinghyku.io/) project.
 
-Contact: Brian Hole ([brian.hole@ubiquitypress.com](https://web.archive.org/web/20210813201925/mailto:brian.hole@ubiquitypress.com))
+Contact: Brian Hole [brian.hole@ubiquitypress.com](mailto:brian.hole@ubiquitypress.com)
