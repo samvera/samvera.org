@@ -12,7 +12,7 @@ The Hydra Project, Samvera's original name, was founded in 2008 by:
 - Stanford University
 - University of Virginia
 - University of Hull
-- Fedora (now part of DuraSpace)
+- Fedora (now part of Lyrasis)
 
 quickly augmented by:
 
@@ -22,12 +22,11 @@ The three founding universities are still very active and, together with Data Cu
 
 Additional Partners have formally committed themselves to support and further Samvera’s work.  In order of Partnership:
 
-- University of Notre Dame
 - Northwestern University
 - Columbia University
 - Penn State University
 - Indiana University
-- WGBH, Boston
+- GBH Archives
 - Boston Public Library
 - Duke University
 - Yale University
@@ -39,7 +38,6 @@ Additional Partners have formally committed themselves to support and further Sa
 - Tufts University
 - University of Michigan
 - University of California, San Diego
-- University of York
 - Lafayette College
 - Washington University in St Louis
 - Digital Repository of Ireland
@@ -49,7 +47,7 @@ Additional Partners have formally committed themselves to support and further Sa
 - CoSector, University of London
 - Ubiquity Press
 - University of Utah
-- Notch8
+- Software Services by Scientist.com
 - Hyku for Consortia (PALNI & PALCI)
 - El Colegio de Mexico
 
