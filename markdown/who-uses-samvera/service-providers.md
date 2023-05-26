@@ -15,9 +15,9 @@ If you are a service provider and would like to be listed on this page, please c
 in alphabetical order
 
 
----
+* * *
 
-CoSector, University of London
+#### CoSector, University of London
 
 The Research Technologies Team have been hosting and developing OS repositories and associated services since 2007. Working with the EU, Jisc, University College London, The Linnean Society and many more along the way. In recent years we have added Samvera to our expertise stack.
 
@@ -33,9 +33,9 @@ We are available to provide repository hosting as well as bespoke development of
 Contact: [researchtech@cosector.com](https://web.archive.org/web/20210813201925/mailto:researchtech@cosector.com)
 
 
----
+* * *
 
-Cottage Labs \
+#### Cottage Labs 
 [https://cottagelabs.com/](https://web.archive.org/web/20210813201925/https://cottagelabs.com/)
 
 UK-based but has worked with Partners in the UK and the US.
@@ -49,9 +49,9 @@ Services provided:
 Contact: Richard Jones ([richard@cottagelabs.com](https://web.archive.org/web/20210813201925/mailto:richard@cottagelabs.com))
 
 
----
+* * *
 
-Data Curation Experts
+#### Data Curation Experts
 
 [https://curationexperts.com/](https://web.archive.org/web/20210813201925/https://curationexperts.com/)
 
@@ -67,9 +67,9 @@ Services provided:
 Contact: Mark Bussey ([mark@curationexperts.com](https://web.archive.org/web/20210813201925/mailto:mark@curationexperts.com))
 
 
----
+* * *
 
-SoftServ by Scientist.com
+#### SoftServ by Scientist.com
 
 [http://SoftServ.Scientist.com/](http://softserv.scientist.com/)
 
@@ -99,9 +99,9 @@ SoftServ is a Samvera Partner, and we are passionate participants in this commun
 
 Contact: Kevin Kochanski (softserv@scientist.com)
 
----
+* * *
 
-Ubiquity
+#### Ubiquity
 
 [https://www.ubiquitypress.com/](https://web.archive.org/web/20210813201925/https://www.ubiquitypress.com/)
 
