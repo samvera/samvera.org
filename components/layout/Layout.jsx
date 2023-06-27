@@ -1,11 +1,12 @@
 import BannerContact from "../BannerContact";
 import BannerLicense from "../BannerLicense";
 import BannerPartners from "../BannerPartners";
-import React from "react";
 import Footer from "./Footer";
 import Head from "next/head";
 import Header from "./Header";
 import OuterWrapper from "./OuterWrapper";
+import React from "react";
+import SidebarLinks from "../sidebar/Links";
 import { prefix } from "prefix";
 
 const description =
@@ -27,6 +28,7 @@ export default function Layout({ children, title }) {
       <Header />
       <OuterWrapper>{children}</OuterWrapper>
       <BannerContact />
+      <SidebarLinks />
       <BannerPartners />
       <BannerLicense />
       <Footer />

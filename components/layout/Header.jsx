@@ -1,10 +1,11 @@
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 /* This example requires Tailwind CSS v2.0+ */
 import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import NavItem from "components/nav/NavItem";
-import Link from "next/link";
-import { prefix } from "prefix";
+
 import { Fragment } from "react";
+import Link from "next/link";
+import NavItem from "components/nav/NavItem";
+import { prefix } from "prefix";
 import { siteNavigation } from "site-navigation";
 
 const newsNavigation = [
@@ -34,7 +35,7 @@ export default function Header() {
   return (
     <Popover className="relative bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
-        <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 ">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link legacyBehavior href="/">
               <a>
@@ -54,7 +55,7 @@ export default function Header() {
           </div>
           <Popover.Group
             as="nav"
-            className="z-30 hidden space-x-10 lowercase md:flex font-fontinBold"
+            className="z-30 hidden space-x-3 lowercase lg:space-x-10 md:flex font-fontinBold"
           >
             {siteNavigation &&
               siteNavigation.map((navItem) => (

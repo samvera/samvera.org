@@ -1,8 +1,9 @@
+import { Popover, Transition } from "@headlessui/react";
+
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import Link from "next/link";
-import { Popover, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -23,7 +24,7 @@ export default function NavItem({ navItem }) {
             <ChevronDownIcon
               className={classNames(
                 open ? "text-gray-600" : "text-gray-400",
-                "ml-2 h-5 w-5 group-hover:text-gray-500"
+                "ml-1 h-5 w-5 group-hover:text-gray-500"
               )}
               aria-hidden="true"
             />

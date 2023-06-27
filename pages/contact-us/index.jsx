@@ -1,26 +1,15 @@
 import DynamicPage from "components/layout/DynamicPage";
-import { getMarkdownPageContent, getSideNav } from "lib/markdown-helpers";
 import { buildWorkOpenGraphData } from "lib/open-graph";
+import { getMarkdownPageContent } from "lib/markdown-helpers";
 
 const CONFIG = {
   parentDir: "contact-us",
   parentDirLabel: "Contact Us",
 };
 
-export default function ContactPage({
-  content,
-  frontmatter,
-  sideNav,
-  sideNewsAndEvents,
-}) {
+export default function ContactPage({ content, frontmatter }) {
   return (
-    <DynamicPage
-      config={CONFIG}
-      content={content}
-      frontmatter={frontmatter}
-      sideNav={sideNav}
-      sideNewsAndEvents={sideNewsAndEvents}
-    />
+    <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
 }
 
@@ -28,8 +17,6 @@ export async function getStaticProps() {
   const { content, frontmatter } = getMarkdownPageContent(
     `markdown/${CONFIG.parentDir}/index.md`
   );
-  const { sideNav } = getSideNav(`markdown/${CONFIG.parentDir}`);
-  const { sideNav: sideNewsAndEvents } = getSideNav(`markdown/news`);
 
   const openGraphData = buildWorkOpenGraphData(
     CONFIG.parentDirLabel,
@@ -42,8 +29,6 @@ export async function getStaticProps() {
       content,
       frontmatter,
       openGraphData,
-      sideNav,
-      sideNewsAndEvents,
     },
   };
 }
