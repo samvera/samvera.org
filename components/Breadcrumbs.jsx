@@ -1,10 +1,10 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import React from "react";
-import Link from "next/link";
 
 const Breadcrumbs = ({ items }) => {
   return (
-    <ul className="mt-8 mb-6 flex">
+    <ul className="flex pb-0 mt-8 mb-6 ml-0 list-none">
       {items.map((item, index) => (
         <li
           key={index}

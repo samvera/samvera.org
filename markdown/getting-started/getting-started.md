@@ -21,8 +21,6 @@ If you have unique needs that are not represented on the Hyrax feature list, do 
 
 You can find some instructional documentation in [our knowledge base](http://samvera.github.io/index.html). The [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech/join) is a good resource, as is the #dev channel on Samvera Slack. Official Samvera code repositories are in the Samvera [Github organization](https://github.com/samvera), and emerging projects are in samvera\-labs. You might also consider attending a Samvera Camp or Advanced Samvera Camp for face-to-face instruction.
 
- 
-
 ### Samvera for Managers
 
 Forthcoming.
