@@ -1,12 +1,12 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
 import { prefix } from "prefix";
 
 export default function CommunityNewsEvents({ items }) {
   return (
     <section className="bg-none md:bg-community-news">
-      <div className="container px-0 md:px-4 max-w-full">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="container max-w-full px-0 md:px-4">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <div className="p-10 md:col-span-2">
             <h2 className="section-title">The Samvera Community</h2>
             <p>
@@ -38,7 +38,7 @@ export default function CommunityNewsEvents({ items }) {
             style={{ backgroundImage: `url(${prefix}/images/news-bg.jpeg)` }}
           >
             <h2 className="section-title">News &amp; Events</h2>
-            <ul>
+            <ul className="ml-0 list-none">
               {items.map((item) => (
                 <li key={item.slug} className="mb-3">
                   <Link legacyBehavior href={`/news/${item.slug}`}>

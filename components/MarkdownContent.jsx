@@ -1,19 +1,21 @@
 /**
  * Good reference for how to parse markdown w/ HTML
  * https://unifiedjs.com/learn/recipe/remark-html/
+ * https://unifiedjs.com/explore/package/hast-util-sanitize/#defaultschema
  */
 
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
+
 import React from "react";
+import deepmerge from "deepmerge";
 import md from "markdown-it";
+import rehypeRaw from "rehype-raw";
+import rehypeStringify from "rehype-stringify";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
 import remarkParse from "remark-parse";
-import { unified } from "unified";
 import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
-import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
-import deepmerge from "deepmerge";
-import rehypeRaw from "rehype-raw";
+import { unified } from "unified";
 
 export default function MarkdownContent({ content }) {
   const [processedContent, setProcessedContent] = React.useState();
