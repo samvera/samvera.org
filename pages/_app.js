@@ -1,7 +1,15 @@
-import { defaultOpenGraphData } from "lib/open-graph";
-import Head from "next/head";
-import Script from "next/script";
 import "../styles/global.css";
+
+import Head from "next/head";
+import { Open_Sans } from "next/font/google";
+import Script from "next/script";
+import { defaultOpenGraphData } from "lib/open-graph";
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-open-sans",
+});
 
 export default function App({ Component, pageProps }) {
   const { openGraphData = {} } = pageProps;
@@ -28,7 +36,9 @@ export default function App({ Component, pageProps }) {
           gtag('config', 'G-8T5XY480BE');
           `}
       </Script>
-      <Component {...pageProps} />
+      <div className={`${openSans.variable}`}>
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }

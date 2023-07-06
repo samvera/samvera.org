@@ -8,10 +8,10 @@ a {
 main button,
 .button {
   /* @apply inline-block px-8 py-3 text-center uppercase font-fontinBold bg-samBlue text-samGreyDark; */
-  @apply flex items-center justify-center w-full px-8 py-3 transition duration-200 ease-in-out border border-transparent rounded-md md:w-auto font-fontinBold text-samGreyDark hover:text-white bg-samBlue hover:bg-samDarkRed md:py-4 md:text-lg md:px-10;
+  @apply flex items-center justify-center w-full px-8 py-3 transition duration-300 ease-in-out border border-transparent rounded-md md:w-auto font-fontinBold text-samGreyDark hover:text-samGreyDark bg-samBlue hover:bg-samBlueLight md:py-4 md:text-lg md:px-10;
 }
 .button-inverted {
-  @apply button bg-white hover:text-samGreyDark !important;
+  @apply bg-white button hover:text-samGreyDark hover:bg-samBlueLight !important;
 }
 h1,
 h2,
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply mb-3 uppercase font-fontin;
+  @apply mb-3 uppercase font-fontin text-samGrey;
 }
 h1 {
   @apply text-3xl font-fontinBold;
@@ -37,13 +37,13 @@ main a {
   @apply text-samDarkRed hover:text-samOrange;
 }
 p {
-  @apply pb-4 leading-loose;
+  @apply pb-4 leading-relaxed;
 }
 main ul {
   @apply pb-2 ml-5 list-disc;
 }
 main li {
-  @apply leading-loose;
+  @apply leading-normal;
 }
 main li ul {
   @apply pb-0;

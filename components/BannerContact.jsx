@@ -12,8 +12,13 @@ export default function BannerContact() {
         backgroundImage: `url(${prefix}/images/hydra-transparency.png)`,
       }}
     >
-      <h3 className="mb-6 title">If you want to go far, go together.</h3>
-      <button onClick={() => router.push("mailto:contact@samvera.org")}>
+      <h3 className="mb-6 text-center text-white title">
+        If you want to go far, go together.
+      </h3>
+      <button
+        className="button"
+        onClick={() => router.push("mailto:contact@samvera.org")}
+      >
         Contact Us
       </button>
     </section>
