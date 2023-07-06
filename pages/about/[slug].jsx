@@ -1,5 +1,6 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
+import CommunityLeadership from "components/about/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
@@ -11,7 +12,19 @@ const CONFIG = {
   parentDirLabel: "About Samvera",
 };
 
-export default function AboutPage({ content, frontmatter }) {
+export default function AboutPage({ content, frontmatter, slug }) {
+  // Special case for Community Leadership page
+  if (slug === "community-leadership") {
+    return (
+      <CommunityLeadership
+        config={CONFIG}
+        content={content}
+        frontmatter={frontmatter}
+      />
+    );
+  }
+
+  // Regular dynamic page
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
@@ -41,6 +54,7 @@ export async function getStaticProps({ params: { slug } }) {
       content,
       frontmatter,
       openGraphData,
+      slug,
     },
   };
 }
