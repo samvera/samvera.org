@@ -3,11 +3,11 @@ import React from "react";
 export default function BenefitHow() {
   return (
     <section className="bg-none md:bg-benefit-how">
-      <div className="container px-0 md:px-4 max-w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="container max-w-full px-0 md:px-4">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div className="p-10">
             <h2 className="section-title">Benefits of Samvera</h2>
-            <p>
+            <p className="">
               We believe that no single system can&nbsp;provide the full range
               of repository-based solutions for a given institution’s needs and
               that no single institution can resource the development of a full
@@ -24,7 +24,7 @@ export default function BenefitHow() {
             </p>
           </div>
           <div className="p-10 text-white bg-samDarkRed">
-            <h2 className="section-title">How it Works</h2>
+            <h2 className="text-white section-title">How it Works</h2>
             <p>
               Samvera maintains a set of Ruby on Rails components (Ruby gems)
               that, together, can be used to build flexible and extensible

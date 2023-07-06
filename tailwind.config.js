@@ -34,6 +34,7 @@ module.exports = {
         cooperBold: ["Cooper Hewitt Bold", "Helvitica"],
         fontin: ["Fontin Sans Regular", "sans-serif"],
         fontinBold: ["Fontin Sans Bold", "sans-serif"],
+        openSans: ["var(--font-open-sans)", "sans-serif"],
       },
     },
   },
