@@ -105,7 +105,7 @@ export default function Header() {
                       <Link
                         legacyBehavior
                         key={item.slug}
-                        href={item.items[0].href}
+                        href={item.items[0]?.href}
                       >
                         <a className="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
                           <span className="ml-3 text-base font-medium text-gray-900">
