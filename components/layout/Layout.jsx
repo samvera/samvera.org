@@ -14,7 +14,7 @@ const description =
 
 export default function Layout({ children, title }) {
   return (
-    <div className="bg-white text-samGrey font-cooperBook">
+    <div className="font-openSans text-samGreyDark">
       <Head>
         <Head>
           <title>{title}</title>

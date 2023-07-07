@@ -15,7 +15,7 @@ const title =
 
 export default function HomeLayout({ children }) {
   return (
-    <div className="bg-white text-samGrey font-cooperBook">
+    <div className="bg-white text-samGrey font-openSans">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

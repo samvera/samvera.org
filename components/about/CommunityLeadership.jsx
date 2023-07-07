@@ -61,7 +61,7 @@ export default function CommunityLeadership({ config, content, frontmatter }) {
         <div className="pt-8 pb-10 mx-auto">
           <ul
             role="list"
-            className="grid grid-cols-1 mx-auto gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:gap-x-8 xl:col-span-2 2xl:grid-cols-3"
+            className="grid grid-cols-1 mx-auto list-none gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:gap-x-8 xl:col-span-2 2xl:grid-cols-3"
           >
             {groups.map((group) => (
               <li

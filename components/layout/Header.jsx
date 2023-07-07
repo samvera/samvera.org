@@ -7,6 +7,7 @@ import Link from "next/link";
 import NavItem from "components/nav/NavItem";
 import { prefix } from "prefix";
 import { siteNavigation } from "site-navigation";
+import MobileNavItem from "components/nav/MobileNavItem";
 
 const newsNavigation = [
   {
@@ -47,12 +48,16 @@ export default function Header() {
               </a>
             </Link>
           </div>
+
+          {/* Mobile menu button */}
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
           </div>
+
+          {/* Desktop menu */}
           <Popover.Group
             as="nav"
             className="z-30 hidden space-x-3 lowercase lg:space-x-10 md:flex font-fontinBold"
@@ -77,6 +82,7 @@ export default function Header() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
+        {/* Mobile navigation container */}
         <Popover.Panel
           focus
           className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
@@ -99,20 +105,11 @@ export default function Header() {
                 </div>
               </div>
               <div className="mt-6">
+                {/* Mobile menu */}
                 <nav className="grid gap-y-8">
                   {siteNavigation &&
                     siteNavigation.map((item) => (
-                      <Link
-                        legacyBehavior
-                        key={item.slug}
-                        href={item.items[0]?.href}
-                      >
-                        <a className="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                          <span className="ml-3 text-base font-medium text-gray-900">
-                            {item.label}
-                          </span>
-                        </a>
-                      </Link>
+                      <MobileNavItem key={item.slug} item={item} />
                     ))}
                 </nav>
               </div>
