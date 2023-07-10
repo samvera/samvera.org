@@ -61,6 +61,16 @@ There are some pieces of site information not easily updated via markdown files.
 
 To make updates to the list of Samvera Partners, open the file `/app-config.js` and you'll see a list of Samvera Partners and associated info.
 
+### Non-markdown driven pages
+
+#### About / Community Leadership
+
+To update this file, open the `components/about/CommunityLeadership.jsx` component and update the data directly.
+
+#### About / FAQ
+
+To update this file, open the `components/about/Faq.jsx` component and update the HTML/JSX directly.
+
 ## Developers
 
 This is a [NextJS application](https://nextjs.org/) and follows normal NextJS conventions. To do some work on the site and run the app locally, clone this repository and run the following:

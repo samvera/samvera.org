@@ -2,6 +2,7 @@ import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
 import CommunityLeadership from "components/about/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
+import Faq from "components/about/Faq";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
@@ -13,7 +14,10 @@ const CONFIG = {
 };
 
 export default function AboutPage({ content, frontmatter, slug }) {
-  // Special case for Community Leadership page
+  /**
+   * The following pages use customized layouts
+   */
+  // Community Leadership page
   if (slug === "community-leadership") {
     return (
       <CommunityLeadership
@@ -24,7 +28,14 @@ export default function AboutPage({ content, frontmatter, slug }) {
     );
   }
 
-  // Regular dynamic page
+  // FAQ page
+  if (slug === "faq") {
+    return <Faq config={CONFIG} content={content} frontmatter={frontmatter} />;
+  }
+
+  /**
+   * Standard template page
+   */
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
