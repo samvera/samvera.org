@@ -9,8 +9,6 @@ import { prefix } from "prefix";
 import { siteNavigation } from "site-navigation";
 import MobileNavItem from "components/nav/MobileNavItem";
 
-console.log("siteNavigation", siteNavigation);
-
 const newsNavigation = [
   {
     label: "News and Events",
