@@ -9,6 +9,8 @@ import { prefix } from "prefix";
 import { siteNavigation } from "site-navigation";
 import MobileNavItem from "components/nav/MobileNavItem";
 
+console.log("siteNavigation", siteNavigation);
+
 const newsNavigation = [
   {
     label: "News and Events",
@@ -106,10 +108,13 @@ export default function Header() {
               </div>
               <div className="mt-6">
                 {/* Mobile menu */}
-                <nav className="grid gap-y-8">
+                <nav className="flex flex-col">
                   {siteNavigation &&
-                    siteNavigation.map((item) => (
-                      <MobileNavItem key={item.slug} item={item} />
+                    siteNavigation.map((parentPage) => (
+                      <MobileNavItem
+                        key={parentPage.slug}
+                        parentPage={parentPage}
+                      />
                     ))}
                 </nav>
               </div>
