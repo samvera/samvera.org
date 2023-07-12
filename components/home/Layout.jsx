@@ -4,7 +4,6 @@ import BannerPartners from "components/BannerPartners";
 import React from "react";
 import Footer from "components/layout/Footer";
 import Head from "next/head";
-import Header from "components/layout/Header";
 import { prefix } from "prefix";
 import HeaderNew from "components/layout/HeaderNew";
 

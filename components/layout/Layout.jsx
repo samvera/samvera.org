@@ -3,7 +3,6 @@ import BannerLicense from "../BannerLicense";
 import BannerPartners from "../BannerPartners";
 import Footer from "./Footer";
 import Head from "next/head";
-import Header from "./Header";
 import OuterWrapper from "./OuterWrapper";
 import React from "react";
 import SidebarLinks from "../sidebar/Links";
