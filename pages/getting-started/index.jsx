@@ -1,11 +1,7 @@
-import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
-
 import DynamicPage from "components/layout/DynamicPage";
 import { buildWorkOpenGraphData } from "lib/open-graph";
+import { getMarkdownPageContent } from "lib/markdown-helpers";
 
-/**
- * Customize this info per dynamic page
- */
 const CONFIG = {
   parentDir: "getting-started",
   parentDirLabel: "Getting Started",
@@ -17,23 +13,15 @@ export default function GettingStartedPage({ content, frontmatter }) {
   );
 }
 
-export async function getStaticPaths() {
-  const paths = getPaths(`markdown/${CONFIG.parentDir}`);
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps() {
   const { content, frontmatter } = getMarkdownPageContent(
-    `markdown/${CONFIG.parentDir}/${slug}.md`
+    `markdown/${CONFIG.parentDir}/index.md`
   );
 
   const openGraphData = buildWorkOpenGraphData(
     CONFIG.parentDirLabel,
     frontmatter.title,
-    `${CONFIG.parentDir}/${slug}`
+    `${CONFIG.parentDir}/index`
   );
 
   return {

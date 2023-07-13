@@ -1,10 +1,13 @@
+import {
+  ArrowTopRightOnSquareIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { prefix } from "prefix";
 import Link from "next/link";
+import { prefix } from "prefix";
 import { siteNavigation } from "site-navigation";
 
 const newsNavigation = [
@@ -24,6 +27,40 @@ const newsNavigation = [
       {
         label: "Samvera Twitter page",
         href: "http://twitter.com/SamveraRepo",
+        isExternal: true,
+      },
+    ],
+  },
+];
+
+const softwareSolutionsNavigation = [
+  {
+    label: "Sofware Solutions",
+    slug: "",
+    items: [
+      {
+        label: "Avalon Media System",
+        href: "https://www.avalonmediasystem.org/",
+        isExternal: true,
+      },
+      {
+        label: "Hyku",
+        href: "https://hyku.samvera.org/",
+        isExternal: true,
+      },
+      {
+        label: "Hyrax",
+        href: "https://hyrax.samvera.org/",
+        isExternal: true,
+      },
+      {
+        label: "Samvera Community Github",
+        href: "https://github.com/samvera",
+        isExternal: true,
+      },
+      {
+        label: "Samvera Labs",
+        href: "https://github.com/samvera-labs",
         isExternal: true,
       },
     ],
@@ -76,8 +113,15 @@ const PopOverWrapper = ({ label, items, siteNavIndex }) => {
                 className="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50"
               >
                 <div className="flex-auto">
-                  <Link href={item.href} className="block capitalize">
-                    {item.label}
+                  <Link
+                    href={item.href}
+                    className="block capitalize"
+                    {...(item.isExternal ? { target: "_blank" } : {})}
+                  >
+                    {item.label}{" "}
+                    {item.isExternal && (
+                      <ArrowTopRightOnSquareIcon className="inline-block w-4 h-4 ml-1 " />
+                    )}
                   </Link>
                 </div>
               </div>
@@ -113,6 +157,9 @@ const DisclosureWrapper = ({ label, items }) => {
                 className="block py-2 pl-6 pr-3 text-sm leading-7 capitalize rounded-lg text-samGrey hover:bg-gray-50"
               >
                 {item.label}
+                {item.isExternal && (
+                  <ArrowTopRightOnSquareIcon className="inline-block w-4 h-4 ml-1 " />
+                )}
               </Disclosure.Button>
             ))}
           </Disclosure.Panel>
@@ -158,7 +205,7 @@ export default function HeaderNew() {
         </div>
 
         {/* Desktop menu */}
-        <Popover.Group className="hidden lg:flex lg:gap-x-6">
+        <Popover.Group className="hidden lg:flex lg:gap-x-4">
           {siteNavigation &&
             siteNavigation.map((navItem, index) => {
               if (navItem.items?.length > 0) {
@@ -188,6 +235,14 @@ export default function HeaderNew() {
               label={navItem.label}
               items={navItem.items}
               siteNavIndex={siteNavigation.length}
+            />
+          ))}
+          {softwareSolutionsNavigation.map((navItem) => (
+            <PopOverWrapper
+              key={navItem.slug}
+              label={navItem.label}
+              items={navItem.items}
+              siteNavIndex={siteNavigation.length + 1}
             />
           ))}
         </Popover.Group>
@@ -241,6 +296,13 @@ export default function HeaderNew() {
                     )
                   )}
                 {newsNavigation.map((parentPage) => (
+                  <DisclosureWrapper
+                    key={parentPage.slug}
+                    label={parentPage.label}
+                    items={parentPage.items}
+                  />
+                ))}
+                {softwareSolutionsNavigation.map((parentPage) => (
                   <DisclosureWrapper
                     key={parentPage.slug}
                     label={parentPage.label}
