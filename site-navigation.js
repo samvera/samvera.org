@@ -38,17 +38,7 @@ export const siteNavigation = [
     ],
     slug: "about",
   },
-  {
-    label: "getting started",
-    items: [
-      {
-        href: "/getting-started/getting-started",
-        label: "Getting started",
-        slug: "getting-started",
-      },
-    ],
-    slug: "getting-started",
-  },
+  { label: "getting started", items: [], slug: "getting-started" },
   {
     label: "what is samvera",
     items: [
