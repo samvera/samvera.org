@@ -31,7 +31,7 @@ const groups = [
     name: "Interest/Working Groups",
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "We have very active working and interest groups that form the heart of our community work. Everyone is welcome to attend to learn more about a specific area of interest and to hear from others in the community.",
+    bio: "Much of Samvera's development is driven by its Interest and Working Groups. These groups come together to discuss and work on matters of particular importance to the Samvera Community at any given time.  Samvera's Interest and Working Groups operate in a transparent and inclusive manner.  Each proposed new Group sets out a charter and posts an open invitation for participants from across the Community.  Generally the meetings are held online and the minutes are posted on Samvera's wiki. ",
     url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319284/Interest+Group+IG+and+Working+Group+WG+Hub",
   },
   {
