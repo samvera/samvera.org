@@ -13,17 +13,9 @@ Details on joining Slack, participating in community phone calls, and other ways
 
 The easiest way to get started developing with Samvera is to install and configure Hyrax.  Two resources will aid you with this - our [general documentation](http://samvera.github.io/) and the [GitHub page with specific installation instructions](https://github.com/samvera/hyrax#getting-started). While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera Community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the Community. We are in the process of focusing our Community development efforts on Hyrax, and that will be the code base we are best able to support and maintain.
 
-#### What if Hyrax will not work for me?
-
-If you have unique needs that are not represented on the Hyrax feature list, do check in with the Community about our development roadmap, but you might need to consider rolling your own solution.
-
 #### Development Resources
 
-You can find some instructional documentation in [our knowledge base](http://samvera.github.io/index.html). The [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech/join) is a good resource, as is the #dev channel on Samvera Slack. Official Samvera code repositories are in the Samvera [Github organization](https://github.com/samvera), and emerging projects are in samvera\-labs. You might also consider attending a Samvera Camp or Advanced Samvera Camp for face-to-face instruction.
-
-### Samvera for Managers
-
-Forthcoming.
+You can find some instructional documentation in [our knowledge base](http://samvera.github.io/index.html). The [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech/join) is a good resource, as is the #dev channel on Samvera Slack. Official Samvera code repositories are in the Samvera [Github organization](https://github.com/samvera), and emerging projects are in samvera\-labs. 
 
 ### Samvera for Metadata Professionals
 
