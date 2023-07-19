@@ -6,10 +6,17 @@ import MarkdownContent from "../MarkdownContent";
 
 const groups = [
   {
+    name: "Samvera Partners",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Samvera Partners are institutions, corporations or other groups that have formally committed to contributing to the Samvera Community. Samvera Partners collectively advance the project and the Community for the benefit of all participants.",
+    url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/1872461833/About+Samvera+Partners",
+  },
+  {    
     name: "Samvera Board",
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur.",
+    bio: "The Samvera Board is elected and governs in accordance with the Samvera Bylaws. Board members are individuals nominated and supported in their participation by a Samvera Partner institution. Board elections are held annually for three of nine seats in rotating groups. The term for each seat is three years with the possibility for one re-election, allowing for a total term of six consecutive years.",
     url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/405210594/Samvera+Board+membership",
   },
   {
@@ -17,25 +24,21 @@ const groups = [
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
     // Write some latin text for the bio. It should be a paragraph with 3-5 sentences.
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur.",
-  },
-  {
-    name: "Product Leadership",
-    imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur.",
+    bio: "The Roadmaps Alignment Group (formerly called Samvera Roadmap Council) works to identify conflicts and areas of alignment between the roadmaps of the Core Components Owners, Hyrax, Hyku, Valkyrie, and Avalon. This group works in consultation with the Metadata Interest Group and Samvera Service Providers. The Group identifies cross-project development opportunities, helps to arrange maintenance sprints, and coordinates communication to the Samvera Community about these activities.",
+     url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/422315415/Samvera+Roadmaps+Alignment+Group",
   },
   {
     name: "Interest/Working Groups",
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur.",
+    bio: "We have very active working and interest groups that form the heart of our community work. Everyone is welcome to attend to learn more about a specific area of interest and to hear from others in the community.",
+    url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319284/Interest+Group+IG+and+Working+Group+WG+Hub",
   },
   {
     name: "Community Manager",
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium tenetur pariatur.",
+    bio: "Contact Heather Greer Klein, the Samvera Community Manager, heather@samvera.org to discuss the Community, Samvera technologies, ways to get started, for help or other questions.",
   },
 ];
 
