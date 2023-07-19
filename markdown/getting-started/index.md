@@ -17,13 +17,10 @@ Samvera is also a community of practice where software developers and library te
 * Code repository [https://github.com/samvera](https://github.com/samvera)
 
 **Join the Samvera Slack workspace**
-
 This is the best place to get started with the Samvera Community. Join us for discussion, questions, announcements, interest groups, and working groups. 
-
 Fill out this[ form](https://forms.gle/oeLBwbQw9QoCZWTL6) to get a Samvera Slack invitation.
 
 **Join Community Email Lists**
-
 Keep up with Community announcements, updates, and conversations.[ See all our available lists](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1171226735) and sign up for those that interest you.
 
 ### Attend an Interest Group or Technical Call
