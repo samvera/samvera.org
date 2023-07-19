@@ -35,7 +35,7 @@ const newsNavigation = [
 
 const softwareSolutionsNavigation = [
   {
-    label: "Sofware Solutions",
+    label: "Software Solutions",
     slug: "",
     items: [
       {

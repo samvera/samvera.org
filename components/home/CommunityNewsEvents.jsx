@@ -28,7 +28,7 @@ export default function CommunityNewsEvents({ items }) {
               bundles.
             </p>
             <div className="flex justify-around pt-5">
-              <Link legacyBehavior href="/getting-started/getting-started">
+              <Link legacyBehavior href="/getting-started">
                 <a className="button">Getting started</a>
               </Link>
             </div>
