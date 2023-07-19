@@ -23,13 +23,16 @@ export default function HomeHero() {
 
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
-              <Link legacyBehavior href="/getting-started/getting-started">
-                <a className="button">Get started</a>
+              <Link className="button" href="/getting-started">
+                Get started
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <Link legacyBehavior href="/what-is-samvera/applications-demos">
-                <a className="button-inverted">Learn more</a>
+              <Link
+                className="button-inverted"
+                href="/what-is-samvera/applications-demos"
+              >
+                Learn more
               </Link>
             </div>
           </div>
