@@ -25,8 +25,8 @@ const newsNavigation = [
         isExternal: true,
       },
       {
-        label: "Samvera Twitter page",
-        href: "http://twitter.com/SamveraRepo",
+        label: "Samvera Connect 2023 Conference",
+        href: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/2174877699/Samvera+Connect+2023",
         isExternal: true,
       },
     ],
