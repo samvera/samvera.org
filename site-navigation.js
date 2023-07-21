@@ -40,25 +40,25 @@ export const siteNavigation = [
   },
   { label: "getting started", items: [], slug: "getting-started" },
   {
-    label: "what is samvera",
+    label: "why use samvera",
     items: [
       {
-        href: "/what-is-samvera/applications-demos",
+        href: "/why-use-samvera/applications-demos",
         label: "Applications & Demos",
         slug: "applications-demos",
       },
       {
-        href: "/what-is-samvera/samvera-open-source-repository-framework",
+        href: "/why-use-samvera/samvera-open-source-repository-framework",
         label: "Samvera is an Open Source Repository Framework",
         slug: "samvera-open-source-repository-framework",
       },
       {
-        href: "/what-is-samvera/technology-stack",
+        href: "/why-use-samvera/technology-stack",
         label: "Technology stack",
         slug: "technology-stack",
       },
     ],
-    slug: "what-is-samvera",
+    slug: "why-use-samvera",
   },
   {
     label: "who uses samvera",
@@ -106,5 +106,4 @@ export const siteNavigation = [
     ],
     slug: "who-uses-samvera",
   },
-  { label: "why use samvera", items: [], slug: "why-use-samvera" },
 ];
