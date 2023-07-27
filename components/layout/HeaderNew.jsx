@@ -13,11 +13,11 @@ import { siteNavigation } from "site-navigation";
 const newsNavigation = [
   {
     label: "News & Events",
-    slug: "news",
+    slug: "news-and-events",
     items: [
       {
         label: "News and events",
-        href: "/news",
+        href: "/news-and-events",
       },
       {
         label: "Samvera calendar",
@@ -237,14 +237,6 @@ export default function HeaderNew() {
               siteNavIndex={siteNavigation.length}
             />
           ))}
-          {softwareSolutionsNavigation.map((navItem) => (
-            <PopOverWrapper
-              key={navItem.slug}
-              label={navItem.label}
-              items={navItem.items}
-              siteNavIndex={siteNavigation.length + 1}
-            />
-          ))}
         </Popover.Group>
       </nav>
 
@@ -296,13 +288,6 @@ export default function HeaderNew() {
                     )
                   )}
                 {newsNavigation.map((parentPage) => (
-                  <DisclosureWrapper
-                    key={parentPage.slug}
-                    label={parentPage.label}
-                    items={parentPage.items}
-                  />
-                ))}
-                {softwareSolutionsNavigation.map((parentPage) => (
                   <DisclosureWrapper
                     key={parentPage.slug}
                     label={parentPage.label}

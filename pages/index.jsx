@@ -1,8 +1,8 @@
 import Applications from "components/home/Applications";
 import BenefitHow from "components/home/BenefitHow";
 import CommunityNewsEvents from "components/home/CommunityNewsEvents";
-import HomeLayout from "components/home/Layout";
 import HomeHero from "components/home/Hero";
+import HomeLayout from "components/home/Layout";
 import { getSideNav } from "lib/markdown-helpers";
 
 export default function Home({ sideNav }) {
@@ -19,7 +19,7 @@ export default function Home({ sideNav }) {
 }
 
 export async function getStaticProps() {
-  const { sideNav } = getSideNav(`markdown/news`);
+  const { sideNav } = getSideNav(`markdown/news-and-events`);
 
   return {
     props: { sideNav },

@@ -1,15 +1,3 @@
-export const primaryNavigation = [
-  { name: "About Samvera", href: "/about/samvera-community-sourced-software" },
-  {
-    name: "What is Samvera?",
-    href: "/what-is-samvera/samvera-open-source-repository-framework",
-  },
-  { name: "Why Use Samvera?", href: "/why-use-samvera" },
-  { name: "Who Uses Samvera?", href: "/who-uses-samvera" },
-  { name: "Getting Started", href: "/getting-started" },
-  { name: "News and Events", href: "/news" },
-];
-
 export const SAMVERA_PARTNERS = [
   {
     label: "Boston Public Library",
