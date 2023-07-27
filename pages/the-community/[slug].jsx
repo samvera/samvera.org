@@ -1,24 +1,41 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
+import CommunityLeadership from "components/about/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
+import Faq from "components/about/Faq";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
- * This is where the magic happens.
- * 'parentDir' is the value of this file's parent directory
- * along with a matching directory title which exists in
- * /markdown.
- *
- * For example:
- * /markdown/my-cool-directory/...
- * /pages/my-cool-directory/...
+ * Customize this info per dynamic page
  */
 const CONFIG = {
-  parentDir: "who-uses-samvera",
-  parentDirLabel: "Who uses Samvera?",
+  parentDir: "the-community",
+  parentDirLabel: "The Community",
 };
 
-export default function WhatIsSamveraPage({ content, frontmatter }) {
+export default function TheCommunityPage({ content, frontmatter, slug }) {
+  /**
+   * The following pages use customized layouts
+   */
+  // Community Leadership page
+  if (slug === "community-leadership") {
+    return (
+      <CommunityLeadership
+        config={CONFIG}
+        content={content}
+        frontmatter={frontmatter}
+      />
+    );
+  }
+
+  // FAQ page
+  if (slug === "faq") {
+    return <Faq config={CONFIG} content={content} frontmatter={frontmatter} />;
+  }
+
+  /**
+   * Standard template page
+   */
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
@@ -48,6 +65,7 @@ export async function getStaticProps({ params: { slug } }) {
       content,
       frontmatter,
       openGraphData,
+      slug,
     },
   };
 }

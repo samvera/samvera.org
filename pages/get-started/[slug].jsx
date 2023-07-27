@@ -1,23 +1,19 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
-import DynamicNewsContent from "components/layout/DynamicNewsContent";
+import DynamicPage from "components/layout/DynamicPage";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
  * Customize this info per dynamic page
  */
 const CONFIG = {
-  parentDir: "news",
-  parentDirLabel: "News and Events",
+  parentDir: "get-started",
+  parentDirLabel: "Get Started",
 };
 
-export default function NewsPage({ content, frontmatter }) {
+export default function GetStartedPage({ content, frontmatter, slug }) {
   return (
-    <DynamicNewsContent
-      config={CONFIG}
-      content={content}
-      frontmatter={frontmatter}
-    />
+    <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
 }
 
@@ -45,6 +41,7 @@ export async function getStaticProps({ params: { slug } }) {
       content,
       frontmatter,
       openGraphData,
+      slug,
     },
   };
 }

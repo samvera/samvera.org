@@ -7,7 +7,7 @@ import NewsMeta from "components/news/Meta";
 import { getNewsPreviews } from "lib/markdown-helpers";
 
 const CONFIG = {
-  parentDir: "news",
+  parentDir: "news-and-events",
   parentDirLabel: "News and Events",
 };
 
@@ -36,9 +36,9 @@ export default function NewsAndEventsPage({ previews }) {
           } = preview;
 
           return (
-            <article key={title} className="mb-12">
+            <article key={title} className="mb-12 break-words">
               <h2>
-                <Link legacyBehavior href={`/news/${slug}`}>
+                <Link legacyBehavior href={`/news-and-events/${slug}`}>
                   <a className="normal-case text-samGreyDark hover:text-samDarkRed">
                     {title}
                   </a>

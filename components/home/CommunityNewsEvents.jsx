@@ -41,7 +41,7 @@ export default function CommunityNewsEvents({ items }) {
             <ul className="ml-0 list-none">
               {items.map((item) => (
                 <li key={item.slug} className="mb-3">
-                  <Link legacyBehavior href={`/news/${item.slug}`}>
+                  <Link legacyBehavior href={`/news-and-events/${item.slug}`}>
                     <a className="text-samGreyDark font-cooperBold">
                       {item.title}
                     </a>
@@ -49,7 +49,7 @@ export default function CommunityNewsEvents({ items }) {
                 </li>
               ))}
             </ul>
-            <Link legacyBehavior href="/news">
+            <Link legacyBehavior href="/news-and-events">
               <a className="button">View all news</a>
             </Link>
           </div>

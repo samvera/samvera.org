@@ -4,21 +4,14 @@ import DynamicPage from "components/layout/DynamicPage";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
- * This is where the magic happens.
- * 'parentDir' is the value of this file's parent directory
- * along with a matching directory title which exists in
- * /markdown.
- *
- * For example:
- * /markdown/my-cool-directory/...
- * /pages/my-cool-directory/...
+ * Customize this info per dynamic page
  */
 const CONFIG = {
-  parentDir: "what-is-samvera",
-  parentDirLabel: "What is Samvera?",
+  parentDir: "repository-solutions",
+  parentDirLabel: "Repository Solutions",
 };
 
-export default function WhatIsSamveraPage({ content, frontmatter }) {
+export default function TheCommunityPage({ content, frontmatter, slug }) {
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
@@ -48,6 +41,7 @@ export async function getStaticProps({ params: { slug } }) {
       content,
       frontmatter,
       openGraphData,
+      slug,
     },
   };
 }
