@@ -10,19 +10,19 @@ If you are adding or updating content on the Samvera.org website, you'll only ne
 
 ### /markdown
 
-This folder's content resembles the shape of the website's information architecture. Sub folders (like `/about`, `/what-is-samvera`, etc) match the primary navigation links.
+This folder's content resembles the shape of the website's information architecture. Sub folders (like `/get-started`, `/the-community`, etc) match the primary navigation links.
 
 ![image](https://user-images.githubusercontent.com/3020266/186482460-51e7e89f-2ca5-4824-ba0a-22d41144a6ae.png)
 
 Within each subfolder you'll find markdown files, which contain page content.
 
-To add a new page to the website, locate the folder (main nav link), where you want the new page to live, and create a new markdown file titled something which follows suit on sibling files. Ie. `/about/my-new-page.md`.
+To add a new page to the website, locate the folder (main nav link), where you want the new page to live, and create a new markdown file titled something which follows suit on sibling files. Ie. `/get-started/my-new-page.md`.
 
 ### Front Matter
 
 All site markdown files use the [Front Matter](https://www.npmjs.com/package/gray-matter) convention for providing some helpful metadata on our markdown files. So if we look at an existing file as an example...
 
-`/markdown/about/faq.md`
+`/markdown/get-started/faq.md`
 
 We'll see at the top of the file:
 
@@ -43,7 +43,7 @@ Adjust these to taste.
 
 (For now), site updates will follow a [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). The easiest way is to update directly in the Github repository UI.
 
-Say we want to update the FAQ page. Navigate to the file location `markdown/about/faq.md`, and click the "edit" icon
+Say we want to update the FAQ page. Navigate to the file location `markdown/the-community/faq.md`, and click the "edit" icon
 
 ![image](https://user-images.githubusercontent.com/3020266/186482791-22546553-7ece-49e7-80b1-8d4084b1f87c.png)
 
@@ -63,19 +63,24 @@ To make updates to the list of Samvera Partners, open the file `/app-config.js` 
 
 ### Non-markdown driven pages
 
-#### About / Community Leadership
+#### The Community / Community Leadership
 
-To update this file, open the `components/about/CommunityLeadership.jsx` component and update the data directly.
+To update this file, open the `components/the-community/CommunityLeadership.jsx` component and update the data directly.
 
-#### About / FAQ
+#### The Community / FAQ
 
-To update this file, open the `components/about/Faq.jsx` component and update the HTML/JSX directly.
+To update this file, open the `components/the-community/Faq.jsx` component and update the HTML/JSX directly.
 
 ## Developers
 
 This is a [NextJS application](https://nextjs.org/) and follows normal NextJS conventions. To do some work on the site and run the app locally, clone this repository and run the following:
 
-```
+```bash
+# PNPM (NPM alternative => https://pnpm.io/)
+pnpm install
+pnpm dev
+
+# Or standard NPM
 npm install
 npm run dev
 ```
@@ -96,12 +101,12 @@ See above
 `/pages`
 This directory is a NextJS convention which will autogenerate app routes. These folders should mirror the directory structure of `/markdown`, and that's how content and routes will be dynamically created as part of the static site build.
 
-Within each child directory (ie. `pages/about`), is a file called `[slug].jsx`. This is a React component wired up to display dynamic content pulled in from the Markdown files mentioned above. In each `[slug].jsx` file, you'll make it unique by updating a `CONFIG` variable defined in the component. For example in the "About" folder:
+Within each child directory (ie. `pages/get-started`), is a file called `[slug].jsx`. This is a React component wired up to display dynamic content pulled in from the Markdown files mentioned above. In each `[slug].jsx` file, you'll make it unique by updating a `CONFIG` variable defined in the component. For example in the "About" folder:
 
 ```
 const CONFIG = {
-  parentDir: "about",
-  parentDirLabel: "About Samvera",
+  parentDir: "get-started",
+  parentDirLabel: "Get Started",
 };
 ```
 
@@ -140,7 +145,3 @@ Site navigation generation is automated in our Github Actions workflow. You can 
 ```
 npm run build-site-nav
 ```
-
-## Branding guidelines
-
-...coming soon

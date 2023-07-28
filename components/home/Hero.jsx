@@ -4,10 +4,10 @@ import { prefix } from "prefix";
 export default function HomeHero() {
   return (
     <section className="text-white lg:relative bg-samGrey">
-      <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
+      <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-36 lg:text-left">
         <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span className="block xl:inline">A vibrant and</span>{" "}
+            <span className="block text-white xl:inline">A vibrant and</span>{" "}
             <span className="block text-samBlue xl:inline">
               welcoming community
             </span>
@@ -23,14 +23,14 @@ export default function HomeHero() {
 
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
-              <Link className="button" href="/getting-started">
+              <Link className="button" href="/get-started/getting-started">
                 Get started
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <Link
                 className="button-inverted"
-                href="/what-is-samvera/applications-demos"
+                href="/repository-solutions/applications-demos"
               >
                 Learn more
               </Link>
