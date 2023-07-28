@@ -81,7 +81,7 @@ strong {
 }
 
 /* Swiper styles */
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev svg,
+.swiper-button-next svg {
   @apply text-samGrey !important;
 }
