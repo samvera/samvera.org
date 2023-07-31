@@ -16,22 +16,25 @@ jobs:
 
     steps:
       - name: Get files
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-          cache: npm
+          cache: "pnpm"
 
       - name: Install packages
-        run: npm ci
+        run: pnpm install
 
       - name: Build Site Navigation
-        run: npm run build-site-nav
+        run: pnpm run build-site-nav
 
       - name: Export static files
-        run: npm run build
+        run: pnpm run build
 
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
