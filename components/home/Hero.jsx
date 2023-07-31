@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { prefix } from "prefix";
+import svc2023 from "../../public/images/samvera-connect-2023.png";
 
 export default function HomeHero() {
   return (
@@ -39,10 +41,9 @@ export default function HomeHero() {
         </div>
       </div>
       <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-        <img
+        <Image
           className="absolute inset-0 object-cover w-full h-full"
-          src={`${prefix}/images/washu-samvera-group.jpeg`}
-          alt=""
+          src={svc2023}
         />
       </div>
     </section>
