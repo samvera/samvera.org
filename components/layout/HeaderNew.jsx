@@ -33,40 +33,6 @@ const newsNavigation = [
   },
 ];
 
-const softwareSolutionsNavigation = [
-  {
-    label: "Software Solutions",
-    slug: "",
-    items: [
-      {
-        label: "Avalon Media System",
-        href: "https://www.avalonmediasystem.org/",
-        isExternal: true,
-      },
-      {
-        label: "Hyku",
-        href: "https://hyku.samvera.org/",
-        isExternal: true,
-      },
-      {
-        label: "Hyrax",
-        href: "https://hyrax.samvera.org/",
-        isExternal: true,
-      },
-      {
-        label: "Samvera Community Github",
-        href: "https://github.com/samvera",
-        isExternal: true,
-      },
-      {
-        label: "Samvera Labs",
-        href: "https://github.com/samvera-labs",
-        isExternal: true,
-      },
-    ],
-  },
-];
-
 /**
  * Helper function to control the position of the popovers
  */
@@ -193,7 +159,7 @@ export default function HeaderNew() {
         </div>
 
         {/* Mobile menu button */}
-        <div className="flex lg:hidden">
+        <div className="z-10 flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -205,7 +171,7 @@ export default function HeaderNew() {
         </div>
 
         {/* Desktop menu */}
-        <Popover.Group className="hidden lg:flex lg:gap-x-4">
+        <Popover.Group className="z-10 hidden lg:flex lg:gap-x-4">
           {siteNavigation &&
             siteNavigation.map((navItem, index) => {
               if (navItem.items?.length > 0) {
