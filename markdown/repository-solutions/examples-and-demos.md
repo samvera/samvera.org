@@ -3,18 +3,22 @@ title: "examples and demos"
 date: "2023-08-04"
 ---
 
-[See the full list of known repositories using Samvera Community-supported technologies on the Samvera wiki](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production) along with more details about specific repository technologies they use.
-
-See the [latest Samvera technology and repository demo videos on YouTube](https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq)
+There are many ways to see what Samvera Community repositories can do:
  
-Try out Avalon Media System on the [Avalon Demo site](https://www.avalonmediasystem.org/try-out-avalon)
+* Try out Avalon Media System on the [Avalon Demo site](https://www.avalonmediasystem.org/try-out-avalon)
 
-See Hyrax in action on the [Hyrax development site](https://dev.nurax.samvera.org/)
+* See Hyrax in action on the [Hyrax development site](https://dev.nurax.samvera.org/)
 
-Check out the [Samvera Community Repository](https://repo.samvera.org/) for an example of a Hyku tenant
+* See the [Samvera Community Repository](https://repo.samvera.org/) for an example of a Hyku tenant
+  
+* Watch the [latest Samvera technology and repository demo videos on YouTube](https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq)
+  
+* Check out the repository examples below or [view the full list of known repositories using Samvera Community-supported technologies](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production) on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
+
+
 * * *
 
-#### Example bespoke applications
+#### Examples of Samvera Community repository solutions in action
 
 American Theological Library Association (ATLA) - [Atla Digital Library](https://dl.atla.com/) provides [Atla](https://www.atla.com/) members and other organizations with access to aggregated theological library collections from across the US.
 
