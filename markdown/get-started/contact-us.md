@@ -8,4 +8,4 @@ To reach the Samvera Board, email [board@samvera.org](mailto:board@samvera.org)
 
 To report a [Code of Conduct](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212316/Samvera+Code+of+Conduct+and+Anti-Harassment+Policy) violation, email [incident-responders@samvera.org](mailto:incident-responders@samvera.org) 
 
-If you’re interested in hosted solutions, Requests for Proposals, or contracted work, see our [service providers page](https://samvera.org/who-uses-samvera/service-providers) for contact information.
+If you’re interested in hosted solutions, Requests for Proposals, or contracted work, see our [service providers page](https://samvera.org/the-community/service-providers) for contact information.
