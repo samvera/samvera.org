@@ -1,5 +1,5 @@
 ---
-title: "See repositories in action"
+title: "examples and demos"
 date: "2023-08-04"
 ---
 
