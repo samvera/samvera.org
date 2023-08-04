@@ -5,7 +5,7 @@ date: "2023-07-19"
 
 ### What is Samvera?
 
-Samvera is an Icelandic word meaning something like “togetherness.” The Samvera Community is a global community of technologists who create and maintain repository software; you can’t install Samvera, but you can install the software solutions we support including [Avalon Media System](https://www.avalonmediasystem.org/), [Hyrax](hyrax.samvera.org), and [Hyku](hyku.samvera.org). Institutions around the world rely on Samvera Community supported software to provide access to their digital content. 
+Samvera is an Icelandic word meaning “togetherness.” The Samvera Community is a global community of technologists who create and maintain repository software; you can’t install Samvera, but you can install the repository solutions we develop together including [Avalon Media System](https://www.avalonmediasystem.org/), [Hyrax](https://www.hyrax.samvera.org), and [Hyku](https://www.hyku.samvera.org). Institutions around the world rely on Samvera Community supported software to provide access to their digital content. 
 
 Samvera is also a community of practice where software developers and library technologists can support and learn from one another. We have active participation from metadata specialists, repository managers, user experience professionals, and others who contribute their expertise to ensure the software stays relevant and responsive to changing needs.
 
@@ -13,8 +13,8 @@ Samvera is also a community of practice where software developers and library te
 
 * See the[ Samvera Community Guidelines](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1947631640) to learn how we work together
 * Our[ wiki homepage](https://samvera.atlassian.net/wiki/spaces/samvera) is a great place to start learning about the Community, including our technologies, governance Partners, and more.
-* [Take a tour](https://samvera.org/samvera-open-source-repository-framework/take-a-tour-of-active-samvera-repositories/) of some Samvera repositories
-* Code repository [https://github.com/samvera](https://github.com/samvera)
+* [Take a tour](https://samvera.org/repository-solutions/take-a-tour-of-active-samvera-repositories) of some Samvera repositories
+* Dive into our code repository [https://github.com/samvera](https://github.com/samvera)
 
 **Join the Samvera Slack workspace**
 This is the best place to get started with the Samvera Community. Join us for discussion, questions, announcements, interest groups, and working groups. 
@@ -27,7 +27,7 @@ Keep up with Community announcements, updates, and conversations.[ See all our a
 
 **[Technical Call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059)**
 
-There is a weekly Samvera tech call for developers and other folks who are contributing code or are actively using the core Samvera plugins & components. Contributors should consult the [ Getting Connected](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211650) page in the [ Developers](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211345) section of our wiki for more information.
+There is a weekly Samvera tech call for developers and other folks who are contributing code or are actively using the core Samvera plugins & components. 
 
 **[Interest Groups](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319284)**
 
