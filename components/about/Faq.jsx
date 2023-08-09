@@ -69,83 +69,17 @@ export default function Faq({ config, content, frontmatter }) {
                 <Question open={open}>What is Samvera?</Question>
                 <Answer>
                   <p>
-                    The name Samvera is an Icelandic term meaning
-                    &quot;togetherness.&quot;  Samvera is a grass-roots,
-                    open-source community of library professionals, including
-                    repository managers, developers, metadata experts, content
-                    owners and users, working together to create best-in-class
-                    digital repository solutions.  The scope of the community
-                    encompasses work for Libraries, Archives, Museums and
-                    others. Read more about the{" "}
-                    <Link href="/who-uses-samvera/community-framework">
-                      Samvera Community Framework
-                    </Link>
-                    on our website.
-                  </p>
+Samvera is an Icelandic word meaning “togetherness.” The Samvera Community is a global community of technologists who create and maintain repository software; you can’t install Samvera, but you can install the repository solutions we develop together including <a href="https://www.avalonmediasystem.org/">Avalon Media System</a>, <a href="https://www.hyrax.samvera.org/">Hyrax</a>, and <a href="https://www.hyku.samvera.org/">Hyku</a>. Institutions around the world rely on Samvera Community supported software to provide access to their digital content.
+</p>
+<p>
+Samvera is also a community of practice where software developers and library technologists can support and learn from one another. We have active participation from metadata specialists, repository managers, user experience professionals, and others who contribute their expertise to ensure the software stays relevant and responsive to changing needs.
+</p>
 
                   <p>
                     Samvera software is free and open source, available under an
                     Apache 2 license.  It offers flexible and rich user
                     interfaces tailored to distinct content types on top of a
                     robust back end – giving adopters the best of both worlds.
-                     Samvera is based around a framework that combines four
-                    major components:
-                  </p>
-
-                  <ul>
-                    <li>
-                      the{" "}
-                      <a href="http://fedorarepository.org/">
-                        Fedora repository software
-                      </a>{" "}
-                      providing a robust, durable digital repository layer for
-                      persisting and managing digital objects.
-                    </li>
-
-                    <li>
-                      <a href="http://lucene.apache.org/solr/">Solr indexes</a>,
-                      providing fast access to information about an
-                      institution’s resources.
-                    </li>
-
-                    <li>
-                      <a href="http://projectblacklight.org/">Blacklight</a>, a
-                      discovery interface that sits above Solr and provides
-                      faceted searching, browsing and tailored views on objects.
-                    </li>
-
-                    <li>
-                      <a href="http://fedorarepository.org/">
-                        Fedora repository software
-                      </a>
-                      , providing a robust, durable digital repository layer for
-                      persisting and managing digital objects.
-                    </li>
-
-                    <li>
-                      <a href="https://github.com/samvera/">Samvera gems</a>, a
-                      series of components built using the Ruby on Rails
-                      programming language that integrate the building blocks to
-                      form the basis of complete, flexible and extensible
-                      digital repository solutions.
-                    </li>
-                  </ul>
-
-                  <p>
-                    The combination of the components is consciously modular to
-                    enable individual solutions to make use of alternatives if
-                    they so wish. The Samvera community has worked together to
-                    develop and sustain a number of “solution bundles” —
-                    applications designed to solve a common need in a
-                    generalized yet customizable way with minimal development
-                    effort required — including the Avalon Media System, for
-                    managing and providing access to large collections of
-                    digital audio and video, and Hyrax, a front-end enabling
-                    common digital collections management and institutional
-                    repository features including creation of repository object
-                    types on demand, deposit of content via multiple
-                    configurable workflows, and description of content with
-                    flexible metadata.
                   </p>
                 </Answer>
               </>
@@ -155,14 +89,14 @@ export default function Faq({ config, content, frontmatter }) {
           <FAQItem>
             {({ open }) => (
               <>
-                <Question open={open}>Why use Samvera?</Question>
+                <Question open={open}>Why use Samvera repository solutions?</Question>
                 <Answer>
                   <p>
                     We believe that no single repository system can provide the
                     full range of repository-based solutions for a given
                     institution’s needs; likewise, no single institution can
                     resource the development of a full range of solutions on its
-                    own. Samvera is an open-source repository solution built
+                    own. Samvera Community open-source repository solutions are built
                     collaboratively to address a broad range of repository
                     needs. Rather than being one-size-fits-all, Samvera
                     leverages an ecosystem of components that lets institutions
@@ -209,41 +143,10 @@ export default function Faq({ config, content, frontmatter }) {
                 <Answer>
                   <p>
                     Read about{" "}
-                    <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+In-production">
+                    <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production">
                       implementations of Samvera
                     </a>{" "}
-                    on our wiki. At a host of educational and cultural
-                    institutions, Samvera is currently in use to:
-                  </p>
-                  <ul>
-                    <li>
-                      Provide a digital repository framework for digitized
-                      archival collections and faculty publications (see{" "}
-                      <a href="http://samvera.org/samvera-flexible-extensible/case-studies/">
-                        Case Studies
-                      </a>
-                      )
-                    </li>
-                    <li>
-                      Provide a platform for scholarly communication through
-                      initiatives like{" "}
-                      <a href="https://www.fulcrum.org/">Fulcrum</a> and{" "}
-                      <a href="https://www.ubiquitypress.com/">
-                        Ubiquity Press
-                      </a>
-                    </li>
-                    <li>
-                      Provide a framework for the management and access of media
-                      collections, research data, and geo-referenced data
-                    </li>
-                  </ul>
-                  <p>
-                    For more details about Samvera use cases and links out to
-                    current Samvera applications, visit{" "}
-                    <a href="http://samvera.org/samvera-open-source-repository-framework/applications-demos/">
-                      our Applications &amp; Demos
-                    </a>{" "}
-                    page.
+                    on our wiki. 
                   </p>
                 </Answer>
               </>
@@ -260,7 +163,7 @@ export default function Faq({ config, content, frontmatter }) {
                   <p>
                     Samvera is a community, and, as such, it is governed by
                     members of the community. The{" "}
-                    <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/405210590/Samvera+Community+Framework">
+                    <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/1872461833/About+Samvera+Partners">
                       Samvera Partners
                     </a>{" "}
                     are at the heart of how Samvera operates. They encompass
@@ -309,7 +212,7 @@ export default function Faq({ config, content, frontmatter }) {
                     development of Samvera, but all are welcome to contribute as
                     they can. Contributing to the community can take many forms:
                     developing the codebase, developing metadata, contributing
-                    to documentation and marketing efforts, or simply adopting
+                    to documentation and outreach efforts, or simply adopting
                     the Samvera technology and communicating about that
                     experience. The Samvera Community has multiple open{" "}
                     <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319284/Interest+Group+IG+and+Working+Group+WG+Hub">
@@ -319,13 +222,6 @@ export default function Faq({ config, content, frontmatter }) {
                     levels to the development of its outputs. Work is managed in
                     concert with other users to ensure that the Samvera
                     technology meets as many shared needs as possible.
-                  </p>
-                  <p>
-                    Contributing to the community is not a one-way street—what
-                    we invest in terms of staff time and resources we also take
-                    out, in terms of the combined work of the community on a
-                    shared set of repository solutions meeting ever more complex
-                    needs.
                   </p>
                 </Answer>
               </>
@@ -395,7 +291,7 @@ export default function Faq({ config, content, frontmatter }) {
                     other meetings, an organization can be assured that staff
                     members are supported to learn skills and gain expertise
                     that directly impacts the development and delivery of their
-                    Samvera-based repository.  We really do go further together.
+                    Samvera-based repository.  
                   </p>
                 </Answer>
               </>
@@ -445,53 +341,25 @@ export default function Faq({ config, content, frontmatter }) {
             {({ open }) => (
               <>
                 <Question open={open}>
-                  Where can I download and try Samvera?
+                  Where can I download and try Samvera repository solutions?
                 </Question>
                 <Answer>
                   <p>
-                    All the software is available through the Samvera
-                    Community&#39;s{" "}
-                    <a href="https://github.com/samvera">Github</a>.
-                    Documentation is available at{" "}
-                    <a href="http://samvera.github.io/">
-                      http://samvera.github.io/
-                    </a>
-                    . A test instance of the Hyrax implementation of the Samvera
-                    framework is made available by Data Curation Experts (DCE)
-                    at{" "}
-                    <a href="https://nurax.curationexperts.com/">
-                      https://nurax.curationexperts.com/
-                    </a>
-                    .
-                  </p>
-                </Answer>
-              </>
-            )}
-          </FAQItem>
+There are many ways to see what Samvera Community repositories can do:
+</p>
+<ul>
 
-          <FAQItem>
-            {({ open }) => (
-              <>
-                <Question open={open}>
-                  Why did Samvera choose the specific components that Samvera
-                  repository solutions are based on?
-                </Question>
-                <Answer>
-                  <p>
-                    The components that form the basis of Samvera’s solutions
-                    (Fedora, Blacklight, Solr) were selected as well-designed
-                    services in their own right, and in recognition of their
-                    successful use in existing services. Samvera has created
-                    associated components (Samvera gems) to bring them together
-                    in ways that make them more than the sum of their parts.
-                  </p>
-                  <p>
-                    The Samvera architecture was always designed to allow for
-                    individual components to be replaced with new or preferred
-                    technologies. For example, the Valkyrie initiative is
-                    designing a means through which alternatives to Fedora can
-                    be used if desired.
-                  </p>
+<li>Try out Avalon Media System on the <a href="https://www.avalonmediasystem.org/try-out-avalon">Avalon Demo site</a>
+
+<li>See Hyrax in action on the <a href="https://dev.nurax.samvera.org/">Hyrax development site</a>
+
+<li>See the <a href="https://repo.samvera.org/">Samvera Community Repository</a> for an example of a Hyku tenant
+
+<li>Watch the <a href="https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq">latest Samvera technology and repository demo videos on YouTube</a>
+
+<li>Check out the repository examples below or <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production">view the full list of known repositories using Samvera Community-supported technologies</a> on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
+</li>
+</ul>
                 </Answer>
               </>
             )}
@@ -505,10 +373,9 @@ export default function Faq({ config, content, frontmatter }) {
                 </Question>
                 <Answer>
                   <p>
-                    Samvera software is free and open-source, but of course,
-                    this is free in the same way that stray puppies come free:
-                    you will have your own ongoing support and maintenance costs
-                    to look after it. Depending on the complexity and degree of
+                    Samvera software is free and open-source, but
+                   you will have your own ongoing support and maintenance costs
+                    for your repository implementation. Depending on the complexity and degree of
                     local customization you require in your implementation,
                     areas of cost to your institution may include:
                   </p>
@@ -533,7 +400,7 @@ export default function Faq({ config, content, frontmatter }) {
                     Devoting resources to development using Ruby on Rails is a
                     requirement, whether that be provided in-house or through
                     one of the{" "}
-                    <a href="http://samvera.org/communication/service-providers/">
+                    <a href="https://samvera.org/the-community/service-providers">
                       service providers
                     </a>{" "}
                     that support Samvera, in order to capitalise on the
@@ -550,11 +417,11 @@ export default function Faq({ config, content, frontmatter }) {
                     future of sustainable, values-driven, open-source technology
                     for scholarly communication and cultural heritage. Learn
                     more about{" "}
-                    <a href="http://samvera.org/communication/getting-started/">
+                    <a href="https://samvera.org/get-started/getting-started">
                       getting started with Samvera
                     </a>{" "}
                     on our website. Follow{" "}
-                    <a href="http://samvera.org/news-events/">
+                    <a href="https://samvera.org/news-events/">
                       News &amp; Events
                     </a>{" "}
                     to keep in the loop about learning and training
@@ -580,13 +447,7 @@ export default function Faq({ config, content, frontmatter }) {
                     <a href="https://samvera.github.io/tag_community.html">
                       Documentation
                     </a>{" "}
-                    site. Please also note that we require all contributions to
-                    be licensed via a completed{" "}
-                    <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211651/Samvera+Community+Intellectual+Property+Licensing+and+Ownership">
-                      Contributor Licensing Agreement
-                    </a>{" "}
-                    to ensure clarity in how Samvera can continue to make use of
-                    code you created.
+                    site. 
                   </p>
                 </Answer>
               </>
