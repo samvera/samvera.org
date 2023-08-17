@@ -69,11 +69,29 @@ export default function Faq({ config, content, frontmatter }) {
                 <Question open={open}>What is Samvera?</Question>
                 <Answer>
                   <p>
-Samvera is an Icelandic word meaning “togetherness.” The Samvera Community is a global community of technologists who create and maintain repository software; you can’t install Samvera, but you can install the repository solutions we develop together including <a href="https://www.avalonmediasystem.org/">Avalon Media System</a>, <a href="https://www.hyrax.samvera.org/">Hyrax</a>, and <a href="https://www.hyku.samvera.org/">Hyku</a>. Institutions around the world rely on Samvera Community supported software to provide access to their digital content.
-</p>
-<p>
-Samvera is also a community of practice where software developers and library technologists can support and learn from one another. We have active participation from metadata specialists, repository managers, user experience professionals, and others who contribute their expertise to ensure the software stays relevant and responsive to changing needs.
-</p>
+                    Samvera is an Icelandic word meaning “togetherness.” The
+                    Samvera Community is a global community of technologists who
+                    create and maintain repository software; you can’t install
+                    Samvera, but you can install the repository solutions we
+                    develop together including{" "}
+                    <a href="https://www.avalonmediasystem.org/">
+                      Avalon Media System
+                    </a>
+                    , <a href="https://www.hyrax.samvera.org/">Hyrax</a>, and{" "}
+                    <a href="https://www.hyku.samvera.org/">Hyku</a>.
+                    Institutions around the world rely on Samvera Community
+                    supported software to provide access to their digital
+                    content.
+                  </p>
+                  <p>
+                    Samvera is also a community of practice where software
+                    developers and library technologists can support and learn
+                    from one another. We have active participation from metadata
+                    specialists, repository managers, user experience
+                    professionals, and others who contribute their expertise to
+                    ensure the software stays relevant and responsive to
+                    changing needs.
+                  </p>
 
                   <p>
                     Samvera software is free and open source, available under an
@@ -89,15 +107,17 @@ Samvera is also a community of practice where software developers and library te
           <FAQItem>
             {({ open }) => (
               <>
-                <Question open={open}>Why use Samvera repository solutions?</Question>
+                <Question open={open}>
+                  Why use Samvera repository solutions?
+                </Question>
                 <Answer>
                   <p>
                     We believe that no single repository system can provide the
                     full range of repository-based solutions for a given
                     institution’s needs; likewise, no single institution can
                     resource the development of a full range of solutions on its
-                    own. Samvera Community open-source repository solutions are built
-                    collaboratively to address a broad range of repository
+                    own. Samvera Community open-source repository solutions are
+                    built collaboratively to address a broad range of repository
                     needs. Rather than being one-size-fits-all, Samvera
                     leverages an ecosystem of components that lets institutions
                     assemble and deploy robust and durable repository
@@ -146,7 +166,7 @@ Samvera is also a community of practice where software developers and library te
                     <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production">
                       implementations of Samvera
                     </a>{" "}
-                    on our wiki. 
+                    on our wiki.
                   </p>
                 </Answer>
               </>
@@ -345,21 +365,51 @@ Samvera is also a community of practice where software developers and library te
                 </Question>
                 <Answer>
                   <p>
-There are many ways to see what Samvera Community repositories can do:
-</p>
-<ul>
+                    There are many ways to see what Samvera Community
+                    repositories can do:
+                  </p>
+                  <ul>
+                    <li>
+                      Try out Avalon Media System on the{" "}
+                      <a href="https://www.avalonmediasystem.org/try-out-avalon">
+                        Avalon Demo site
+                      </a>
+                    </li>
 
-<li>Try out Avalon Media System on the <a href="https://www.avalonmediasystem.org/try-out-avalon">Avalon Demo site</a>
+                    <li>
+                      See Hyrax in action on the{" "}
+                      <a href="https://dev.nurax.samvera.org/">
+                        Hyrax development site
+                      </a>
+                    </li>
 
-<li>See Hyrax in action on the <a href="https://dev.nurax.samvera.org/">Hyrax development site</a>
+                    <li>
+                      See the{" "}
+                      <a href="https://repo.samvera.org/">
+                        Samvera Community Repository
+                      </a>{" "}
+                      for an example of a Hyku tenant
+                    </li>
 
-<li>See the <a href="https://repo.samvera.org/">Samvera Community Repository</a> for an example of a Hyku tenant
+                    <li>
+                      Watch the{" "}
+                      <a href="https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq">
+                        latest Samvera technology and repository demo videos on
+                        YouTube
+                      </a>
+                    </li>
 
-<li>Watch the <a href="https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq">latest Samvera technology and repository demo videos on YouTube</a>
-
-<li>Check out the repository examples below or <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production">view the full list of known repositories using Samvera Community-supported technologies</a> on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
-</li>
-</ul>
+                    <li>
+                      Check out the repository examples below or{" "}
+                      <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production">
+                        view the full list of known repositories using Samvera
+                        Community-supported technologies
+                      </a>{" "}
+                      on the Samvera wiki to learn more about the specific
+                      repository solutions they use and other implementation
+                      details.
+                    </li>
+                  </ul>
                 </Answer>
               </>
             )}
@@ -373,11 +423,12 @@ There are many ways to see what Samvera Community repositories can do:
                 </Question>
                 <Answer>
                   <p>
-                    Samvera software is free and open-source, but
-                   you will have your own ongoing support and maintenance costs
-                    for your repository implementation. Depending on the complexity and degree of
-                    local customization you require in your implementation,
-                    areas of cost to your institution may include:
+                    Samvera software is free and open-source, but you will have
+                    your own ongoing support and maintenance costs for your
+                    repository implementation. Depending on the complexity and
+                    degree of local customization you require in your
+                    implementation, areas of cost to your institution may
+                    include:
                   </p>
                   <ul>
                     <li>
@@ -447,7 +498,7 @@ There are many ways to see what Samvera Community repositories can do:
                     <a href="https://samvera.github.io/tag_community.html">
                       Documentation
                     </a>{" "}
-                    site. 
+                    site.
                   </p>
                 </Answer>
               </>
