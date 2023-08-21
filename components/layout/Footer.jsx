@@ -71,11 +71,9 @@ export default function Footer() {
         <div className="max-w-4xl mx-auto mt-10 text-xs leading-5 text-center text-gray-500">
           <p className="">&copy; {year} Samvera.org. All rights reserved.</p>
           <p className="">
-            The Samvera name is a trademark in the USA, the UK and in the
-            European Union; it is the subject of a trademark application in
-            Canada. The Samvera logo is a trademark in the USA and is the
-            subject of trademark applications in the UK, Canada and the European
-            Union.
+            The Samvera name is a trademark in the USA, Canada, the UK and in
+            the European Union. The Samvera logo is a trademark in the USA,
+            Canada, the UK and in the European Union.
           </p>
         </div>
       </div>
