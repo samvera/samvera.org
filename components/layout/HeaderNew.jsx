@@ -73,9 +73,9 @@ const PopOverWrapper = ({ label, items, siteNavIndex }) => {
           )} top-full rounded-3xl ring-1 ring-gray-900/5`}
         >
           <div className="p-4">
-            {items.map((item) => (
+            {items.map((item, idx) => (
               <div
-                key={item.slug}
+                key={item.slug || item.href || idx}
                 className="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50"
               >
                 <div className="flex-auto">
@@ -115,9 +115,9 @@ const DisclosureWrapper = ({ label, items }) => {
             />
           </Disclosure.Button>
           <Disclosure.Panel className="mt-2 space-y-2">
-            {[...items].map((item) => (
+            {[...items].map((item, idx) => (
               <Disclosure.Button
-                key={item.slug}
+                key={item.slug || item.href || idx}
                 as="a"
                 href={item.href}
                 className="block py-2 pl-6 pr-3 text-sm leading-7 capitalize rounded-lg text-samGrey hover:bg-gray-50"
