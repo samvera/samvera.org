@@ -13,7 +13,7 @@ export default function BannerContact() {
       }}
     >
       <h3 className="mb-6 text-center text-white title">
-        If you want to go far, go together.
+        Growing open technologies, together.
       </h3>
       <button
         className="button"
