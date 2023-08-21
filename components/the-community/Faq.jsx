@@ -6,7 +6,7 @@ import Layout from "../layout/Layout";
 import Main from "../layout/Main";
 import MarkdownContent from "../MarkdownContent";
 import React from "react";
-import { RichTextContent } from "components/RichTextContent";
+import RichTextContent from "components/RichTextContent";
 import getContentful from "lib/get-contentful";
 
 const FAQItem = ({ children }) => {
@@ -54,7 +54,7 @@ export default function Faq({ config, content, frontmatter }) {
       const entries = await contentful.getEntries({
         content_type: "faq",
       });
-      console.log("entries", entries);
+
       if (!entries.items) {
         return console.error("Error getting entries.");
       }

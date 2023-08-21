@@ -1,6 +1,7 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
 import DynamicPage from "components/layout/DynamicPage";
+import ExamplesAndDemos from "components/repository-solutions/ExamplesDemos";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
@@ -11,7 +12,22 @@ const CONFIG = {
   parentDirLabel: "Repository Solutions",
 };
 
-export default function TheCommunityPage({ content, frontmatter, slug }) {
+export default function RepositorySolutionsPage({
+  content,
+  frontmatter,
+  slug,
+}) {
+  // Community Leadership page
+  if (slug === "examples-and-demos") {
+    return (
+      <ExamplesAndDemos
+        config={CONFIG}
+        content={content}
+        frontmatter={frontmatter}
+      />
+    );
+  }
+
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );

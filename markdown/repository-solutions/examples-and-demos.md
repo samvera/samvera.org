@@ -4,21 +4,20 @@ date: "2023-08-04"
 ---
 
 There are many ways to see what Samvera Community repositories can do:
- 
-* Try out Avalon Media System on the [Avalon Demo site](https://www.avalonmediasystem.org/try-out-avalon)
 
-* See Hyrax in action on the [Hyrax development site](https://dev.nurax.samvera.org/)
+- Try out Avalon Media System on the [Avalon Demo site](https://www.avalonmediasystem.org/try-out-avalon)
 
-* See the [Samvera Community Repository](https://repo.samvera.org/) for an example of a Hyku tenant
-  
-* Watch the [latest Samvera technology and repository demo videos on YouTube](https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq)
-  
-* Check out the repository examples below or [view the full list of known repositories using Samvera Community-supported technologies](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production) on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
+- See Hyrax in action on the [Hyrax development site](https://dev.nurax.samvera.org/)
 
+- See the [Samvera Community Repository](https://repo.samvera.org/) for an example of a Hyku tenant
 
-* * *
+- Watch the [latest Samvera technology and repository demo videos on YouTube](https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq)
 
-#### Examples of Samvera Community repository solutions in action
+- Check out the repository examples below or [view the full list of known repositories using Samvera Community-supported technologies](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production) on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
+
+---
+
+<!-- #### Examples of Samvera Community repository solutions in action
 
 American Theological Library Association (ATLA) - [Atla Digital Library](https://dl.atla.com/) provides [Atla](https://www.atla.com/) members and other organizations with access to aggregated theological library collections from across the US.
 
@@ -92,4 +91,4 @@ University of Utah - [The Hive](https://hive.utah.edu/) - Institutional research
 
 University of Virginia - [Libra](http://libra.virginia.edu/) - Institutional Repository research output including dissertations and open scholarship, primarily self-deposit (unmediated workflow).
 
-University of Virginia - [Virgo GIS](http://gis.lib.virginia.edu/): a maps and GIS data repository.
+University of Virginia - [Virgo GIS](http://gis.lib.virginia.edu/): a maps and GIS data repository. -->
