@@ -1,8 +1,8 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
-import CommunityLeadership from "components/about/CommunityLeadership";
+import CommunityLeadership from "components/the-community/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
-import Faq from "components/about/Faq";
+import Faq from "components/the-community/Faq";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
