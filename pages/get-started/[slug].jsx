@@ -1,5 +1,6 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
+import ContactUs from "components/get-started/ContactUs";
 import DynamicPage from "components/layout/DynamicPage";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
@@ -12,6 +13,13 @@ const CONFIG = {
 };
 
 export default function GetStartedPage({ content, frontmatter, slug }) {
+  // Community Leadership page
+  if (slug === "contact-us") {
+    return (
+      <ContactUs config={CONFIG} content={content} frontmatter={frontmatter} />
+    );
+  }
+
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
   );
