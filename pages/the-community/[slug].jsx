@@ -3,6 +3,7 @@ import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 import CommunityLeadership from "components/the-community/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
 import Faq from "components/the-community/Faq";
+import ServiceProviders from "components/the-community/ServiceProviders";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
@@ -31,6 +32,17 @@ export default function TheCommunityPage({ content, frontmatter, slug }) {
   // FAQ page
   if (slug === "faq") {
     return <Faq config={CONFIG} content={content} frontmatter={frontmatter} />;
+  }
+
+  // Service Providers
+  if (slug === "service-providers") {
+    return (
+      <ServiceProviders
+        config={CONFIG}
+        content={content}
+        frontmatter={frontmatter}
+      />
+    );
   }
 
   /**

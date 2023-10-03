@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@contentful/rich-text-from-markdown": "^15.16.8",
     "@contentful/rich-text-react-renderer": "^15.17.1",
     "@headlessui/react": "^1.7.16",
     "@headlessui/tailwindcss": "^0.2.0",
