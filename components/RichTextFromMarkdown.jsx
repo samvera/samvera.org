@@ -11,6 +11,7 @@ const RichTextFromMarkdown = ({ content }) => {
 
     async function fn() {
       const response = await richTextFromMarkdown(content);
+
       setRichText(response);
     }
     fn();
