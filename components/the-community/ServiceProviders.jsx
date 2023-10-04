@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import Breadcrumbs from "components/Breadcrumbs";
 import Layout from "../layout/Layout";
 import Main from "components/layout/Main";
+import MarkdownContent from "components/MarkdownContent";
 import RichTextContent from "components/RichTextContent";
-import RichTextFromMarkdown from "components/RichTextFromMarkdown";
 import getContentful from "lib/get-contentful";
 
 function classNames(...classes) {
@@ -47,7 +47,7 @@ export default function ServiceProviders({ config, content, frontmatter }) {
 
       <h1>{frontmatter.title}</h1>
 
-      {/* <MarkdownContent content={content} /> */}
+      <MarkdownContent content={content} />
       <Main>
         <div className="my-10 overflow-hidden bg-gray-200 divide-y divide-gray-200 rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
           {entries.map(

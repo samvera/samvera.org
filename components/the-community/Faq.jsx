@@ -84,7 +84,7 @@ export default function Faq({ config, content, frontmatter }) {
         <MarkdownContent content={content} />
 
         <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
-          {faqs.map((faq, idx) => (
+          {/* {faqs.map((faq, idx) => (
             <FAQItem key={idx}>
               {({ open }) => (
                 <>
@@ -95,8 +95,8 @@ export default function Faq({ config, content, frontmatter }) {
                 </>
               )}
             </FAQItem>
-          ))}
-          {/* <FAQItem>
+          ))} */}
+          <FAQItem>
             {({ open }) => (
               <>
                 <Question open={open}>What is Samvera?</Question>
@@ -723,7 +723,7 @@ export default function Faq({ config, content, frontmatter }) {
                 </Answer>
               </>
             )}
-          </FAQItem> */}
+          </FAQItem>
         </dl>
       </Main>
     </Layout>

@@ -17,16 +17,18 @@ export default function RepositorySolutionsPage({
   frontmatter,
   slug,
 }) {
-  // Community Leadership page
-  if (slug === "examples-and-demos") {
-    return (
-      <ExamplesAndDemos
-        config={CONFIG}
-        content={content}
-        frontmatter={frontmatter}
-      />
-    );
-  }
+  // Examples and Demos page
+
+  // TODO: Re-implement this once content is ready at Contentful
+  // if (slug === "examples-and-demos") {
+  //   return (
+  //     <ExamplesAndDemos
+  //       config={CONFIG}
+  //       content={content}
+  //       frontmatter={frontmatter}
+  //     />
+  //   );
+  // }
 
   return (
     <DynamicPage config={CONFIG} content={content} frontmatter={frontmatter} />
