@@ -4,29 +4,28 @@ date: "2023-08-04"
 ---
 
 There are many ways to see what Samvera Community repositories can do:
- 
-* Try out Avalon Media System on the [Avalon Demo site](https://www.avalonmediasystem.org/try-out-avalon)
 
-* See Hyrax in action on the [Hyrax development site](https://dev.nurax.samvera.org/)
+- Try out Avalon Media System on the [Avalon Demo site](https://www.avalonmediasystem.org/try-out-avalon)
 
-* See the [Samvera Community Repository](https://repo.samvera.org/) for an example of a Hyku tenant
-  
-* Watch the [latest Samvera technology and repository demo videos on YouTube](https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq)
-  
-* Check out the repository examples below or [view the full list of known repositories using Samvera Community-supported technologies](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production) on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
+- See Hyrax in action on the [Hyrax development site](https://dev.nurax.samvera.org/)
 
+- See the [Samvera Community Repository](https://repo.samvera.org/) for an example of a Hyku tenant
 
-* * *
+- Watch the [latest Samvera technology and repository demo videos on YouTube](https://youtube.com/playlist?list=PLvnoImgmm7Cf6K3ZdMiXDSwxhmfN6sQJq)
+
+- Check out the repository examples below or [view the full list of known repositories using Samvera Community-supported technologies](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319621/Samvera+Implementations+in+production) on the Samvera wiki to learn more about the specific repository solutions they use and other implementation details.
+
+---
 
 #### Examples of Samvera Community repository solutions in action
 
 American Theological Library Association (ATLA) - [Atla Digital Library](https://dl.atla.com/) provides [Atla](https://www.atla.com/) members and other organizations with access to aggregated theological library collections from across the US.
 
-[British Library Shared Research Repository](https://iro.bl.uk/) - Institutional repositories for UK cultural heritage organisations, currently all Independent Research Organisations (IROs). Content includes a variety of outputs including published works, datasets, 3D models and exhibition material.  Six individual repositories with a unified search layer over the top.
+[British Library Shared Research Repository](https://iro.bl.uk/) - Institutional repositories for UK cultural heritage organisations, currently all Independent Research Organisations (IROs). Content includes a variety of outputs including published works, datasets, 3D models and exhibition material. Six individual repositories with a unified search layer over the top.
 
 [Carolina Digital Repository (CDR)](https://cdr.lib.unc.edu/) - Institutional Repository for OA articles, journals, student papers, research data, posters, 3d objects, OER and more.
 
-Cincinnati University  - [Scholar@UC](https://scholar.uc.edu/) - Self-submission institutional repository.
+Cincinnati University - [Scholar@UC](https://scholar.uc.edu/) - Self-submission institutional repository.
 
 Cornell University - [Southeast Asia Visions](http://seasiavisions.library.cornell.edu/) - A collection of more than 350 European travel accounts of pre-modern Southeast Asia.
 
@@ -52,7 +51,7 @@ Indiana University - [Pages Online](https://pages.dlib.indiana.edu/catalog) - Pa
 
 [King's Fund Digital Archive](https://archive.kingsfund.org.uk/) - Digitized publications from the King's Fund from 1898 onwards.
 
-[Linn-Benton Community College Community Archive](http://libarchive.linnbenton.edu/) - CommunityArchive@LBCC is a tool for showcasing and preserving important content created at Linn-Benton Community College.  Our collection focuses on teaching and learning materials (particularly Open Educational Resources) and institutional history.
+[Linn-Benton Community College Community Archive](http://libarchive.linnbenton.edu/) - CommunityArchive@LBCC is a tool for showcasing and preserving important content created at Linn-Benton Community College. Our collection focuses on teaching and learning materials (particularly Open Educational Resources) and institutional history.
 
 [MAE, Theater Institute of Barcelona](http://colleccions.cdmae.cat/)
 
@@ -68,7 +67,7 @@ Oregon State University - [ScholarsArchive@OSU](https://ir.library.oregonstate.e
 
 Oregon State University - [Oregon Digital](https://oregondigital.org/) - Collaborative digital collections system for unique digitized and born-digital materials including photographs, articles, sheet music, manuscripts, ephemera, and more.
 
-Princeton University Library - [Figgy](https://figgy.princeton.edu/) - Staff tool for building digital objects, which are served using IIIF, and embedded in our user-facing applications.  This is a secured site.  [A screencast is available here](https://vimeo.com/334453271).
+Princeton University Library - [Figgy](https://figgy.princeton.edu/) - Staff tool for building digital objects, which are served using IIIF, and embedded in our user-facing applications. This is a secured site. [A screencast is available here](https://vimeo.com/334453271).
 
 [Tufts University Digital Library](http://dl.tufts.edu/)
 

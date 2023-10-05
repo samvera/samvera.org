@@ -3,9 +3,11 @@ import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Breadcrumbs from "../Breadcrumbs";
 import { Disclosure } from "@headlessui/react";
 import Layout from "../layout/Layout";
-import Link from "next/link";
 import Main from "../layout/Main";
 import MarkdownContent from "../MarkdownContent";
+import React from "react";
+import RichTextContent from "components/RichTextContent";
+import getContentful from "lib/get-contentful";
 
 const FAQItem = ({ children }) => {
   return (
@@ -44,6 +46,24 @@ const Answer = ({ children }) => {
 };
 
 export default function Faq({ config, content, frontmatter }) {
+  const contentful = getContentful();
+  const [faqs, setFaqs] = React.useState([]);
+
+  React.useEffect(() => {
+    async function fetchEntries() {
+      const entries = await contentful.getEntries({
+        content_type: "faq",
+      });
+
+      if (!entries.items) {
+        return console.error("Error getting entries.");
+      }
+      setFaqs(entries.items);
+    }
+
+    fetchEntries();
+  }, [contentful]);
+
   return (
     <Layout title={`${frontmatter.title} - ${config.parentDirLabel} - Samvera`}>
       <Main>
@@ -60,9 +80,22 @@ export default function Faq({ config, content, frontmatter }) {
         />
 
         <h1>{frontmatter.title}</h1>
+
         <MarkdownContent content={content} />
 
         <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+          {/* {faqs.map((faq, idx) => (
+            <FAQItem key={idx}>
+              {({ open }) => (
+                <>
+                  <Question open={open}>{faq.fields.question}</Question>
+                  <Answer>
+                    <RichTextContent content={faq.fields.answer} />
+                  </Answer>
+                </>
+              )}
+            </FAQItem>
+          ))} */}
           <FAQItem>
             {({ open }) => (
               <>
