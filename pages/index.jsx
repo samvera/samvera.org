@@ -11,7 +11,7 @@ export default function Home({ sideNav }) {
   return (
     <>
       <HomeLayout>
-        <HeroSVC2023 />
+        <HomeHero />
         <BenefitHow />
         <Applications />
         <CommunityNewsEvents items={sideNav.slice(0, 5)} />
