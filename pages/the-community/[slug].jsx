@@ -4,6 +4,7 @@ import CommunityLeadership from "components/the-community/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
 import Faq from "components/the-community/Faq";
 import ServiceProviders from "components/the-community/ServiceProviders";
+import UserProfilesPage from "components/the-community/UserProfiles";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 
 /**
@@ -38,6 +39,17 @@ export default function TheCommunityPage({ content, frontmatter, slug }) {
   if (slug === "service-providers") {
     return (
       <ServiceProviders
+        config={CONFIG}
+        content={content}
+        frontmatter={frontmatter}
+      />
+    );
+  }
+
+  // User Profiles
+  if (slug === "samvera-user-profiles") {
+    return (
+      <UserProfilesPage
         config={CONFIG}
         content={content}
         frontmatter={frontmatter}

@@ -20,7 +20,6 @@ export default function ServiceProviders({ config, content, frontmatter }) {
       const entries = await contentful.getEntries({
         content_type: "serviceProviderProfile",
       });
-      console.log("entries", entries);
 
       if (!entries.items) {
         return console.error("Error getting entries.");
