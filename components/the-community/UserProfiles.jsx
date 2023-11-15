@@ -30,7 +30,6 @@ export default function UserProfilesPage({ config, content, frontmatter }) {
 
     fetchData();
   }, [contentful]);
-  console.log("userProfiles", userProfiles);
 
   return (
     <Layout title={`${frontmatter.title} - ${config.parentDirLabel} - Samvera`}>
