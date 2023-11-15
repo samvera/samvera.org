@@ -70,6 +70,7 @@ export async function getStaticProps() {
   let blogPosts = [];
 
   try {
+    // Get Blog Post paths from Contentful
     blogPosts = await contentful.getEntries({
       content_type: "blogPost",
     });
