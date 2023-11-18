@@ -1,18 +1,18 @@
+import MarkdownContent from "components/MarkdownContent";
 import React from "react";
 import RichTextContent from "components/RichTextContent";
 import TagCloud from "components/TagCloud";
 import { UserCircleIcon } from "@heroicons/react/20/solid";
 
-const BlogPostPreview = ({ post }) => {
-  const { content, image, publishDate, slug = "#", tag = [], title } = post;
-
-  // Convert this value: 2023-11-14T10:00+00:00 to this: November 14, 2023
-  const formattedDate = new Date(publishDate).toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
-
+const BlogPostPreview = ({
+  cmsContent,
+  image = null,
+  markdownContent,
+  publishDate,
+  slug = "#",
+  tag = [],
+  title,
+}) => {
   const imgSrc = image?.fields?.file?.url || "/images/1200px-Samvera_logo.png";
 
   return (
@@ -28,7 +28,7 @@ const BlogPostPreview = ({ post }) => {
       <div className="max-w-xl">
         <div className="flex items-center mt-8 text-xs gap-x-4">
           <time dateTime={publishDate} className="text-gray-500">
-            {formattedDate}
+            {publishDate}
           </time>
           {/* List tags */}
           <TagCloud tag={tag} />
@@ -41,7 +41,11 @@ const BlogPostPreview = ({ post }) => {
             </a>
           </h3>
           <div className="mt-5 text-sm leading-6 text-gray-600 [&>p]:line-clamp-6 [&>p]:pb-0">
-            <RichTextContent content={content.content[0]} />
+            {/* CMS content */}
+            {cmsContent && <RichTextContent content={cmsContent.content[0]} />}
+
+            {/* Markdown content */}
+            {markdownContent && <MarkdownContent content={markdownContent} />}
           </div>
         </div>
         <div className="relative flex items-center mt-8 gap-x-4">

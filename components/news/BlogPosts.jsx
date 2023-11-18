@@ -2,7 +2,7 @@ import BlogPostPreview from "./BlogPostPreview";
 
 export default function BlogPosts({ posts }) {
   return (
-    <div className="py-24 bg-white sm:py-12">
+    <div className="py-12 bg-white">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
