@@ -1,68 +1,49 @@
-import RichTextContent from "components/RichTextContent";
+import Date from "components/date";
+import { InformationCircleIcon } from "@heroicons/react/20/solid";
 import React from "react";
-import { UserCircleIcon } from "@heroicons/react/20/solid";
+import RichTextContent from "components/RichTextContent";
+import TagCloud from "components/TagCloud";
 
 const BlogPost = ({ post }) => {
-  const { content, image, publishDate, slug = "#", tag = [], title } = post;
-
-  // Convert this value: 2023-11-14T10:00+00:00 to this: November 14, 2023
-  const formattedDate = new Date(publishDate).toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
-
-  const imgSrc = image?.fields?.file?.url || "/images/1200px-Samvera_logo.png";
+  const { content, image, publishDate, slug, tag, title } = post;
+  const imageDescription = image?.fields?.description || image?.fields?.title;
 
   return (
-    <article className="flex flex-col items-start justify-between">
-      <div className="relative w-full">
-        <img
-          src={imgSrc}
-          alt={image?.fields?.title || "Samvera logo"}
-          className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-        />
-        <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-      </div>
-      <div className="max-w-xl">
-        <div className="flex items-center mt-8 text-xs gap-x-4">
-          <time dateTime={publishDate} className="text-gray-500">
-            {formattedDate}
-          </time>
-          {/* List tags */}
-          {tag.map((tag, index) => (
-            <span
-              key={index}
-              className="relative text-center z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-        <div className="relative group">
-          <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-            <a href={`news-and-events/${slug}`}>
-              <span className="absolute inset-0" />
-              {title}
-            </a>
-          </h3>
-          <div className="mt-5 text-sm leading-6 text-gray-600 [&>p]:line-clamp-6 [&>p]:pb-0">
-            <RichTextContent content={content.content[0]} />
-          </div>
-        </div>
-        <div className="relative flex items-center mt-8 gap-x-4">
-          <UserCircleIcon className="w-10 h-10 bg-gray-100 rounded-full" />
+    <div className="px-6 py-10 bg-white lg:px-8">
+      <div className="max-w-3xl mx-auto text-base leading-7 text-gray-700">
+        <p className="text-base font-semibold leading-7 text-samDarkRed">
+          <Date dateString={publishDate} />
+        </p>
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          {title}
+        </h1>
 
-          <div className="text-sm leading-6">
-            <p className="font-semibold text-gray-900">
-              <span className="absolute inset-0" />
-              Samvera.org Admin
-            </p>
-            <p className="text-gray-600">Contributor</p>
-          </div>
+        {image && (
+          <figure className="mt-8">
+            <img
+              className="object-cover aspect-video rounded-xl bg-gray-50"
+              src={image.fields.file.url}
+              alt={image.fields.title || image.fields.description}
+            />
+            {imageDescription && (
+              <figcaption className="flex mt-4 text-sm leading-6 text-gray-500 gap-x-2">
+                <InformationCircleIcon
+                  className="mt-0.5 h-5 w-5 flex-none text-gray-300"
+                  aria-hidden="true"
+                />
+                {imageDescription}
+              </figcaption>
+            )}
+          </figure>
+        )}
+
+        <div className="max-w-3xl mt-10">
+          <RichTextContent content={content} />
+          <h3 className="mt-10 mb-6">Tags</h3>
+          <TagCloud tag={tag} />
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

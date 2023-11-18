@@ -1,4 +1,4 @@
-import BlogPost from "./BlogPost";
+import BlogPostPreview from "./BlogPostPreview";
 
 export default function BlogPosts({ posts }) {
   return (
@@ -14,7 +14,7 @@ export default function BlogPosts({ posts }) {
         </div>
         <div className="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
-            <BlogPost key={post.sys.id} post={post.fields} />
+            <BlogPostPreview key={post.sys.id} post={post.fields} />
           ))}
         </div>
       </div>

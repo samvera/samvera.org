@@ -1,6 +1,10 @@
 import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
+import BlogPost from "components/news/BlogPost";
+import Breadcrumbs from "components/Breadcrumbs";
 import DynamicNewsContent from "components/layout/DynamicNewsContent";
+import Layout from "components/layout/Layout";
+import Main from "components/layout/Main";
 import { buildWorkOpenGraphData } from "lib/open-graph";
 import getContentful from "lib/get-contentful";
 
@@ -21,9 +25,28 @@ export default function NewsPage({ blogPost, markdownContent }) {
         frontmatter={markdownContent.frontmatter}
       />
     );
+  } else if (blogPost) {
+    return (
+      <Layout>
+        <Main>
+          <Breadcrumbs
+            items={[
+              {
+                href: `/${CONFIG.parentDir}`,
+                label: CONFIG.parentDirLabel,
+              },
+              {
+                label: blogPost.title,
+              },
+            ]}
+          />
+          <BlogPost post={blogPost} />
+        </Main>
+      </Layout>
+    );
+  } else {
+    return <p>Error retrieving blog post</p>;
   }
-
-  return <p>CMS Content goes here</p>;
 }
 
 export async function getStaticPaths() {
@@ -51,13 +74,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
+  let blogPost;
+  const contentful = getContentful();
+
+  // Get Markdown blog posts from file system
   const markdownContent =
     getMarkdownPageContent(`markdown/${CONFIG.parentDir}/${slug}.md`) || null;
-  let blogPost;
 
   try {
     // Get Blog Post by slug value from Contentful
-    const contentful = getContentful();
     const response = await contentful.getEntries({
       content_type: "blogPost",
       "fields.slug": slug,
