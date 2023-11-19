@@ -3,7 +3,7 @@ import Breadcrumbs from "components/Breadcrumbs";
 import Layout from "components/layout/Layout";
 import Main from "components/layout/Main";
 import { formatDateString } from "lib/date-helpers";
-import getContentful from "lib/get-contentful";
+import { getBlogPosts } from "lib/cms/get-blog-posts";
 import { getNewsPreviews } from "lib/markdown-helpers";
 
 const CONFIG = {
@@ -90,30 +90,12 @@ export default function NewsAndEventsPage({ blogPosts = [], previews }) {
 }
 
 export async function getStaticProps() {
-  const contentful = getContentful();
   const { previews } = getNewsPreviews();
   const subsetOfPreviews = previews.slice(0, 30);
-  let blogPosts = [];
 
-  try {
-    // Get Blog Post paths from Contentful
-    blogPosts = await contentful.getEntries({
-      content_type: "blogPost",
-    });
-
-    // Order by publish date
-    blogPosts.items.sort((a, b) => {
-      return new Date(b.fields.publishDate) - new Date(a.fields.publishDate);
-    });
-  } catch (e) {
-    return console.error("Error getting blogPosts.");
-  }
-
-  if (!blogPosts.items) {
-    return console.error("Error getting blogPosts.");
-  }
+  const blogPosts = await getBlogPosts();
 
   return {
-    props: { blogPosts: blogPosts.items, previews: subsetOfPreviews },
+    props: { blogPosts, previews: subsetOfPreviews },
   };
 }
