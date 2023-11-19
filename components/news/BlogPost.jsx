@@ -1,11 +1,12 @@
 import Date from "components/date";
 import { InformationCircleIcon } from "@heroicons/react/20/solid";
+import MarkdownContent from "components/MarkdownContent";
 import React from "react";
 import RichTextContent from "components/RichTextContent";
 import TagCloud from "components/TagCloud";
 
 const BlogPost = ({ post }) => {
-  const { content, image, publishDate, slug, tag, title } = post;
+  const { content, image, mdContent, publishDate, slug, tag, title } = post;
   const imageDescription = image?.fields?.description || image?.fields?.title;
 
   return (
@@ -14,7 +15,7 @@ const BlogPost = ({ post }) => {
         <p className="text-base font-semibold leading-7 text-samDarkRed">
           <Date dateString={publishDate} />
         </p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-samGreyDark sm:text-4xl">
           {title}
         </h1>
 
@@ -38,7 +39,12 @@ const BlogPost = ({ post }) => {
         )}
 
         <div className="max-w-3xl mt-10">
-          <RichTextContent content={content} />
+          {/* Render Markdown content if it exists */}
+          {mdContent && <MarkdownContent content={mdContent} />}
+
+          {/* Render CMS content if it exists */}
+          {content && <RichTextContent content={content} />}
+
           <h3 className="mt-10 mb-6">Tags</h3>
           <TagCloud tag={tag} />
         </div>

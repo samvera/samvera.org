@@ -2,7 +2,6 @@ import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 
 import BlogPost from "components/news/BlogPost";
 import Breadcrumbs from "components/Breadcrumbs";
-import DynamicNewsContent from "components/layout/DynamicNewsContent";
 import Layout from "components/layout/Layout";
 import Main from "components/layout/Main";
 import { buildWorkOpenGraphData } from "lib/open-graph";
@@ -17,36 +16,43 @@ const CONFIG = {
 };
 
 export default function NewsPage({ blogPost, markdownContent }) {
+  let post = {};
+  let blogPostTitle = "";
+
   if (markdownContent) {
-    return (
-      <DynamicNewsContent
-        config={CONFIG}
-        content={markdownContent.content}
-        frontmatter={markdownContent.frontmatter}
-      />
-    );
+    const { categories, date, title } = markdownContent.frontmatter;
+
+    post.mdContent = markdownContent.content;
+    post.publishDate = date;
+    post.tag = categories;
+    post.title = title;
+
+    blogPostTitle = title;
   } else if (blogPost) {
-    return (
-      <Layout>
-        <Main>
-          <Breadcrumbs
-            items={[
-              {
-                href: `/${CONFIG.parentDir}`,
-                label: CONFIG.parentDirLabel,
-              },
-              {
-                label: blogPost.title,
-              },
-            ]}
-          />
-          <BlogPost post={blogPost} />
-        </Main>
-      </Layout>
-    );
+    post = { ...blogPost };
+    blogPostTitle = blogPost.title;
   } else {
     return <p>Error retrieving blog post</p>;
   }
+
+  return (
+    <Layout>
+      <Main>
+        <Breadcrumbs
+          items={[
+            {
+              href: `/${CONFIG.parentDir}`,
+              label: CONFIG.parentDirLabel,
+            },
+            {
+              label: blogPostTitle,
+            },
+          ]}
+        />
+        <BlogPost post={post} />
+      </Main>
+    </Layout>
+  );
 }
 
 export async function getStaticPaths() {
@@ -74,10 +80,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  let blogPost;
+  let blogPost = null;
   const contentful = getContentful();
 
-  // Get Markdown blog posts from file system
+  // Get Markdown blog post from file system
   const markdownContent =
     getMarkdownPageContent(`markdown/${CONFIG.parentDir}/${slug}.md`) || null;
 

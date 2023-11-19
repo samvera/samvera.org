@@ -1,11 +1,7 @@
 import BlogPostPreview from "components/news/BlogPostPreview";
-import BlogPosts from "components/news/BlogPosts";
 import Breadcrumbs from "components/Breadcrumbs";
 import Layout from "components/layout/Layout";
-import Link from "next/link";
 import Main from "components/layout/Main";
-import MarkdownContent from "components/MarkdownContent";
-import NewsMeta from "components/news/Meta";
 import { formatDateString } from "lib/date-helpers";
 import getContentful from "lib/get-contentful";
 import { getNewsPreviews } from "lib/markdown-helpers";
@@ -16,7 +12,6 @@ const CONFIG = {
 };
 
 export default function NewsAndEventsPage({ blogPosts = [], previews }) {
-  console.log("blogPosts", blogPosts);
   return (
     <Layout>
       <Main>
