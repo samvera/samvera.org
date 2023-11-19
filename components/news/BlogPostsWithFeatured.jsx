@@ -10,8 +10,6 @@ const User = () => (
 );
 
 export default function BlogPostsWithFeatured({ blogPosts = [] }) {
-  console.log("blogPosts", blogPosts);
-
   if (blogPosts.length === 0) {
     return null;
   }

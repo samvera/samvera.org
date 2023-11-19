@@ -10,7 +10,7 @@ const BlogPost = ({ post }) => {
   const imageDescription = image?.fields?.description || image?.fields?.title;
 
   return (
-    <div className="px-6 py-10 bg-white lg:px-8">
+    <div className="px-6 py-10 mb-10 bg-white lg:px-8">
       <div className="max-w-3xl mx-auto text-base leading-7 text-gray-700">
         <p className="text-base font-semibold leading-7 text-samDarkRed">
           <Date dateString={publishDate} />
