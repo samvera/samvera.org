@@ -1,5 +1,4 @@
 import { AtIcon } from "pages/types-of-applications";
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import RichTextContent from "components/RichTextContent";
 
