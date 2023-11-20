@@ -1,16 +1,16 @@
 # Samvera Community Website
 
-This is a [NextJS framework](https://nextjs.org/) application which creates a static website powered by [markdown](https://www.markdownguide.org/getting-started/) files.
+This is a [NextJS framework](https://nextjs.org/) application which creates a static website powered by local [markdown](https://www.markdownguide.org/getting-started/) files and [Contentful CMS](https://www.contentful.com/).
 
 How do I use this app / code repository / website?
 
 ## Content managers
 
-If you are adding or updating content on the Samvera.org website, you'll only need to work with files in the `/markdown` folder.
+If you are adding or updating content on the Samvera.org website, you'll update files in this project's `/markdown` folder, or at [Contentful CMS](https://www.contentful.com/).
 
-### /markdown
+### Markdown
 
-This folder's content resembles the shape of the website's information architecture. Sub folders (like `/get-started`, `/the-community`, etc) match the primary navigation links.
+This project's `/markdown` folder content reflects the shape of the website's information architecture. Sub folders (like `/get-started`, `/the-community`, etc) match the primary navigation links.
 
 ![image](https://user-images.githubusercontent.com/3020266/186482460-51e7e89f-2ca5-4824-ba0a-22d41144a6ae.png)
 
@@ -18,7 +18,7 @@ Within each subfolder you'll find markdown files, which contain page content.
 
 To add a new page to the website, locate the folder (main nav link), where you want the new page to live, and create a new markdown file titled something which follows suit on sibling files. Ie. `/get-started/my-new-page.md`.
 
-### Front Matter
+#### Front Matter
 
 All site markdown files use the [Front Matter](https://www.npmjs.com/package/gray-matter) convention for providing some helpful metadata on our markdown files. So if we look at an existing file as an example...
 
@@ -39,29 +39,25 @@ date: "2016-12-05"
 
 Adjust these to taste.
 
-### How does the site update itself?
+#### Committing your updates
 
-(For now), site updates will follow a [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). The easiest way is to update directly in the Github repository UI.
+(For now), site updates will follow a [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Best practice is to create a new branch (from the `main` branch), make your edits, and create a PR (Pull request). Assign a member of the Samvera Community to review your PR. Once approved, merge your branch back into `main`. All commits to the `main` branch (our production branch), will trigger a new build of the website. Github Actions will also automatically deploy a public version of the website to: https://samvera-labs.github.io/samvera.org/.
 
-Say we want to update the FAQ page. Navigate to the file location `markdown/the-community/faq.md`, and click the "edit" icon
+### Contentful CMS
 
-![image](https://user-images.githubusercontent.com/3020266/186482791-22546553-7ece-49e7-80b1-8d4084b1f87c.png)
+The second method of updating site content is through the [Contentful](https://www.contentful.com/) headless CMS (Content Management System). This is a web-based interface that allows you to edit content in a more user-friendly way than editing markdown files. The CMS is currently used to provide data for the following pages/info on the site:
 
-Make whatever updates you want, and when finished we'll commit the changes. Best practice is to create a new branch (from the `main` branch) and create a PR (Pull request).
-
-![image](https://user-images.githubusercontent.com/3020266/186483252-62d0d302-eb83-4f48-abda-046ebcc7ce94.png)
-
-Once a pull request is opened, a reviewer will review. When approved, merge your branch back into `main`. All commits to the `main` branch (our production branch), will trigger a new build of the website. Github Actions will also automatically deploy a public version of the website to: https://samvera-labs.github.io/samvera.org/
-
-### Updating Samvera Partners
-
-There are some pieces of site information not easily updated via markdown files. Samvera Partners for one.
-
-![image](https://user-images.githubusercontent.com/3020266/186483776-96d3580c-49ba-4fda-96e7-d659ea832beb.png)
-
-To make updates to the list of Samvera Partners, open the file `/app-config.js` and you'll see a list of Samvera Partners and associated info.
+- Blog posts (https://samvera.org/news-and-events)
+- Samvera Partners (https://samvera.org/)
+- Examples and Demos (https://samvera.org/repository-solutions/examples-and-demos)
+- User Profiles (https://samvera.org/the-community/user-profiles)
+- Service Providers (https://samvera.org/the-community/service-providers)
+- FAQ (https://samvera.org/the-community/faq)
+- Samvera Adopters (https://samvera.org/the-community/samvera-adopters)
 
 ### Non-markdown driven pages
+
+_Note this content is currently in transition to Contentful CMS._
 
 #### The Community / Community Leadership
 
@@ -73,7 +69,7 @@ To update this file, open the `components/the-community/Faq.jsx` component and u
 
 ## Developers
 
-This is a [NextJS application](https://nextjs.org/) and follows normal NextJS conventions. To do some work on the site and run the app locally, clone this repository and run the following:
+This is a [NextJS application](https://nextjs.org/) and follows normal NextJS conventions. To run the app locally, clone this repository, open your terminal, and run the following commands:
 
 ```bash
 # PNPM (NPM alternative => https://pnpm.io/)
