@@ -1,19 +1,26 @@
-import Applications from "components/home/Applications";
+import ApplicationTypes from "components/home/ApplicationTypes";
 import BannerContact from "components/BannerContact";
 import BenefitHow from "components/home/BenefitHow";
 import BlogPostsWithFeatured from "components/news/BlogPostsWithFeatured";
 import Community from "components/home/Community";
 import HomeHero from "components/home/Hero";
 import HomeLayout from "components/home/Layout";
+import { getApplicationTypes } from "lib/cms/get-application-types";
 import { getBlogPosts } from "lib/cms/get-blog-posts";
+import { useQuery } from "@tanstack/react-query";
 
 export default function Home({ blogPosts }) {
+  const query = useQuery({
+    queryKey: ["applicationTypes"],
+    queryFn: getApplicationTypes,
+  });
+
   return (
     <>
       <HomeLayout>
         <HomeHero />
         <BlogPostsWithFeatured blogPosts={blogPosts} />
-        <Applications />
+        <ApplicationTypes applicationTypes={query.data} />
         <Community />
         <BannerContact />
         <BenefitHow />

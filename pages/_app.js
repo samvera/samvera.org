@@ -1,9 +1,13 @@
 import "../styles/global.css";
 
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
 import Head from "next/head";
 import { Open_Sans } from "next/font/google";
 import Script from "next/script";
 import { defaultOpenGraphData } from "lib/open-graph";
+
+const queryClient = new QueryClient();
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -37,7 +41,9 @@ export default function App({ Component, pageProps }) {
           `}
       </Script>
       <div className={`${openSans.variable}`}>
-        <Component {...pageProps} />
+        <QueryClientProvider client={queryClient}>
+          <Component {...pageProps} />
+        </QueryClientProvider>
       </div>
     </>
   );
