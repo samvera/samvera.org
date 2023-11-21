@@ -6,7 +6,32 @@ How do I use this app / code repository / website?
 
 ## Content managers
 
-If you are adding or updating content on the Samvera.org website, you'll update files in this project's `/markdown` folder, or at [Contentful CMS](https://www.contentful.com/).
+Adding or updating content to the Samvera.org website happens in one of two ways:
+
+1. At [Contentful CMS](https://www.contentful.com/)
+2. Update local project files in the `/markdown` folder
+
+### Contentful CMS
+
+The preferred method of updating site content is through the [Contentful](https://www.contentful.com/) headless CMS (Content Management System). This is a web-based interface that allows you to edit content in a more user-friendly way than editing markdown files. The CMS is currently used to provide data for the following pages/info on the site:
+
+- Blog posts (https://samvera.org/news-and-events)
+- Samvera Partners (https://samvera.org/)
+- Examples and Demos (https://samvera.org/repository-solutions/examples-and-demos)
+- User Profiles (https://samvera.org/the-community/user-profiles)
+- Service Providers (https://samvera.org/the-community/service-providers)
+- FAQ (https://samvera.org/the-community/faq)
+- Samvera Adopters (https://samvera.org/the-community/samvera-adopters)
+
+#### Blog Post updates
+
+Blog Posts (ie. News and Events) updated via Contentful are used to create dynamic individual pages at build time, since samvera.org is a static site (no server interaction). After creating or updating Blog Post content, you must manually trigger a re-deploy of the samvera.org site.
+
+1. Go to the Github Actions tab in the `samvera.org` repository.
+2. Click on "Deploy to GitHub Pages" in the left-hand column, under "Actions" / "All workflows".
+3. Click on "Run workflow" in the upper right-hand corner (see screenshot below):
+
+![image](https://github.com/samvera/samvera.org/assets/3020266/056d1558-216c-4bdd-aa43-adda71a9e6ac)
 
 ### Markdown
 
@@ -43,18 +68,6 @@ Adjust these to taste.
 
 (For now), site updates will follow a [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Best practice is to create a new branch (from the `main` branch), make your edits, and create a PR (Pull request). Assign a member of the Samvera Community to review your PR. Once approved, merge your branch back into `main`. All commits to the `main` branch (our production branch), will trigger a new build of the website. Github Actions will also automatically deploy a public version of the website to: https://samvera-labs.github.io/samvera.org/.
 
-### Contentful CMS
-
-The second method of updating site content is through the [Contentful](https://www.contentful.com/) headless CMS (Content Management System). This is a web-based interface that allows you to edit content in a more user-friendly way than editing markdown files. The CMS is currently used to provide data for the following pages/info on the site:
-
-- Blog posts (https://samvera.org/news-and-events)
-- Samvera Partners (https://samvera.org/)
-- Examples and Demos (https://samvera.org/repository-solutions/examples-and-demos)
-- User Profiles (https://samvera.org/the-community/user-profiles)
-- Service Providers (https://samvera.org/the-community/service-providers)
-- FAQ (https://samvera.org/the-community/faq)
-- Samvera Adopters (https://samvera.org/the-community/samvera-adopters)
-
 ### Non-markdown driven pages
 
 _Note this content is currently in transition to Contentful CMS._
@@ -79,6 +92,17 @@ pnpm dev
 # Or standard NPM
 npm install
 npm run dev
+```
+
+### CMS local dev setup
+
+If you're interested in running the app locally as a developer and working on pages which interact with Contentful CMS, you'll need to create a `.env.local` file in the project root. This file is ignored by git, so you'll need to create it yourself. The file should contain the following:
+
+```
+NEXT_PUBLIC_CONTENTFUL_SPACE_ID=gmxjheo1ix1o
+NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN=[TOKEN_GOES_HERE]
+
+Email adam.arling@northwestern.edu or Heather Greer Klein <heather@samvera.org> for access to the token
 ```
 
 ## Top level app overview
