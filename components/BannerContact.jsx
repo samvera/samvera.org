@@ -7,7 +7,7 @@ export default function BannerContact() {
 
   return (
     <section
-      className="bg-samGrey flex flex-col justify-center items-center text-white p-10 bg-fixed md:bg-[center_right] bg-center"
+      className="bg-samGrey flex flex-col justify-center items-center text-white p-10 pb-16 bg-fixed md:bg-[center_right] bg-center"
       style={{
         backgroundImage: `url(${prefix}/images/hydra-transparency.png)`,
       }}
