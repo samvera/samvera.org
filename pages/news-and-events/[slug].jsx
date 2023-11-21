@@ -94,7 +94,9 @@ export async function getStaticProps({ params: { slug } }) {
       "fields.slug": slug,
     });
     blogPost = response.items[0].fields;
-  } catch {}
+  } catch {
+    console.error("Error retrieving blog post from Contentful");
+  }
 
   const ogTitle = markdownContent
     ? markdownContent.frontmatter.title
@@ -103,7 +105,8 @@ export async function getStaticProps({ params: { slug } }) {
   const openGraphData = buildWorkOpenGraphData(
     CONFIG.parentDirLabel,
     ogTitle,
-    `${CONFIG.parentDir}/${slug}`
+    `${CONFIG.parentDir}/${slug}`,
+    blogPost?.image?.fields?.file?.url
   );
 
   return {

@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>{ogData["og:title"]}</title>
         {/* Add Open Graph <meta></meta> tags here */}
         {Object.keys(ogData).map((key) => (
           // @ts-ignore

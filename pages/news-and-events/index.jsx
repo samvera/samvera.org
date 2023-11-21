@@ -95,7 +95,13 @@ export async function getStaticProps() {
 
   const blogPosts = await getBlogPosts();
 
+  const openGraphData = {
+    "og:title": "News and Events - Samvera",
+    "og:description":
+      "Learn about the latest News and Events in the Samvera Community.",
+  };
+
   return {
-    props: { blogPosts, previews: subsetOfPreviews },
+    props: { blogPosts, openGraphData, previews: subsetOfPreviews },
   };
 }

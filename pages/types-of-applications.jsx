@@ -3,7 +3,6 @@ import {
   BriefcaseIcon,
   BuildingLibraryIcon,
   CheckBadgeIcon,
-  CheckCircleIcon,
   CircleStackIcon,
   CloudArrowUpIcon,
   SpeakerWaveIcon,
