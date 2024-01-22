@@ -3,19 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build && next export",
     "build-site-nav": "node lib/build-nav.js",
-    "start": "next start",
+    "ci-test": "jest",
+    "depcheck": "npx depcheck --ignores=app-config,autoprefixer,components,fixtures,jest-environment-jsdom,lib,pages,prefix,postcss,site-navigation",
+    "dev": "next dev",
     "lint": "next lint",
-    "test": "jest --watch",
-    "ci-test": "jest"
+    "start": "next start",
+    "test": "jest --watch"
   },
   "dependencies": {
     "-": "^0.0.1",
     "@contentful/rich-text-from-markdown": "^15.16.9",
     "@contentful/rich-text-react-renderer": "^15.19.0",
-    "@contentful/rich-text-types": "^16.3.0",
     "@headlessui/react": "^1.7.18",
     "@headlessui/tailwindcss": "^0.2.0",
     "@heroicons/react": "^2.1.1",
