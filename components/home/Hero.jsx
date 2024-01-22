@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { prefix } from "prefix";
-import svc2023 from "../../public/images/samvera-connect-2023.png";
 import groupPhoto from "../../public/images/washu-samvera-group.jpeg";
 
 export default function HomeHero() {
@@ -31,12 +29,9 @@ export default function HomeHero() {
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <Link
-                className="button-inverted"
-                href="/repository-solutions/applications-demos"
-              >
+              <a className="button-inverted" href="#applications">
                 Learn more
-              </Link>
+              </a>
             </div>
           </div>
         </div>
