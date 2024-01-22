@@ -21,8 +21,8 @@ const newsNavigation = [
       },
       {
         label: "Samvera calendar",
-        href: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/433553767/Samvera+Events+Calendar",
-        isExternal: true,
+        href: "/news-and-events/calendar",
+        isExternal: false,
       },
       {
         label: "Samvera Connect 2023 Conference",
