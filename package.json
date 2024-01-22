@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
     "build-site-nav": "node lib/build-nav.js",
     "ci-test": "jest",
     "depcheck": "npx depcheck --ignores=app-config,autoprefixer,components,fixtures,jest-environment-jsdom,lib,pages,prefix,postcss,site-navigation",
