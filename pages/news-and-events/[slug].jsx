@@ -93,9 +93,11 @@ export async function getStaticProps({ params: { slug } }) {
       content_type: "blogPost",
       "fields.slug": slug,
     });
-    blogPost = response.items[0].fields;
+    if (response.total > 0) {
+      blogPost = response.items[0].fields;
+    }
   } catch {
-    console.error("Error retrieving blog post from Contentful");
+    console.error(`Error retrieving blog post: ${slug} from Contentful`);
   }
 
   const ogTitle = markdownContent

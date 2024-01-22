@@ -3,7 +3,7 @@ import { prefix } from "prefix";
 
 export default function Document() {
   return (
-    <Html>
+    <Html className="scroll-smooth">
       <Head>
         <style
           dangerouslySetInnerHTML={{
