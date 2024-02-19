@@ -19,10 +19,6 @@ export default function Layout({ children, title }) {
         <Head>
           <title>{title}</title>
           <meta name="description" content={description} />
-          <meta name="theme-color" content="#121212" />
-          <link rel="icon" href={`${prefix}/images/favicon.ico`} />
-          <link rel="canonical" href="https://samvera.org/" />
-          <meta name="twitter:card" content="summary_large_image" />
         </Head>
       </Head>
       <HeaderNew />
