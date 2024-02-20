@@ -3,6 +3,7 @@ import { getMarkdownPageContent, getPaths } from "lib/markdown-helpers";
 import CommunityLeadership from "components/the-community/CommunityLeadership";
 import DynamicPage from "components/layout/DynamicPage";
 import Faq from "components/the-community/Faq";
+import SamveraPartners from "components/the-community/Partners";
 import ServiceProviders from "components/the-community/ServiceProviders";
 import UserProfilesPage from "components/the-community/UserProfiles";
 import { buildWorkOpenGraphData } from "lib/open-graph";
@@ -33,6 +34,17 @@ export default function TheCommunityPage({ content, frontmatter, slug }) {
   // FAQ page
   if (slug === "faq") {
     return <Faq config={CONFIG} content={content} frontmatter={frontmatter} />;
+  }
+
+  // Samvera Partners
+  if (slug === "samvera-partners") {
+    return (
+      <SamveraPartners
+        config={CONFIG}
+        content={content}
+        frontmatter={frontmatter}
+      />
+    );
   }
 
   // Service Providers
