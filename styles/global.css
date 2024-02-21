@@ -55,6 +55,10 @@ strong {
   @apply font-fontinBold;
 }
 
+hr {
+  @apply my-8;
+}
+
 .ul-disc {
   @apply ml-4 list-disc;
 }

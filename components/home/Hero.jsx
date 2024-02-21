@@ -30,7 +30,7 @@ export default function HomeHero() {
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a className="button-inverted" href="#applications">
-                Learn more
+                Learn More About Samvera
               </a>
             </div>
           </div>
