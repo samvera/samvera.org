@@ -19,5 +19,3 @@ Partnership is earned by actively contributing to the Community. Partners:
 
 **Lead.** Help lead the way by participating in the governance of Samvera. Partners may provide input on the Community and technical direction up to the highest levels, and represent Samvera to the broader community. Partners have the right to nominate persons for election to the Samvera Board of Directors.
 
-<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1kLOr2tK3nZyuc49AInv_CtjwF30CzSGT" width="100%" height="600"></iframe>
-
