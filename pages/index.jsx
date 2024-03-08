@@ -19,7 +19,6 @@ export default function Home({ blogPosts }) {
   return (
     <>
       <HomeLayout>
-        <HomeHero />
         <FeaturedAppsSlider />
         <BlogPostsWithFeatured blogPosts={blogPosts} />
         <ApplicationTypes applicationTypes={query.data} />

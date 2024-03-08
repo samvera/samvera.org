@@ -1,29 +1,23 @@
-import "pure-react-carousel/dist/react-carousel.es.css";
+import React, { useEffect, useRef } from "react";
 
-import {
-  ButtonBack,
-  ButtonNext,
-  CarouselProvider,
-  Slide,
-  Slider,
-} from "pure-react-carousel";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-
-import Image from "next/image";
 import MockTailwindBanner from "./MockTailwindBanner";
-import React from "react";
 import avalonLogo from "/assets/featured-repo-banners/logo-avalon.png";
+import avalonScreen from "/assets/featured-repo-banners/avalon.png";
+import cloverIIIFSceen from "/assets/featured-repo-banners/clover-iiif.png";
+import cloverLogo from "/assets/featured-repo-banners/clover-iiif.svg";
 import hykuLogo from "/assets/featured-repo-banners/logo-hyku.png";
-import hykuSceen from "/assets/featured-repo-banners/hyku1.png";
+import hykuSceen from "/assets/featured-repo-banners/hyku2.png";
 import hyraxLogo from "/assets/featured-repo-banners/logo-hyrax.png";
-import logo from "/assets/featured-repo-banners/logo-serverless-iiif.svg";
+import hyraxSceen from "/assets/featured-repo-banners/hyrax2.png";
 import { registerSwiper } from "lib/swiper";
+import serverlessIIIFSceen from "/assets/featured-repo-banners/serverless-iiif.png";
+import serverlessLogo from "/assets/featured-repo-banners/logo-serverless-iiif.svg";
 
 registerSwiper();
 
 const slides = [
   {
-    bgImg: hykuSceen,
+    bgImg: avalonScreen,
     description:
       "Avalon Media System is a free, open source software system for managing and providing access to large collections of digital audio and video.",
     githubUrl: "https://github.com/avalonmediasystem/avalon/",
@@ -34,13 +28,14 @@ const slides = [
     version: "7.7",
   },
   {
-    bgImg: hykuSceen,
-    description: "",
-    githubUrl: "#",
-    headline: "",
-    logo: hyraxLogo,
+    bgImg: cloverIIIFSceen,
+    description:
+      "Extensible IIIF front-end toolkit and Manifest viewer. Accessible. Composable. Open Source.",
+    githubUrl: "https://github.com/samvera-labs/clover-iiif",
+    headline: "Showcase IIIF Manifests as interoperable web content",
+    logo: cloverLogo,
     name: "Clover IIIF",
-    url: "",
+    url: "https://samvera-labs.github.io/clover-iiif/",
     version: "2.3.1",
   },
   {
@@ -55,35 +50,65 @@ const slides = [
     version: "7.7",
   },
   {
-    bgImg: hykuSceen,
-    description: "",
-    githubUrl: "#",
-    headline: "",
+    bgImg: hyraxSceen,
+    description:
+      "Hyrax is a repository solution that allows deposit of content via configurable workflows; description with customizable metadata; and user-level control over that content.",
+    githubUrl: "https://github.com/samvera/hyrax",
+    headline: "An open-source, Samvera-powered repository front-end",
     logo: hyraxLogo,
     name: "Hyrax",
-    url: "",
-    version: "1.2.3",
+    url: "https://hyrax.samvera.org/",
+    version: "5.0.0",
   },
   {
-    bgImg: hykuSceen,
-    description: "",
-    githubUrl: "#",
-    headline: "",
-    logo: hyraxLogo,
+    bgImg: serverlessIIIFSceen,
+    description:
+      "A cost-effective, infinitely scalable IIIF Image API v2.1 and v3.0 compliant service packaged as an AWS Serverless Application with minimum setup and no maintenance. Suitable for large institutional collections or small digital humanities projects. ",
+    githubUrl: "https://github.com/samvera/serverless-iiif",
+    headline: "Fast, zoomable images without servers",
+    logo: serverlessLogo,
     name: "Serverless IIIF",
-    url: "",
-    version: "1.2.3",
+    url: "https://samvera.github.io/serverless-iiif/",
+    version: "5.0.2",
   },
 ];
 
 const FeaturedAppsSlider = () => {
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const params = {
+      injectStyles: [
+        `
+        @media (max-width: 640px) {
+          .swiper-button-next svg,
+          .swiper-button-prev svg {
+            display: none;
+          }
+        }
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+      color: #383d3b
+    }
+      `,
+      ],
+    };
+
+    Object.assign(swiperRef.current, params);
+    swiperRef.current.initialize();
+  }, []);
+
   return (
-    <section className="mt-10">
+    <section className="">
       <swiper-container
+        init="false"
+        ref={swiperRef}
         autoplay="true"
         loop="true"
+        navigation="true"
         slides-per-view="1"
-        speed="500"
+        speed="2000"
       >
         {slides.map((slide) => (
           <swiper-slide key={slide.name}>
@@ -91,50 +116,6 @@ const FeaturedAppsSlider = () => {
           </swiper-slide>
         ))}
       </swiper-container>
-      {/* <CarouselProvider
-        infinite={true}
-        interval={3000}
-        isPlaying={true}
-        naturalSlideWidth={16}
-        naturalSlideHeight={12}
-        totalSlides={slides.length}
-        visibleSlides={1}
-      >
-        <div className="grid grid-cols-12 pb-10 border-b border-gray-200">
-          <div className="flex flex-col justify-center col-span-1 justify-self-start">
-            <ButtonBack className="p-0 ml-5">
-              <ChevronLeftIcon className="w-8 h-8" />
-            </ButtonBack>
-          </div>
-          <div className="col-span-10">
-            <Slider>
-              {slides.map(({ bgImg, alt, description, logo }, index) => (
-                <Slide key={index} index={index}></Slide>
-              ))}
-            </Slider>
-          </div>
-
-          <div className="flex flex-col justify-center col-span-1 justify-self-end">
-            <ButtonNext className="p-0 mr-5">
-              <ChevronRightIcon className="w-8 h-8" />
-            </ButtonNext>
-          </div>
-        </div>
-      </CarouselProvider> */}
-
-      {/* <div className="relative flex flex-col justify-end isolate aspect-video">
-        <Image
-          src={hykuSceen}
-          alt={"hey"}
-          className="absolute inset-0 object-cover w-full h-full -z-10"
-        />
-        <div className="absolute bottom-0 w-full bg-white h-2/3 bg-gradient-to-b from-transparent to-white bg-opacity-20"></div>
-        <p className="relative z-10 max-w-lg mx-auto mt-3 text-lg text-center ">
-          Avalon Media System is a free, open source software system for
-          managing and providing access to large collections of digital audio
-          and video.
-        </p>
-      </div> */}
     </section>
   );
 };

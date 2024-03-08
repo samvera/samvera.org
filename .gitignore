@@ -25,3 +25,4 @@ yarn-debug.log*
 yarn-error.log*
 
 /assets/featured-app-banners.psd
+/assets/featured-repo-banners/application-screenshots.psd

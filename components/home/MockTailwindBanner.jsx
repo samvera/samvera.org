@@ -1,21 +1,23 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import hykuLogo from "/assets/featured-repo-banners/logo-hyku.png";
-import hykuSceen from "/assets/featured-repo-banners/hyku1.png";
+import clsx from "clsx";
 
 export default function MockTailwindBanner({ banner }) {
   const { bgImg, description, githubUrl, headline, logo, name, url, version } =
     banner;
 
+  const isSvgLogo = logo?.src.endsWith(".svg");
+
   return (
     <div className="bg-white">
-      <div className="relative overflow-hidden isolate bg-gradient-to-b from-indigo-100/20">
-        <div className="pt-10 pb-24 mx-auto max-w-7xl sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+      <div className="relative overflow-hidden isolate bg-gradient-to-b from-samBlue-100/20">
+        <div className="pt-10 pb-24 mx-auto max-w-7xl sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="max-w-2xl mx-auto">
               <div className="max-w-lg">
+                {/* Logo */}
                 <Image
-                  className="w-auto max-h-20"
+                  className={clsx(`w-auto max-h-20`, isSvgLogo && "max-h-10")}
                   src={logo}
                   alt={`${name} logo`}
                 />
@@ -33,10 +35,10 @@ export default function MockTailwindBanner({ banner }) {
                     </span>
                   </a>
                 </div>
-                <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className="mt-10 text-4xl font-bold tracking-tight text-samGreyDark sm:text-6xl">
                   {headline}
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-lg leading-8 text-samGrey">
                   {description}
                 </p>
                 <div className="flex items-center mt-10 gap-x-6">
