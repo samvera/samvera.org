@@ -4,14 +4,12 @@ import MockTailwindBanner from "./MockTailwindBanner";
 import avalonLogo from "/assets/featured-repo-banners/logo-avalon.png";
 import avalonScreen from "/assets/featured-repo-banners/avalon.png";
 import cloverIIIFSceen from "/assets/featured-repo-banners/clover-iiif.png";
-import cloverLogo from "/assets/featured-repo-banners/clover-iiif.svg";
 import hykuLogo from "/assets/featured-repo-banners/logo-hyku.png";
 import hykuSceen from "/assets/featured-repo-banners/hyku2.png";
 import hyraxLogo from "/assets/featured-repo-banners/logo-hyrax.png";
 import hyraxSceen from "/assets/featured-repo-banners/hyrax2.png";
 import { registerSwiper } from "lib/swiper";
 import serverlessIIIFSceen from "/assets/featured-repo-banners/serverless-iiif.png";
-import serverlessLogo from "/assets/featured-repo-banners/logo-serverless-iiif.svg";
 
 registerSwiper();
 
@@ -33,7 +31,7 @@ const slides = [
       "Extensible IIIF front-end toolkit and Manifest viewer. Accessible. Composable. Open Source.",
     githubUrl: "https://github.com/samvera-labs/clover-iiif",
     headline: "Showcase IIIF Manifests as interoperable web content",
-    logo: cloverLogo,
+    logo: null,
     name: "Clover IIIF",
     url: "https://samvera-labs.github.io/clover-iiif/",
     version: "2.3.1",
@@ -66,7 +64,7 @@ const slides = [
       "A cost-effective, infinitely scalable IIIF Image API v2.1 and v3.0 compliant service packaged as an AWS Serverless Application with minimum setup and no maintenance. Suitable for large institutional collections or small digital humanities projects. ",
     githubUrl: "https://github.com/samvera/serverless-iiif",
     headline: "Fast, zoomable images without servers",
-    logo: serverlessLogo,
+    logo: null,
     name: "Serverless IIIF",
     url: "https://samvera.github.io/serverless-iiif/",
     version: "5.0.2",

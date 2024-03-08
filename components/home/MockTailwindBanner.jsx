@@ -1,12 +1,17 @@
+import { LogoCloverIIIF, LogoServerlessIIIF } from "components/home/SVGLogos";
+
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import clsx from "clsx";
+
+function LogoWrapper({ children }) {
+  return <div className="flex items-center justify-start h-20">{children}</div>;
+}
 
 export default function MockTailwindBanner({ banner }) {
   const { bgImg, description, githubUrl, headline, logo, name, url, version } =
     banner;
 
-  const isSvgLogo = logo?.src.endsWith(".svg");
+  const isSvgLogo = ["Clover IIIF", "Serverless IIIF"].includes(name);
 
   return (
     <div className="bg-white">
@@ -16,11 +21,22 @@ export default function MockTailwindBanner({ banner }) {
             <div className="max-w-2xl mx-auto">
               <div className="max-w-lg">
                 {/* Logo */}
-                <Image
-                  className={clsx(`w-auto max-h-20`, isSvgLogo && "max-h-10")}
-                  src={logo}
-                  alt={`${name} logo`}
-                />
+                {isSvgLogo ? (
+                  <LogoWrapper>
+                    {name === "Clover IIIF" ? (
+                      <LogoCloverIIIF />
+                    ) : (
+                      <LogoServerlessIIIF />
+                    )}
+                  </LogoWrapper>
+                ) : (
+                  <Image
+                    className={`w-auto h-20`}
+                    src={logo}
+                    alt={`${name} logo`}
+                  />
+                )}
+
                 <div className="mt-24 sm:mt-32 lg:mt-16">
                   <a href="#" className="inline-flex space-x-6">
                     <span className="px-3 py-1 text-sm font-semibold leading-6 rounded-full text-samGrey bg-samGrey/10 ring-1 ring-inset ring-samGrey/10">
