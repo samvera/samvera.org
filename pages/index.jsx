@@ -3,6 +3,7 @@ import BannerContact from "components/BannerContact";
 import BenefitHow from "components/home/BenefitHow";
 import BlogPostsWithFeatured from "components/news/BlogPostsWithFeatured";
 import Community from "components/home/Community";
+import FeaturedAppsSlider from "components/home/FeaturedAppsSlider";
 import HomeHero from "components/home/Hero";
 import HomeLayout from "components/home/Layout";
 import { getApplicationTypes } from "lib/cms/get-application-types";
@@ -19,6 +20,7 @@ export default function Home({ blogPosts }) {
     <>
       <HomeLayout>
         <HomeHero />
+        <FeaturedAppsSlider />
         <BlogPostsWithFeatured blogPosts={blogPosts} />
         <ApplicationTypes applicationTypes={query.data} />
         <Community />
