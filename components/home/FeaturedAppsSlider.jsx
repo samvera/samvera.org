@@ -75,7 +75,11 @@ const FeaturedAppsSlider = () => {
   const swiperRef = useRef(null);
 
   useEffect(() => {
+    const refCurrent = swiperRef.current;
     const params = {
+      autoplay: {
+        delay: 6000,
+      },
       injectStyles: [
         `
         @media (max-width: 640px) {
@@ -85,28 +89,60 @@ const FeaturedAppsSlider = () => {
           }
         }
 
-    .swiper-button-next svg,
-    .swiper-button-prev svg {
-      color: #383d3b
-    }
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+          color: #383d3b
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: #383d3b;
+        }
+
+        swiper-slide {
+          user-select: auto !important;
+          -webkit-user-select: auto !important;
+          -moz-user-select: auto !important;
+          -ms-user-select: auto !important;
+        }
       `,
       ],
     };
 
-    Object.assign(swiperRef.current, params);
-    swiperRef.current.initialize();
+    Object.assign(refCurrent, params);
+    refCurrent.initialize();
+
+    refCurrent.addEventListener("click", handleSlideClick);
+
+    return () => {
+      refCurrent.removeEventListener("click", handleSlideClick);
+    };
   }, []);
+
+  function handleSlideClick(pointerEvent) {
+    const clickedOnSelectableText =
+      pointerEvent.target.className.includes("swiper-no-swiping");
+
+    if (clickedOnSelectableText) return;
+
+    const swiper = swiperRef.current.swiper;
+    const clickedOnLeftHalf = pointerEvent.x < swiper.width / 2;
+
+    if (clickedOnLeftHalf) {
+      swiper.slidePrev();
+    } else {
+      swiper.slideNext();
+    }
+  }
 
   return (
     <section className="">
       <swiper-container
         init="false"
         ref={swiperRef}
-        autoplay="true"
         loop="true"
-        navigation="true"
+        pagination="true"
         slides-per-view="1"
-        speed="2000"
+        speed="1500"
       >
         {slides.map((slide) => (
           <swiper-slide key={slide.name}>

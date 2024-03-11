@@ -38,7 +38,7 @@ export default function MockTailwindBanner({ banner }) {
                 )}
 
                 <div className="mt-24 sm:mt-32 lg:mt-16">
-                  <a href="#" className="inline-flex space-x-6">
+                  <a href={githubUrl} className="inline-flex space-x-6">
                     <span className="px-3 py-1 text-sm font-semibold leading-6 rounded-full text-samGrey bg-samGrey/10 ring-1 ring-inset ring-samGrey/10">
                       Whats new
                     </span>
@@ -51,10 +51,10 @@ export default function MockTailwindBanner({ banner }) {
                     </span>
                   </a>
                 </div>
-                <h1 className="mt-10 text-4xl font-bold tracking-tight text-samGreyDark sm:text-6xl">
+                <h1 className="mt-10 text-4xl font-bold tracking-tight text-samGreyDark sm:text-6xl swiper-no-swiping">
                   {headline}
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-samGrey">
+                <p className="mt-6 text-lg leading-8 text-samGrey swiper-no-swiping">
                   {description}
                 </p>
                 <div className="flex items-center mt-10 gap-x-6">
