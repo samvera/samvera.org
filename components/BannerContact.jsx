@@ -1,3 +1,4 @@
+import FadeIn from "components/FadeIn";
 import React from "react";
 import { prefix } from "prefix";
 import { useRouter } from "next/router";
@@ -6,8 +7,9 @@ export default function BannerContact() {
   const router = useRouter();
 
   return (
-    <section
+    <FadeIn
       className="bg-samGrey flex flex-col justify-center items-center text-white p-10 pb-16 bg-fixed md:bg-[center_right] bg-center"
+      component="section"
       style={{
         backgroundImage: `url(${prefix}/images/hydra-transparency.png)`,
       }}
@@ -21,6 +23,6 @@ export default function BannerContact() {
       >
         Contact Us
       </button>
-    </section>
+    </FadeIn>
   );
 }

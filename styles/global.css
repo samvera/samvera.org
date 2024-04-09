@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .button {
+    @apply flex items-center justify-center w-full px-8 py-3 transition duration-300 ease-in-out border border-transparent rounded-md md:w-auto font-fontinBold text-samGreyDark hover:text-samGreyDark bg-samBlue hover:bg-samBlueLight md:py-4 md:text-lg md:px-10;
+  }
+}
+
 a {
   @apply transition-all duration-300 ease-in-out;
 }
-main button,
-.button {
-  /* @apply inline-block px-8 py-3 text-center uppercase font-fontinBold bg-samBlue text-samGreyDark; */
-  @apply flex items-center justify-center w-full px-8 py-3 transition duration-300 ease-in-out border border-transparent rounded-md md:w-auto font-fontinBold text-samGreyDark hover:text-samGreyDark bg-samBlue hover:bg-samBlueLight md:py-4 md:text-lg md:px-10;
+
+main button {
+  @apply button;
+}
+
+.button-small {
+  @apply px-6 py-2 text-sm button;
 }
 .button-inverted {
   @apply bg-white button hover:text-samGreyDark hover:bg-samBlueLight !important;

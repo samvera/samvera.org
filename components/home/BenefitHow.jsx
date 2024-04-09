@@ -1,8 +1,9 @@
+import FadeIn from "components/FadeIn";
 import React from "react";
 
 export default function BenefitHow() {
   return (
-    <section className="bg-none md:bg-benefit-how">
+    <FadeIn component="section" className="bg-none md:bg-benefit-how">
       <div className="container max-w-full px-0 md:px-4">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div className="p-10">
@@ -65,6 +66,6 @@ export default function BenefitHow() {
           </div>
         </div>
       </div>
-    </section>
+    </FadeIn>
   );
 }

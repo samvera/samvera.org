@@ -151,7 +151,7 @@ export default function HeaderNew() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <img
-              className="w-auto h-16"
+              className="w-auto h-12"
               src={`${prefix}/images/samvera-logo-tm.svg`}
               alt="Samvera Logo"
             />
@@ -218,7 +218,7 @@ export default function HeaderNew() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <img
-                className="w-auto h-16"
+                className="w-auto h-12"
                 src={`${prefix}/images/samvera-logo-tm.svg`}
                 alt="Samvera Logo"
               />
