@@ -1,14 +1,15 @@
+import FadeIn from "components/FadeIn";
 import Link from "next/link";
 
 export default function Community() {
   return (
-    <div className="bg-white">
+    <FadeIn className="bg-white">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             The Samvera Community
           </h2>
-          <div className="mt-6 text-lg leading-8 text-gray-600">
+          <div className="mt-6 leading-8 text-gray-600 lg:text-lg">
             <p>
               Samvera is not (and has never been) grant funded. It is
               distributed, robust and open. The Samvera Community&nbsp;was
@@ -36,6 +37,6 @@ export default function Community() {
           </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }

@@ -1,3 +1,4 @@
+import FadeIn from "components/FadeIn";
 import RichTextContent from "components/RichTextContent";
 import { UserCircleIcon } from "@heroicons/react/20/solid";
 import { formatDateString } from "lib/date-helpers";
@@ -17,7 +18,7 @@ export default function BlogPostsWithFeatured({ blogPosts = [] }) {
   const featuredPost = blogPosts[0].fields;
 
   return (
-    <div className="py-24 bg-white sm:py-32">
+    <FadeIn className="py-24 bg-gray-50 sm:py-28">
       <div className="grid grid-cols-1 px-6 mx-auto max-w-7xl gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
         <article className="w-full max-w-2xl mx-auto lg:mx-0 lg:max-w-lg">
           <time
@@ -91,6 +92,6 @@ export default function BlogPostsWithFeatured({ blogPosts = [] }) {
           </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }

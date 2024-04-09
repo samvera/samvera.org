@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import Breadcrumbs from "components/Breadcrumbs";
 import Layout from "../layout/Layout";
 import Main from "components/layout/Main";

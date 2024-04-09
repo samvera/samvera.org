@@ -1,12 +1,14 @@
 import { AtIcon } from "pages/types-of-applications";
+import FadeIn from "components/FadeIn";
 import Link from "next/link";
 import RichTextContent from "components/RichTextContent";
+import { motion } from "framer-motion";
 
 export default function ApplicationTypes({ applicationTypes = [] }) {
   return (
     <div className="py-24 bg-samGreyDark sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
-        <div className="max-w-2xl mx-auto lg:text-center">
+        <FadeIn className="max-w-2xl mx-auto lg:text-center">
           <h2
             id="applications"
             className="text-base font-semibold leading-7 text-samBlue"
@@ -17,29 +19,20 @@ export default function ApplicationTypes({ applicationTypes = [] }) {
             Types of Applications powered by Samvera Community technology
             solutions
           </p>
-          {/* <p className="mt-6 text-lg leading-8 text-gray-300">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
-          </p> */}
-        </div>
+        </FadeIn>
         <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {applicationTypes.map((at) => {
               const { title, description } = at.fields;
 
               return (
-                <div key={at.sys.id} className="flex flex-col">
+                <FadeIn key={at.sys.id} className="flex flex-col">
                   <dt className="flex items-center text-base font-semibold leading-7 text-white gap-x-3">
                     <AtIcon
                       atId={at.sys.id}
                       className="flex-none w-5 h-5 text-samBlue"
                       aria-hidden="true"
                     />
-                    {/* <CheckCircleIcon
-                      className="flex-none w-5 h-5 text-samBlue"
-                      aria-hidden="true"
-                    /> */}
                     {title}
                   </dt>
                   <dd className="flex flex-col flex-auto mt-4 text-base leading-7 text-gray-300">
@@ -55,7 +48,7 @@ export default function ApplicationTypes({ applicationTypes = [] }) {
                       </Link>
                     </p>
                   </dd>
-                </div>
+                </FadeIn>
               );
             })}
           </dl>

@@ -1,6 +1,6 @@
+import FadeIn from "components/FadeIn";
 import PartnersMap from "./PartnersMap";
 import React from "react";
-import getContentful from "lib/get-contentful";
 import { useRouter } from "next/router";
 import useSamveraPartners from "hooks/use-samvera-partners";
 
@@ -12,7 +12,7 @@ export default function BannerPartners() {
 
   return (
     <>
-      <section className="py-8 bg-samBlue">
+      <FadeIn component="section" className="py-8 bg-samBlue">
         <h3 className="pb-4 text-center title">Samvera Partners</h3>
         <div className="container">
           <ul className="grid grid-cols-2 gap-4 ml-0 list-none lg:gap-6 lg:px-10 md:grid-cols-3 xl:grid-cols-4 ">
@@ -33,7 +33,7 @@ export default function BannerPartners() {
             ))}
           </ul>
         </div>
-      </section>
+      </FadeIn>
 
       {isHomePage && <PartnersMap partners={partners} />}
     </>
