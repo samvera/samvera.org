@@ -72,7 +72,7 @@ const FeaturedAppsSlider = () => {
   }
 
   return (
-    <section className="mb-5 min-h-[80vh]">
+    <section className="mb-5">
       <swiper-container
         init="false"
         ref={swiperRef}
