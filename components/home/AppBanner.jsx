@@ -71,11 +71,18 @@ export default function AppBanner({ banner }) {
                   {description}
                 </p>
                 <div className="flex items-center mt-8 gap-x-6">
-                  <a href={url} className="button">
+                  <a
+                    href={url}
+                    className="button"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     Documentation
                   </a>
                   <a
                     href={githubUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
