@@ -43,41 +43,20 @@ const FeaturedAppsSlider = () => {
         }
       `,
       ],
+      pagination: {
+        clickable: true,
+      },
     };
 
     Object.assign(refCurrent, params);
     refCurrent.initialize();
-    refCurrent.addEventListener("click", handleSlideClick);
-
-    // Clean up, avoid memory leaks
-    return () => {
-      refCurrent.removeEventListener("click", handleSlideClick);
-    };
   }, []);
-
-  function handleSlideClick(pointerEvent) {
-    const clickedOnSelectableText =
-      pointerEvent.target.className.includes("swiper-no-swiping");
-
-    if (clickedOnSelectableText) return;
-
-    const swiper = swiperRef.current.swiper;
-    const clickedOnLeftHalf = pointerEvent.x < swiper.width / 2;
-
-    if (clickedOnLeftHalf) {
-      swiper.slidePrev();
-    } else {
-      swiper.slideNext();
-    }
-  }
 
   return (
     <section className="mb-5">
       <swiper-container
         init="false"
         ref={swiperRef}
-        loop="true"
-        pagination="true"
         slides-per-view="1"
         speed="1500"
       >
