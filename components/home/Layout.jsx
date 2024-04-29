@@ -1,9 +1,8 @@
-import BannerContact from "components/BannerContact";
 import BannerLicense from "components/BannerLicense";
 import BannerPartners from "components/BannerPartners";
 import Footer from "components/layout/Footer";
 import Head from "next/head";
-import HeaderNew from "components/layout/HeaderNew";
+import Header from "components/layout/Header";
 import React from "react";
 import { prefix } from "prefix";
 
@@ -20,7 +19,7 @@ export default function HomeLayout({ children }) {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <HeaderNew />
+      <Header />
       <main>
         {children}
         <BannerPartners />
