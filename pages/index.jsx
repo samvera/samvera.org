@@ -1,6 +1,5 @@
 import ApplicationTypes from "components/home/ApplicationTypes";
 import BannerContact from "components/BannerContact";
-import BenefitHow from "components/home/BenefitHow";
 import BlogPostsWithFeatured from "components/news/BlogPostsWithFeatured";
 import Community from "components/home/Community";
 import FeaturedAppsSlider from "components/home/FeaturedAppsSlider";
@@ -23,7 +22,6 @@ export default function Home({ blogPosts }) {
         <ApplicationTypes applicationTypes={query.data} />
         <Community />
         <BannerContact />
-        <BenefitHow />
       </HomeLayout>
     </>
   );
