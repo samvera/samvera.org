@@ -11,22 +11,14 @@ export default function Community() {
           </h2>
           <div className="mt-6 leading-8 text-gray-600 lg:text-lg">
             <p>
-              Samvera is not (and has never been) grant funded. It is
-              distributed, robust and open. The Samvera Community&nbsp;was
-              conceived and executed, under its original name “Hydra”, as a
-              collaborative, open source effort from its very beginning in 2008.
-            </p>
-            <p>
-              Samvera has grown into a vibrant, highly active community
-              including more than 30 Partners who formally support our work and
-              development.
-            </p>
-            <p>
-              Samvera is designed so that adopters can each have their own mix
-              of features; variation is part of the plan. For adopters who do
-              not have the resourcing to create their own variant, the Samvera
-              Community has developed rather more “off-the-shelf” application
-              bundles.
+              Samvera is a vibrant, highly active community including more than
+              30 Partners who formally support our work and development. Working
+              together, members of the Samvera Community create sustainable
+              repository solutions based on a common infrastructure, allowing
+              the flexibility to tailor solutions to local demands and
+              workflows. This provides the foundation for both highly
+              customized, extensible repositories as well as turn-key solutions
+              that allow adopters to get up and running quickly.
             </p>
           </div>
 
