@@ -16,8 +16,9 @@ const newsNavigation = [
     slug: "news-and-events",
     items: [
       {
-        label: "News and events",
-        href: "/news-and-events",
+        label: "Samvera Virtual Connect 2024",
+        href: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/2420015105/Samvera+Virtual+Connect+2024+Program",
+        isExternal: true,
       },
       {
         label: "Samvera calendar",
