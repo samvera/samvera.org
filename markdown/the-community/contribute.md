@@ -1,3 +1,8 @@
+---
+title: "Contributing"
+date: "2024-05-01"
+---
+
 ## The Samvera Community persists because of many types of contributions – of code, volunteer time, and money – that maintain our community infrastructure. 
 
 
