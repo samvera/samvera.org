@@ -79,7 +79,7 @@ The easiest way to get started developing with Samvera is to install and configu
 
 #### Development Resources
 
-You can find some instructional documentation in [our knowledge base](http://samvera.github.io/index.html). The [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech/join) is a good resource, as is the #dev channel on Samvera Slack. Official Samvera code repositories are in the Samvera [Github organization](https://github.com/samvera), and emerging projects are in samvera\-labs. 
+You can find some instructional documentation in [the knowledge base on the Samvera Wiki](https://samvera.atlassian.net/wiki/spaces/samvera/pages/2212069377/Samvera+Development+Knowledge+Base). The [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech/join) is a good resource, as is the #dev channel on Samvera Slack. Official Samvera code repositories are in the Samvera [Github organization](https://github.com/samvera), and emerging projects are in samvera\-labs. 
 
 #### Samvera for Metadata Professionals
 
