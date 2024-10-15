@@ -16,19 +16,9 @@ const newsNavigation = [
     slug: "news-and-events",
     items: [
       {
-        label: "Samvera Virtual Connect 2024",
-        href: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/2420015105/Samvera+Virtual+Connect+2024+Program",
-        isExternal: true,
-      },
-      {
         label: "Samvera calendar",
         href: "/news-and-events/calendar",
         isExternal: false,
-      },
-      {
-        label: "Samvera Connect 2023 Conference",
-        href: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/2174877699/Samvera+Connect+2023",
-        isExternal: true,
       },
     ],
   },
