@@ -38,7 +38,8 @@ const groups = [
     name: "Community Manager",
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Contact Heather Greer Klein, the Samvera Community Manager, heather@samvera.org to discuss the Community, Samvera technologies, ways to get started, for help or other questions.",
+    bio: "Contact Heather Greer Klein, the Samvera Community Manager, to discuss the Community, Samvera technologies, ways to get started, for help or other questions. You can email her at heather@samvera.org or schedule time with her using the link below to discuss anything related to Samvera. ",
+    url: "https://calendar.app.google/d9cDcUVrcsZxZxn17"
   },
 ];
 
