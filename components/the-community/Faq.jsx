@@ -528,7 +528,7 @@ export default function Faq({ config, content, frontmatter }) {
                     Firstly, thank you for considering sharing your work with
                     Samvera, it’s very much appreciated. There is guidance on
                     making technical contributions to Samvera available on our{" "}
-                    <a href="https://samvera.github.io/tag_community.html">
+                    <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/2212069377/Samvera+Development+Knowledge+Base">
                       Documentation
                     </a>{" "}
                     site.
