@@ -46,4 +46,4 @@ There are many institutions using Samvera software components. Some we know abou
 - University of North Carolina, Chapel Hill (_[Carolina Digital Repository (CDR)](https://cdr.lib.unc.edu/)_)
 - University of Oxford
 - University of Washington
-- University of West Virginia
+- West Virginia University
