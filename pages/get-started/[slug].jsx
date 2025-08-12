@@ -35,13 +35,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const { content, frontmatter } = getMarkdownPageContent(
-    `markdown/${CONFIG.parentDir}/${slug}.md`
+    `markdown/${CONFIG.parentDir}/${slug}.md`,
   );
 
   const openGraphData = buildWorkOpenGraphData(
     CONFIG.parentDirLabel,
     frontmatter.title,
-    `${CONFIG.parentDir}/${slug}`
+    `${CONFIG.parentDir}/${slug}`,
   );
 
   return {

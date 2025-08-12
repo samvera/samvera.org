@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function FadeIn({ children, component = "div", ...restProps }) {
-  const MotionEl = motion(component);
+  const MotionEl = motion.create(component);
   return (
     <MotionEl
       initial={{ opacity: 0 }}

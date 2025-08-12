@@ -28,7 +28,11 @@ export default function Home({ blogPosts }) {
 }
 
 export async function getStaticProps() {
-  const blogPosts = await getBlogPosts(3);
+  let blogPosts = [];
+  const fetched = await getBlogPosts(3);
+  if (fetched && fetched.length > 0) {
+    blogPosts = fetched;
+  }
 
   return {
     props: { blogPosts },

@@ -1,6 +1,9 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -8,6 +11,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  contentfulToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
   experimental: {
     esmExternals: true,
   },
@@ -25,7 +29,7 @@ const nextConfig = {
             to: path.resolve(__dirname, "public", "leaflet", "images"),
           },
         ],
-      })
+      }),
     );
     return config;
   },

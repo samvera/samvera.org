@@ -9,16 +9,22 @@ export default function useSamveraPartners() {
 
   useEffect(() => {
     (async function init() {
-      const partners = await contentful.getEntries({
-        content_type: "samveraPartner",
-      });
+      let partners = {};
+      try {
+        partners = await contentful.getEntries({
+          content_type: "samveraPartner",
+        });
+      } catch (error) {
+        console.debug(contentful);
+        return console.error("Error fetching partners:", error);
+      }
 
       if (!partners.items) {
         return console.error("Error getting partners.");
       }
 
       const sorted = partners.items.sort((a, b) =>
-        a.fields.name.localeCompare(b.fields.name)
+        a.fields.name.localeCompare(b.fields.name),
       );
       const groomedData = sorted.map((record) => ({
         ...record.fields,
