@@ -15,7 +15,6 @@ export default function useSamveraPartners() {
           content_type: "samveraPartner",
         });
       } catch (error) {
-        console.debug(contentful);
         return console.error("Error fetching partners:", error);
       }
 
