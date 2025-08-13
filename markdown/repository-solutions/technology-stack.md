@@ -2,28 +2,136 @@
 title: "Technology stack"
 date: "2016-10-07"
 ---
-Samvera is not one single software product; it is a collection of components built and supported by the Samvera Community to create a repository solution. In addition, Samvera draws on many more open source components that are maintained by other open source communities.
+The Samvera Community supports not one software product, but rather a collection of components to create a repository solution. These components draw on many more open source components that are maintained by other open source communities. The diagram below outlines the Hyrax and Hyku technology stack in detail, followed by a detailed explaination of the components. 
 
 A Samvera repository solution provides functionality for the full range of CRUD services (create, read, update, delete).  To do this it employs a number of [Ruby on Rails](https://rubyonrails.org/) based components (or "gems") in conjunction with other open source software products.
 
-![Samvera technology stack diagram](../images/technology-stack.png)
+![Samvera technology stack diagram](../images/Hyrax-hyku-stack-2025-07.png)
 
-At the top of the stack are three options for repository application solutions that have been bundled in such a way to deliver functionality for a specific set of use cases:
+*Hyrax and Hyku include built-in support for using either Postgres or Fedora 6 for metadata storage. The options for file storage are disk storage or Fedora 6; Hyku also supports Amazon S3-compatible cloud storage out-of-the-box, and this is an option in Hyrax that is currently without official support. Some applications may also optionally use Solr/Blacklight for secondary indexing of metadata.
 
-* **[Avalon Media System](https://www.avalonmediasystem.org/)** is a platform for managing and providing access to large collections of digital audio and video, and is built on Samvera core components. 
+New applications can use any of these options, or use a custom adapter to connect to a different backend (see “External Adapters” in the Hyrax wiki). Older or legacy applications may use the Wings adapter to connect to Fedora 4, but this is not recommended for new applications, since Fedora 4 is end-of-life and the Wings adapter will be deprecated in a future Hyrax/Hyku release.
 
-* **[Hyrax](https://hyrax.samvera.org/)** is a fully featured repository front end with self-deposit and administrative workflow features. One benefit of starting your application with Hyrax instead of starting your application with just Ruby on Rails is that Hyrax has a rich and growing set of features built in that are especially useful for repository owners, such as the ability to create and edit user profiles, configure workflows, generate work types and work type images, upload multiple files and folders, set user level control over metadata and more. 
+See the “Valkyrie” section below for a more detailed explanation of adapters and how they fit into the Samvera architecture.
 
-* **[Hyku](https://hyku.samvera.org/)** offers multi-tenancy. It’s built on top of Hyrax so it comes with all of the features of Hyrax, but being multi-tenant means that there’s a single repository owner that can create multiple Hyrax instances for that repository. In addition, Hyku adds IIIF Image & Presentation API support, the Universal Viewer, and bulk import scripts as well as greater customization options like adding fonts and custom CSS. Hyku as a hosted service is offered by service providers.
+## **Samvera Applications**
 
-Other open source software used in the stack include **[Blacklight](https://projectblacklight.org/)** to display search results; **[Spotlight](https://github.com/projectblacklight/spotlight)** for attractive collection display; and the **[IIIF Universal Viewer](https://universalviewer.io/)**, a high quality item viewer.
+Broadly, these are[ Ruby on Rails](http://rubyonrails.org/) based applications, such as[ Hyrax](https://hyrax.samvera.org/), that follow Samvera conventions. Other Hyrax-based applications supported by the community include[ Hyku](https://hyku.samvera.org/) (Hyrax with multi-tenancy and other features) and[ Avalon](https://avalon.samvera.org/) (focused on audio/video materials).
 
-A set of core components (Ruby gems) provide interfaces interacting with [Fedora](https://fedora.lyrasis.org/) and [Solr](https://solr.apache.org/), [PCDM-compliant data models](https://pcdm.org/models) and other commonly-needed features like characterization, text extraction and derivative generation. Samvera also has core components that can be used by institutions who want to create fully custom front ends for their repositories while still benefiting from community supported components for some common repository processes. 
+While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the community.
 
-The base of this stack of components is the data store layer. A data store is a repository for continuously storing and managing collections of data. It is used as the persistence layer and is where the actual content and its associated metadata are stored. **[Fedora](https://fedora.lyrasis.org/)** is a popular option as a persistence layer in Samvera Community repositories.
+## **Valkyrie**
 
-**[Solr](https://solr.apache.org/)** is an indexed based data store, used to power the search functionality of our Samvera applications. It’s quick because it allows for indexing records by ID as well as by other metadata, like ‘author’, which means a record can be linked to multiple pointers and referenced in many different ways. It answers the question: What items have metadata that match? And returns the ids to look up the actual data in a database.
+[Valkyrie](https://github.com/samvera/valkyrie) is a gem that handles the transfer of data between a persistent data store (e.g. a database) and the Samvera application. It handles core functions like creating, reading, updating, and deleting files or metadata using “adapters.” By default, Valkyrie ships with adapters for the backends pictured above. But you can also write your own adapter if the default adapters don’t fit your needs.
 
-**[Valkyrie](https://github.com/samvera/valkyrie)** is a data mapper that is used with data stores. It’s a gem for enabling multiple backends for the storage of files and metadata in Samvera. Valkyrie can talk to various versions of Fedora and other storage engines as well.
+Valkyrie gives organizations the flexibility to choose different backends, while sharing front-end logic and code. It can also make migration between backend systems easier by reading from one data store and writing to another. You can find a[ detailed rationale and FAQ](https://github.com/samvera/valkyrie/wiki/Frequently-Asked-Questions) on the Hyrax GitHub wiki. In the past, older Samvera applications were locked into using Fedora 4 as the persistence layer and used[ Active Fedora](https://github.com/samvera/active_fedora) as the middleware to connect to Fedora 4.
 
-For a deep dive into Samvera development, see the [Developers section of the Samvera Community wiki](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211345/Developers).
+Instructions for configuration with various adapters can be found on the[ Valkyrie GitHub README page](https://github.com/samvera/valkyrie).
+
+### **Storage Adapter and Backends**
+
+The storage adapter connects the Samvera application to the place where your digital objects are stored or will be stored once uploaded to the application. Here is a list of possible backends that are supported by both Hyrax and Hyku, unless stated otherwise:
+
+* In-Memory - used primarily for testing and not recommended in production
+* Disk Storage - this may be a large[ NFS Share](https://www.techtarget.com/searchenterprisedesktop/definition/Network-File-System) in production
+* [Fedora 6](https://fedorarepository.org/) - repository software that supports[ OCFL (Oxford Common File Layout)](https://ocfl.io/). Interested developers may want to explore[ Sirenia](https://github.com/samvera/hyrax/blob/main/CONTAINERS.md#sirenia-internal-test-app-with-valkyrie-connector-to-fedora), a test/sample application compatible with Fedora 6.
+* S3 Cloud Storage (supported in Hyku only) - Samvera apps can use the[ Valkyrie-Shrine adapter/gem](https://github.com/samvera-labs/valkyrie-shrine) to connect to cloud storage. Although only Hyku comes bundled with S3 support, Hyrax can still be configured to use valkyrie-shrine.
+
+### **Metadata Adapter and Storage**
+
+The metadata adapter connects the application to the metadata store. The metadata store acts as the primary, canonical source of metadata.
+
+Some institutions may want to implement a secondary index for search/querying. For example, if your institution wants to store linked data in Fedora but use Solr for search, then you would use the *metadata adapter* for Fedora 6 and the *indexing adapter* for Solr (see below).
+
+Here is a list of possible metadata stores that are supported by Hyrax & Hyku:
+
+* In-Memory - used primarily for testing and not recommended in production
+* [Postgres (database)](https://www.postgresql.org/) - interested developers may want to explore[ Koppie](https://github.com/samvera/hyrax/blob/main/CONTAINERS.md#koppie-internal-test-app-with-valkyrie-connector-to-postgres), a Hyrax test/sample application that uses Postgres for metadata storage.
+* [Fedora 6](https://fedorarepository.org/) - repository software that supports Linked Data
+
+### **Indexing Adapter and Storage (optional)**
+
+Currently, only Apache[ Solr](https://solr.apache.org/) is supported for this purpose. Solr is used with/by[ Blacklight](https://github.com/projectblacklight/blacklight) to provide a search interface for metadata in Samvera applications.
+
+## **Middleware & Plugins**
+
+Note: this list is non-exhaustive.
+
+### **Hydra-Head**
+
+[Hydra-Head](https://github.com/samvera/hydra-head) is a Ruby-on-Rails gem containing the core code for a web application using the full stack of Samvera building blocks.
+
+
+### **Blacklight**
+
+Much of our search and display behavior is inherited from[ Blacklight](http://projectblacklight.org/). Many Samvera institutions also run Blacklight applications separately from Samvera, to provide search and discovery for their collections. The Blacklight Project also has many of its own plugins, such as[ Spotlight](https://github.com/projectblacklight/spotlight), for building virtual exhibits, and[ GeoBlacklight](http://geoblacklight.org/), which enhances Blacklight for use with geospatial data.
+
+Blacklight relies on[ RSolr](https://github.com/rsolr/rsolr), a ruby gem for connecting to Solr using the Solr API.
+
+
+### **Hydra Derivatives**
+
+A[ gem to create derivatives](https://github.com/samvera/hydra-derivatives) for uploaded content. This might include, for example, generating thumbnails for large images, down-sampled audio and video for web steaming, or thumbnail snapshots of PDF documents.
+
+
+### **Hydra Editor**
+
+[Hydra-editor](https://github.com/samvera/hydra-editor) is a basic editor for Samvera objects. It provides the edit interface for works and collections.
+
+
+### **Questioning Authority**
+
+[Questioning Authority](https://github.com/samvera/questioning_authority) provides a set of uniform RESTful routes to query any controlled vocabulary or set of authority terms. Results are returned in JSON and can be used within the context of a Rails application or any other Ruby environment.
+
+[Questioning Authority - How do I use this?](https://github.com/samvera/questioning_authority?tab=readme-ov-file#how-do-i-use-this)
+
+[Questioning Authority Wiki](https://github.com/samvera/questioning_authority/wiki)
+
+
+### **RIIIF**
+
+The default[ IIIF](https://iiif.io/) server (see[ Github repo](https://github.com/sul-dlss/riiif)) that serves images to deep-zoom image viewers, such as[ Universal Viewer](https://universalviewer.io/) (default iiif viewer in Hyrax/Hyku).
+
+Alternatives for RIIIF include[ node-iiif](https://github.com/samvera/node-iiif?tab=readme-ov-file#install-with-npm) (NodeJS implementation), or[ serverless-iiif](https://github.com/samvera/serverless-iiif) (AWS Serverless Application).
+
+
+### **File Characterization**
+
+[Hydra File Characterization](https://github.com/samvera/hydra-file_characterization) uses[ fits](https://github.com/harvard-lts/fits) and[ ffprobe](https://ffmpeg.org/ffprobe.html) to characterize files and extract metadata about them. It might tell you what kind of image encoding an image uses, along with it’s height and width, for example.
+
+
+### **Browse-Everything**
+
+[Browse-everything](https://github.com/samvera/browse-everything) is a rails engine providing access to files in cloud storage. Currently there are drivers implemented for Dropbox, Skydrive, Google Drive, Box, and a server-side directory share.
+
+[Getting Started with BrowseEverything](https://github.com/samvera/browse-everything?tab=readme-ov-file#getting-started)
+
+[Configuring BrowseEverything and using JavaScript methods](https://github.com/samvera/browse-everything/wiki)
+
+
+### **LDP**
+
+A ruby gem called[ ldp](https://github.com/samvera/ldp) for implementing LDP ([Linked Data Platform](https://wiki.lyrasis.org/display/FEDORA6x/Linked+Data+Platform)) interaction patterns with Fedora 6 or Fedora 4 (legacy).
+
+
+### **Bixby**
+
+Bixby is a gem containing the default configuration settings for [RuboCop](https://github.com/rubocop/rubocop) used to enforce common Ruby style guidelines across Samvera community projects. (See[ how to use bixby](https://github.com/samvera/bixby?tab=readme-ov-file#to-use-this).)
+
+
+## **Legacy Components**
+
+**The following components are** **not recommended in new Samvera applications** because they are deprecated, or will be deprecated in the near future. They are documented for migration and historical purposes.
+
+
+### **Active Fedora**
+
+[ActiveFedora](https://github.com/samvera/active_fedora) provides an[ Active Record](http://guides.rubyonrails.org/active_record_basics.html)-like interface and pattern to persist objects to Fedora 4.
+
+
+### **Wings**
+
+Wings is the storage and metadata adapter for Fedora 4. It is “a toolkit integrating Valkyrie into Hyrax as a bridge away from the hard dependency on ActiveFedora.”
+
+[Notes from the Hyrax Github](https://github.com/samvera/hyrax/blob/main/lib/wings.rb):
+ "Wings" is primarily an isolating namespace for code intended to be removed after a full transition to "Valkyrie" as the persistence middleware for Hyrax. Applications may find it useful to depend directly on this code to facilitate a smooth code migration, much in the way it is being used in this engine. However, these dependencies should be considered temporary: this code will be deprecated for removal in a future release.
