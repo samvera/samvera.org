@@ -93,7 +93,11 @@ export async function getStaticProps() {
   const { previews } = getNewsPreviews();
   const subsetOfPreviews = previews.slice(0, 30);
 
-  const blogPosts = await getBlogPosts();
+  let fetched = await getBlogPosts();
+  let blogPosts = [];
+  if (fetched && fetched.length > 0) {
+    blogPosts = fetched;
+  }
 
   const openGraphData = {
     "og:title": "News and Events - Samvera",
