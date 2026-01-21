@@ -3,17 +3,17 @@ title: "Contributing"
 date: "2024-05-01"
 ---
 
-## The Samvera Community persists because of many types of contributions – of code, volunteer time, and money – that maintain our community infrastructure. 
+ The Samvera Community persists because of many types of contributions – of code, volunteer time, and money – that maintain our community infrastructure. 
 
 
-### Financial Contributions
+#### Financial Contributions
 
-Samvera infrastructure is supported by [Samvera Partner dues](https://samvera.org/the-community/samvera-partners) as well as contributions from other institutions that value the community. Contributions are always welcome and appreciated. See the latest [Samvera Annual Report](https://samvera.org/news-and-events/samvera-annual-report) for details of how Samvera uses contributed funds.
+Samvera infrastructure is supported by [Samvera Partner dues](https://samvera.org/the-community/samvera-partners) as well as contributions from other institutions that value the community. Contributions are always welcome and appreciated, and are used to support shared staffing and infrastructure for critical community work.
 
  To make a one-time or annual contribution outside of Partnership, please [contact Heather Greer Klein, Samvera Community Manager](mailto:heather@samvera.org).
 
 
-#### Thank you to our 2024 Donors:
+#### Thank you to our 2025 Donors:
 
 
 
@@ -23,7 +23,7 @@ Samvera infrastructure is supported by [Samvera Partner dues](https://samvera.or
 We also [accept direct contributions to the Julie Allinson Award fund](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1851293697/The+Julie+Allinson+Award) from individuals and institutions.
 
 
-### Code Contributions
+#### Code Contributions
 
 Pull requests are always welcome in [Samvera Projects](https://github.com/samvera/), and institutions are encouraged to contribute local work to the community. There are also opportunities for specific contributions throughout the year, including:
 
@@ -35,7 +35,7 @@ Pull requests are always welcome in [Samvera Projects](https://github.com/samver
 * [Technology Maintenance Pledges](https://samvera.atlassian.net/wiki/spaces/samvera/pages/2257158145/2024+Samvera+Technology+Maintenance+Hours+Pledge+Drive) for work that is interesting or important to your institution
 
 
-### Volunteer Contributions
+#### Volunteer Contributions
 
 Samvera has many opportunities for anyone to contribute to the community. [Join the Samvera email list ](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1171226735/Samvera+Community+Email+Lists)to get calls for volunteers, or join a Working or Interest Group meeting from the [Samvera Community Calendar](https://samvera.org/news-and-events/calendar).
 
