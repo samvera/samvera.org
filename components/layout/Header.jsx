@@ -16,6 +16,11 @@ const newsNavigation = [
     slug: "news-and-events",
     items: [
       {
+        label: "News",
+        href: "/news-and-events",
+        isExternal: false,
+      },
+      {
         label: "Samvera calendar",
         href: "/news-and-events/calendar",
         isExternal: false,
