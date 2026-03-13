@@ -24,7 +24,12 @@ export default function ServiceProviders({ config, content, frontmatter }) {
       if (!entries.items) {
         return console.error("Error getting entries.");
       }
-      setEntries(entries.items);
+      const sorted = [...entries.items].sort((a, b) =>
+        (a.fields?.name || "").localeCompare(b.fields?.name || "", undefined, {
+          sensitivity: "base",
+        })
+      );
+      setEntries(sorted);
     }
 
     fetchEntries();
