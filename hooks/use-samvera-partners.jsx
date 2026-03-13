@@ -9,6 +9,7 @@ export default function useSamveraPartners() {
 
   useEffect(() => {
     (async function init() {
+      if (!contentful) return;
       let partners = {};
       try {
         partners = await contentful.getEntries({

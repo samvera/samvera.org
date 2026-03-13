@@ -17,6 +17,7 @@ export default function ServiceProviders({ config, content, frontmatter }) {
 
   useEffect(() => {
     async function fetchEntries() {
+      if (!contentful) return;
       const entries = await contentful.getEntries({
         content_type: "serviceProviderProfile",
       });

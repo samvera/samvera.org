@@ -51,6 +51,7 @@ export default function Faq({ config, content, frontmatter }) {
 
   React.useEffect(() => {
     async function fetchEntries() {
+      if (!contentful) return;
       const entries = await contentful.getEntries({
         content_type: "faq",
       });

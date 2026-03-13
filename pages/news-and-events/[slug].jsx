@@ -58,20 +58,25 @@ export default function NewsPage({ blogPost, markdownContent }) {
 export async function getStaticPaths() {
   const paths = getPaths(`markdown/${CONFIG.parentDir}`);
 
-  // Get Blog Post paths from Contentful
   const contentful = getContentful();
-  const blogPosts = await contentful.getEntries({
-    content_type: "blogPost",
-  });
-
-  // Create paths for each blog post based on the slug value in blogPost.items[0].fields.slug
-  blogPosts.items.forEach((post) => {
-    paths.push({
-      params: {
-        slug: post.fields.slug,
-      },
-    });
-  });
+  if (contentful) {
+    try {
+      const blogPosts = await contentful.getEntries({
+        content_type: "blogPost",
+      });
+      if (blogPosts?.items) {
+        blogPosts.items.forEach((post) => {
+          paths.push({
+            params: {
+              slug: post.fields.slug,
+            },
+          });
+        });
+      }
+    } catch (e) {
+      console.error("Error getting Contentful blog paths:", e);
+    }
+  }
 
   return {
     paths,
@@ -87,17 +92,18 @@ export async function getStaticProps({ params: { slug } }) {
   const markdownContent =
     getMarkdownPageContent(`markdown/${CONFIG.parentDir}/${slug}.md`) || null;
 
-  try {
-    // Get Blog Post by slug value from Contentful
-    const response = await contentful.getEntries({
-      content_type: "blogPost",
-      "fields.slug": slug,
-    });
-    if (response.total > 0) {
-      blogPost = response.items[0].fields;
+  if (contentful) {
+    try {
+      const response = await contentful.getEntries({
+        content_type: "blogPost",
+        "fields.slug": slug,
+      });
+      if (response.total > 0) {
+        blogPost = response.items[0].fields;
+      }
+    } catch {
+      console.error(`Error retrieving blog post: ${slug} from Contentful`);
     }
-  } catch {
-    console.error(`Error retrieving blog post: ${slug} from Contentful`);
   }
 
   const ogTitle = markdownContent
