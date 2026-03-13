@@ -9,16 +9,19 @@ export default function ApplicationTypes({ applicationTypes = [] }) {
     <div className="py-24 bg-samGreyDark sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <FadeIn className="max-w-2xl mx-auto lg:text-center">
-          <h2
-            id="applications"
-            className="text-base font-semibold leading-7 text-samBlue"
+          <span
+            className="block text-base font-semibold leading-7 text-samBlue"
+            aria-hidden="true"
           >
             Applications
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          </span>
+          <h2
+            id="applications"
+            className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+          >
             Types of Applications powered by Samvera Community technology
             solutions
-          </p>
+          </h2>
         </FadeIn>
         <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -39,19 +42,19 @@ export default function ApplicationTypes({ applicationTypes = [] }) {
                     <div className="flex-auto [&_a]:text-samBlue">
                       <RichTextContent content={description.content[0]} />
                     </div>
-                    <p className="mt-6">
-                      <Link
-                        href={`/types-of-applications`}
-                        className="text-sm font-semibold leading-6 text-samBlue"
-                      >
-                        Learn more <span aria-hidden="true">→</span>
-                      </Link>
-                    </p>
                   </dd>
                 </FadeIn>
               );
             })}
           </dl>
+        </div>
+        <div className="flex justify-center mt-12">
+          <Link
+            href="/types-of-applications"
+            className="button"
+          >
+            View applications powered by Samvera
+          </Link>
         </div>
       </div>
     </div>

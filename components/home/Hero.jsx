@@ -25,12 +25,12 @@ export default function HomeHero() {
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
               <Link className="button" href="/get-started/getting-started">
-                Get started
+                Get started with repository solutions
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a className="button-inverted" href="#applications">
-                Learn More About Samvera
+                See Samvera applications
               </a>
             </div>
           </div>
