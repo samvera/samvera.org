@@ -43,7 +43,7 @@ export default function BlogPostsWithFeatured({ blogPosts = [] }) {
                 className="text-sm font-semibold leading-6"
                 aria-describedby="featured-post"
               >
-                Continue reading <span aria-hidden="true">&rarr;</span>
+                Read the full post <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
             <div className="flex lg:border-t lg:border-gray-900/10 lg:pt-8">

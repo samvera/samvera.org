@@ -24,7 +24,7 @@ export default function Community() {
 
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <Link href="/getting-started" className="button">
-              Get started
+              Get started with repository solutions
             </Link>
           </div>
         </div>

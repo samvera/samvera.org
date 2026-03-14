@@ -89,7 +89,7 @@ export default function Applications() {
             collaboration to extend the existing Samvera project codebase to
             build, bundle, and promote a feature-rich, robust, flexible digital
             repository that is easy to install, configure, and maintain. &nbsp;
-            <a href="https://hyku.samvera.org/">Learn more</a>
+            <a href="https://hyku.samvera.org/">See Hyku, the Samvera digital repository</a>
           </p>
         </>
       ),
