@@ -18,6 +18,7 @@ export default function UserProfilesPage({ config, content, frontmatter }) {
 
   useEffect(() => {
     async function fetchData() {
+      if (!contentful) return;
       const userProfiles = await contentful.getEntries({
         content_type: "userProfile",
       });

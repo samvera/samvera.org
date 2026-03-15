@@ -10,6 +10,7 @@ export default function useFeaturedApps() {
 
   useEffect(() => {
     (async function init() {
+      if (!contentful) return;
       try {
         const featuredApps = await contentful.getEntries({
           content_type: "featuredApp",
