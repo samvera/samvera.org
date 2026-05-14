@@ -20,12 +20,12 @@ const groups = [
     url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/405210594/Samvera+Board+membership",
   },
   {
-    name: "Roadmaps Alignment Group",
+    name: "Roadmaps Working Group",
     imageUrl:
       "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
     // Write some latin text for the bio. It should be a paragraph with 3-5 sentences.
-    bio: "The Roadmaps Alignment Group (formerly called Samvera Roadmap Council) works to identify conflicts and areas of alignment between the roadmaps of the Core Components Owners, Hyrax, Hyku, Valkyrie, and Avalon. This group works in consultation with the Metadata Interest Group and Samvera Service Providers. The Group identifies cross-project development opportunities, helps to arrange maintenance sprints, and coordinates communication to the Samvera Community about these activities.",
-     url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/422315415/Samvera+Roadmaps+Alignment+Group",
+    bio: "The Roadmaps Working Group works to develop, maintain, and identify opportunities for cross-collaboration between the roadmaps of Hyrax, Hyku, and Avalon. This group works in consultation with the Metadata Interest Group and Samvera Service Providers. The Group works from a shared Roadmaps document to track and align maintenance and feature priorities across the three platforms.",
+     url: "https://samvera.atlassian.net/wiki/spaces/samvera/pages/422315415/Samvera+Roadmaps+Working+Group",
   },
   {
     name: "Interest/Working Groups",
