@@ -10,7 +10,7 @@ import SidebarLinks from "../sidebar/Links";
 import { prefix } from "prefix";
 
 const description =
-  "Samvera™ is a vibrant and welcoming community of information and technology professionals who share challenges, build expertise, and create sustainable, best-in-class solutions, making the world’s digital collections accessible now and into the future. Samvera’s suite of repository software tools offers flexible and rich user interfaces tailored to distinct content types on top of a robust back end – giving adopters the best of both worlds.";
+  "Samvera builds and maintains open-source repository software (Hyku, Hyrax, Avalon), free to run and steered in the open by the institutions that fund it.";
 
 export default function Layout({ children, title }) {
   return (

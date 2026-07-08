@@ -3,84 +3,24 @@ title: "Getting started"
 date: "2023-07-19"
 ---
 
-### What is Samvera?
+## Evaluating Samvera, or building on it
 
-Samvera is an Icelandic word meaning “togetherness.” The Samvera Community is a global community of technologists who create and maintain repository software; you can’t install Samvera, but you can install the repository solutions we develop together including [Avalon Media System](https://www.avalonmediasystem.org/), [Hyrax](https://www.hyrax.samvera.org), and [Hyku](https://www.hyku.samvera.org). Institutions around the world rely on Samvera Community supported software to provide access to their digital content. 
+If you're a developer or technical evaluator, your first decision is which path to build on. Hyku and Avalon are applications you deploy. Hyrax is the framework underneath them, and building directly on Hyrax is a supported, well-traveled path the community has used for years. Hyku is what you reach for when you want a deployable application with multi-tenancy and a lot of the wiring already done. All of it is open source, lives in the [Samvera GitHub organization](https://github.com/samvera), and any Ruby on Rails team can stand it up. This section is for the people sizing up the platform before they commit, and for the people who keep it running after they do.
 
-Samvera is also a community of practice where software developers and library technologists can support and learn from one another. We have active participation from metadata specialists, repository managers, user experience professionals, and others who contribute their expertise to ensure the software stays relevant and responsive to changing needs.
+### Start with the code
 
-### Learn more about Samvera
+The fastest way to see what Samvera does is to install it. For a framework-level start, follow the Hyrax [general documentation](http://samvera.github.io/) and the [GitHub installation instructions](https://github.com/samvera/hyrax#getting-started). To evaluate a deployable application, start from Hyku. You can assemble your own Samvera application from individual components, and the community did that for years, but most teams now build on Hyrax or deploy Hyku, because the shared core is maintained for everyone instead of re-derived at each institution.
 
-* See the[ Samvera Community Guidelines](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1947631640) to learn how we work together
-* Our[ wiki homepage](https://samvera.atlassian.net/wiki/spaces/samvera) is a great place to start learning about the Community, including our technologies, governance Partners, and more.
-* [Take a tour](https://samvera.org/repository-solutions/take-a-tour-of-active-samvera-repositories) of some Samvera repositories
-* Dive into our code repository [https://github.com/samvera](https://github.com/samvera)
+### Why shared maintenance is worth funding
 
-**Join the Samvera Slack workspace**
-This is the best place to get started with the Samvera Community. Join us for discussion, questions, announcements, interest groups, and working groups. 
-Fill out this[ form](https://forms.gle/oeLBwbQw9QoCZWTL6) to get a Samvera Slack invitation.
+The question a technical lead asks about any open-source platform is who keeps it current. With Samvera, the answer is the community of institutions that fund and build it together. Sharing maintenance across the community spreads the ongoing cost of keeping the software current and reduces the work any single institution carries alone. A security fix, a Rails upgrade, a data-layer modernization: each one is done once and benefits everyone running the software, rather than every institution paying to solve the same problem in isolation.
 
-**Join Community Email Lists**
-Keep up with Community announcements, updates, and conversations.[ See all our available lists](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1171226735) and sign up for those that interest you.
+That changes what your contribution buys. When your team fixes a bug, writes documentation, or funds a feature, the work goes into the platform you run, gets maintained by the community after you ship it, and earns your institution standing in the group that sets the roadmap. Co-investing in shared infrastructure you help steer is a different proposition from buying a license and waiting for a vendor's next release.
 
-### Attend an Interest Group or Technical Call
+### Connect with the people who run it
 
-**[Technical Call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059)**
+You don't have to evaluate this alone. The community runs in the open, and the people maintaining the software are reachable. The [Samvera Slack workspace](https://forms.gle/oeLBwbQw9QoCZWTL6) is the best place to start, with channels for development, metadata, and the interest groups. There's a weekly [technical call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059) for people contributing code or running the core components, and [interest groups](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319284) anyone can attend to ask questions and hear the latest. To talk through where to start, [email or schedule a call](mailto:heather@samvera.org) with Heather Greer Klein, the Samvera Community Manager.
 
-There is a weekly Samvera tech call for developers and other folks who are contributing code or are actively using the core Samvera plugins & components. 
+### Next step
 
-**[Interest Groups](https://samvera.atlassian.net/wiki/spaces/samvera/pages/422319284)**
-
-Anyone is welcome to attend an Interest Group Meeting to learn more about a Samvera technology, to ask questions, and to hear the latest updates. The Groups include individuals from many different roles including developers, managers, librarians, and others.
-
-**[Avalon User Roundtable](https://samvera.atlassian.net/wiki/spaces/AVALON/pages/1957954091)**
-
-The Avalon User Roundtable is a community group that meets monthly to talk all things Avalon and AV in the world of libraries and archives. Agenda topics are sourced from the community, and all potential and current Avalon users are invited to attend!  
-
-**[Hyku Interest Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/419533203)**
-
-The Hyku Interest Group meets to discuss the Hyku repository application. Based on Hyrax, Hyku is intended to be an easy-to-install, easy-to-configure, feature-rich multi-tenancy solution. Hyku is designed to reduce barriers to effective asset management and preservation for collections and content types of many kinds.
-
-**[Hyrax Interest Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/496632287)**
-
-Anyone is welcome to learn more about[ Hyrax](http://hyrax.samvera.org/), the product roadmap, current initiatives, and to ask questions.
-
-**[Metadata Interest Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212126)**
-
-The Samvera Metadata Interest Group (SMIG) is interested in working together on base metadata recommendations for the Samvera Community. The scope of this group concentrates primarily on metadata as it relates to Samvera projects such as Hyrax, Hyku, and Avalon Media System. Types of metadata for which the group has or intends to create recommendations include technical, structural, descriptive, and rights metadata.
-
-**[Repository Management Interest Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212548)**
-
-Provides a support network and sounding board for anyone working with repositories (no matter what your title!) to ask questions and share implementations. The Group provides collective input on the Hyrax roadmap and feature development, providing use cases, proposals, and providing real-time input on implementation of features.
-
-### Attend an Event or Watch a Previous Event
-
-**[Samvera Calendar](https://samvera.atlassian.net/wiki/spaces/samvera/pages/433553767)**
-
-This calendar includes information for Samvera Community events, calls, and meetings.
-
-**[Samvera Community Digital Repository](https://repo.samvera.org/)**
-
-Find white papers, slides and recordings from previous events, and other Community materials in our Hyku-based repository.
-
-**Samvera YouTube Channels**
-
-Watch demos and past events on the[ Samvera Community](https://www.youtube.com/channel/UCtOG8TmOIFauObaNc14VnPQ/videos) and[ Samvera Hyku](https://www.youtube.com/channel/UC_m1Ovaaasa2ksyGaqz5i0Q) YouTube channels.
-
-### Talk to the Community Manager
-
-You're welcome to [email](mailto:heather@samvera.org) or[ schedule a call](https://koalendar.com/events/meet-with-heather-greer-klein) with Heather Greer Klein, the Samvera Community Manager, to discuss the Community, Samvera technologies, ways to get started, for help or other questions. 
-
-### Samvera for Developers
-
-#### Where do I start?
-
-The easiest way to get started developing with Samvera is to install and configure Hyrax.  Two resources will aid you with this - our [general documentation](http://samvera.github.io/) and the [GitHub page with specific installation instructions](https://github.com/samvera/hyrax#getting-started). While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera Community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the Community. 
-
-#### Development Resources
-
-You can find some instructional documentation in [the knowledge base on the Samvera Wiki](https://samvera.atlassian.net/wiki/spaces/samvera/pages/2212069377/Samvera+Development+Knowledge+Base). The [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech/join) is a good resource, as is the #dev channel on Samvera Slack. Official Samvera code repositories are in the Samvera [Github organization](https://github.com/samvera), and emerging projects are in samvera\-labs. 
-
-#### Samvera for Metadata Professionals
-
-The Samvera Community contains many metadata professionals who are working together to share patterns and establish best practices. You can connect with many of them via the [Samvera Metadata Interest Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212126/Samvera+Metadata+Interest+Group), the [samvera-tech mailing list](https://groups.google.com/forum/#!forum/samvera-tech), and on the #metadata channel of Samvera Slack.
+Install Hyrax or deploy Hyku and put it in front of your own content. Join the Slack workspace and bring your questions to a technical call or an interest group. When you're ready to talk about hosting, support, or what a contribution could look like, the Community Manager is the place to start.

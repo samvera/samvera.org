@@ -2,36 +2,54 @@ import Image from "next/image";
 import Link from "next/link";
 import groupPhoto from "../../public/images/washu-samvera-group.jpeg";
 
+const lead =
+  "Every director who funds a repository has to answer two questions to a provost or a board. Will the platform still be supported in five years, and who decides where it goes? Samvera makes both answerable in the open. The software (Hyku, Hyrax, Avalon) is free to download and run on your own terms. What you fund is the community that maintains it, sets its direction, and keeps it here.";
+
+const bodyOne =
+  "For consortia, one Samvera platform runs many institutions from a single installation, each with its own branding, access controls, and configuration, so the cost of shared infrastructure is shared across members. That's how most of the community already runs it.";
+
+const bodyTwo =
+  "Your collections live in documented, interoperable standards (Dublin Core, IIIF, OAI-PMH, RDF), so your description and metadata stay yours and stay portable. Host it yourself or choose any service provider. You're never locked to one.";
+
 export default function HomeHero() {
   return (
     <section className="text-white lg:relative bg-samGrey">
       <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-36 lg:text-left">
         <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span className="block text-white xl:inline">A vibrant and</span>{" "}
+          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">
+            <span className="block text-white xl:inline">
+              Repository infrastructure your institution helps steer,
+            </span>{" "}
             <span className="block text-samBlue xl:inline">
-              welcoming community
+              funded to outlast the next budget cycle.
             </span>
           </h1>
 
-          <p className="max-w-md pt-0 mx-auto text-lg text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
-            &ldquo;Samvera&trade; is a vibrant and welcoming community of
-            information and technology professionals who share challenges, build
-            expertise, and create sustainable, best-in-class solutions, making
-            the world’s digital collections accessible now and into the
-            future.&rdquo;
+          <p className="max-w-md pt-0 mx-auto mt-5 text-lg text-gray-300 md:max-w-3xl">
+            {lead}
+          </p>
+
+          <p className="max-w-md mx-auto mt-4 text-base text-gray-300 md:max-w-3xl">
+            {bodyOne}
+          </p>
+
+          <p className="max-w-md mx-auto mt-4 text-base text-gray-300 md:max-w-3xl">
+            {bodyTwo}
           </p>
 
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
-              <Link className="button" href="/get-started/getting-started">
-                Get started with repository solutions
+              <Link className="button" href="/the-community/samvera-partners">
+                See the case for Samvera Partnership
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a className="button-inverted" href="#applications">
-                See Samvera applications
-              </a>
+              <Link
+                className="button-inverted"
+                href="/get-started/getting-started"
+              >
+                Get started with repository solutions
+              </Link>
             </div>
           </div>
         </div>

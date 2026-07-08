@@ -563,8 +563,9 @@ export default function Faq({ config, content, frontmatter }) {
                     Samvera as an avenue toward the future of accessible,
                     open-access scholarly communications and digital
                     preservation of our cultural heritage. The goal of the
-                    Samvera community is to be a more sustainable long-term
-                    solution than commercial options.
+                    Samvera community is to sustain the software its members
+                    rely on through shared, transparent investment and open
+                    governance.
                   </p>
                 </Answer>
               </>
@@ -680,9 +681,7 @@ export default function Faq({ config, content, frontmatter }) {
             {({ open }) => (
               <>
                 <Question open={open}>
-                  What does Samvera offer that DSpace, EPrints, ContentDM,
-                  Islandora, etc. do not? What makes the Samvera approach to
-                  repositories stand out?
+                  What makes the Samvera approach to repositories stand out?
                 </Question>
                 <Answer>
                   <p>

@@ -18,7 +18,7 @@ See the “Valkyrie” section below for a more detailed explanation of adapters
 
 Broadly, these are[ Ruby on Rails](http://rubyonrails.org/) based applications, such as[ Hyrax](https://hyrax.samvera.org/), that follow Samvera conventions. Other Hyrax-based applications supported by the community include[ Hyku](https://hyku.samvera.org/) (Hyrax with multi-tenancy and other features) and[ Avalon](https://avalon.samvera.org/) (focused on audio/video materials).
 
-While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the community.
+While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera community in the past, sharing maintenance across the community spreads the ongoing cost of keeping the software current and reduces the work any single institution carries alone.
 
 ## **Valkyrie**
 
@@ -90,7 +90,7 @@ A[ gem to create derivatives](https://github.com/samvera/hydra-derivatives) for 
 
 ### **RIIIF**
 
-The default[ IIIF](https://iiif.io/) server (see[ Github repo](https://github.com/sul-dlss/riiif)) that serves images to deep-zoom image viewers, such as[ Universal Viewer](https://universalviewer.io/) (default iiif viewer in Hyrax/Hyku).
+The default[ IIIF](https://iiif.io/) server (see[ Github repo](https://github.com/sul-dlss/riiif)) that serves images to deep-zoom image viewers, such as[ Universal Viewer](https://universalviewer.io/), the default IIIF viewer in both Hyrax and Hyku.
 
 Alternatives for RIIIF include[ node-iiif](https://github.com/samvera/node-iiif?tab=readme-ov-file#install-with-npm) (NodeJS implementation), or[ serverless-iiif](https://github.com/samvera/serverless-iiif) (AWS Serverless Application).
 
@@ -102,7 +102,7 @@ Alternatives for RIIIF include[ node-iiif](https://github.com/samvera/node-iiif?
 
 ### **Browse-Everything**
 
-[Browse-everything](https://github.com/samvera/browse-everything) is a rails engine providing access to files in cloud storage. Currently there are drivers implemented for Dropbox, Skydrive, Google Drive, Box, and a server-side directory share.
+[Browse-everything](https://github.com/samvera/browse-everything) is a rails engine providing access to files in cloud storage. Currently there are drivers implemented for Dropbox, Google Drive, Box, Amazon S3, and a server-side directory share.
 
 [Getting Started with BrowseEverything](https://github.com/samvera/browse-everything?tab=readme-ov-file#getting-started)
 
