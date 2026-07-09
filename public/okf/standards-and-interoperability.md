@@ -32,7 +32,7 @@ Dublin Core and Qualified Dublin Core are the metadata vocabularies Bulkrax hand
 
 ## M3 metadata profiles
 
-Hyrax v5.3 and later supports M3 (Machine-readable Metadata Modeling) profiles for its flexible metadata feature. M3 profiles can be configured through the UI and can be versioned, imported, and exported. This feature is disabled by default and must be enabled. Full detail and constraints are in [Repository Solutions Overview](repository-solutions-overview.md#flexible-metadata-ui-configurable-schemas).
+Hyrax v5.3 and later supports M3 (Machine-readable Metadata Modeling) profiles for its flexible metadata feature. M3 profiles can be configured through the UI and can be versioned, imported, and exported. This feature is disabled by default in the Hyrax gem; Hyku enables it by default via its initializer. Full detail and constraints are in [Repository Solutions Overview](repository-solutions-overview.md#flexible-metadata-ui-configurable-schemas).
 
 ## Solr and Blacklight
 

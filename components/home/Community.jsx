@@ -29,7 +29,7 @@ export default function Community() {
             </Link>
             <Link
               href="/repository-solutions/find-your-solution"
-              className="text-samBlue hover:text-samDarkRed"
+              className="underline text-samDarkRed hover:text-samOrange"
             >
               Explore the repository solutions (Hyku, Hyrax, Avalon)
             </Link>

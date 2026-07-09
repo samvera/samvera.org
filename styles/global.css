@@ -46,7 +46,7 @@ h4 {
   @apply text-lg;
 }
 main a {
-  @apply text-samDarkRed hover:text-samOrange;
+  @apply text-samDarkRed underline hover:decoration-2;
 }
 p {
   @apply pb-4 leading-relaxed;

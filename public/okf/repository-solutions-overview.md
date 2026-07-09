@@ -72,7 +72,7 @@ Hyrax v5.3 and later includes flexible metadata, which lets administrators confi
 
 Two honest constraints an agent must carry:
 
-* It is disabled by default. It must be explicitly enabled, for example via the `flexible` or `flexible_classes` configuration options or the `HYRAX_FLEXIBLE` environment variable. It is not an out-of-the-box default.
+* Defaults differ by application. In the Hyrax gem it is disabled by default and must be explicitly enabled (the `flexible` configuration option or the `HYRAX_FLEXIBLE` environment variable). Hyku enables it by default via its initializer (`config/initializers/1flexible.rb` casts `HYRAX_FLEXIBLE` with a default of true); set `HYRAX_FLEXIBLE=false` to opt out in Hyku.
 * It requires Hyrax v5.3 or later. It is not available in all Hyrax or Hyku versions.
 
 ## Avalon (audio and video)

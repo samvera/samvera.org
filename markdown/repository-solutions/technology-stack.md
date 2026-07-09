@@ -2,7 +2,7 @@
 title: "Technology stack"
 date: "2016-10-07"
 ---
-The Samvera Community supports not one software product, but rather a collection of components to create a repository solution. These components draw on many more open source components that are maintained by other open source communities. The diagram below outlines the Hyrax and Hyku technology stack in detail, followed by a detailed explaination of the components. 
+The Samvera Community maintains a collection of components that combine into a repository solution. These components draw on many more open source components that are maintained by other open source communities. The diagram below outlines the Hyrax and Hyku technology stack, followed by an explanation of each component. 
 
 A Samvera repository solution provides functionality for the full range of CRUD services (create, read, update, delete).  To do this it employs a number of [Ruby on Rails](https://rubyonrails.org/) based components (or "gems") in conjunction with other open source software products.
 
@@ -71,7 +71,7 @@ Blacklight relies on[ RSolr](https://github.com/rsolr/rsolr), a ruby gem for con
 
 ### **Hydra Derivatives**
 
-A[ gem to create derivatives](https://github.com/samvera/hydra-derivatives) for uploaded content. This might include, for example, generating thumbnails for large images, down-sampled audio and video for web steaming, or thumbnail snapshots of PDF documents.
+A[ gem to create derivatives](https://github.com/samvera/hydra-derivatives) for uploaded content. This might include, for example, generating thumbnails for large images, down-sampled audio and video for web streaming, or thumbnail snapshots of PDF documents.
 
 
 ### **Hydra Editor**
@@ -97,7 +97,7 @@ Alternatives for RIIIF include[ node-iiif](https://github.com/samvera/node-iiif?
 
 ### **File Characterization**
 
-[Hydra File Characterization](https://github.com/samvera/hydra-file_characterization) uses[ fits](https://github.com/harvard-lts/fits) and[ ffprobe](https://ffmpeg.org/ffprobe.html) to characterize files and extract metadata about them. It might tell you what kind of image encoding an image uses, along with it’s height and width, for example.
+[Hydra File Characterization](https://github.com/samvera/hydra-file_characterization) uses[ fits](https://github.com/harvard-lts/fits) and[ ffprobe](https://ffmpeg.org/ffprobe.html) to characterize files and extract metadata about them. It might tell you what kind of image encoding an image uses, along with its height and width, for example.
 
 
 ### **Browse-Everything**

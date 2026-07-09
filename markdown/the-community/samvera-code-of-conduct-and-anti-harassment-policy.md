@@ -31,7 +31,7 @@ If you are in the Samvera Community Slack, contact one of the Samvera Community 
 
 Read more about [How to Report a Code of Conduct Violation](https://samvera.atlassian.net/wiki/spaces/samvera/pages/1814233093) and what you can expect in the process.
 
-value your participation in the Samvera Community and your support in keeping it a safe, welcoming, and friendly space for fellow participants!
+We value your participation in the Samvera Community and your support in keeping it a safe, welcoming, and friendly space for fellow participants!
 
 **Code of Conduct Incident Response** 
 
@@ -45,27 +45,27 @@ Participants asked to stop any offending behavior are expected to comply immedia
 
 Specific sanctions may include but are not limited to:
 
-\-- Warning the offender to cease their behavior and that any further reports will result in other sanctions
+- Warning the offender to cease their behavior and that any further reports will result in other sanctions
 
-\-- Requiring that the offender avoid any interaction with, and physical proximity to, the incident reporter for the remainder of the event
+- Requiring that the offender avoid any interaction with, and physical proximity to, the incident reporter for the remainder of the event
 
-\-- Early termination of a talk that violates the policy
+- Early termination of a talk that violates the policy
 
-\-- Not publishing the video or slides of a talk that violated the policy
+- Not publishing the video or slides of a talk that violated the policy
 
-\-- Not allowing a speaker who violated the policy to give (further) talks at the event
+- Not allowing a speaker who violated the policy to give (further) talks at the event
 
-\-- Immediately ending any event volunteer responsibilities and privileges the offender holds requiring that the offender not volunteer for future Samvera events (either indefinitely or for a certain time period)
+- Immediately ending any event volunteer responsibilities and privileges the offender holds requiring that the offender not volunteer for future Samvera events (either indefinitely or for a certain time period)
 
-\-- Requiring that the offender immediately leave the event and not return
+- Requiring that the offender immediately leave the event and not return
 
-\-- Banning the offender from future events (either indefinitely or for a certain time period)
+- Banning the offender from future events (either indefinitely or for a certain time period)
 
-\-- Notifying the offender’s institution or organization that the violation has occurred
+- Notifying the offender’s institution or organization that the violation has occurred
 
-\-- Banning the offender from any (or all) Samvera Community channels
+- Banning the offender from any (or all) Samvera Community channels
 
-\-- Publishing an account of the offending event as outlined in the Incident Response Plan
+- Publishing an account of the offending event as outlined in the Incident Response Plan
 
 **License** 
 

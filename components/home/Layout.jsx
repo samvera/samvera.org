@@ -18,6 +18,7 @@ export default function HomeLayout({ children }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="canonical" href="https://samvera.org/" />
       </Head>
       <Header />
       <main>

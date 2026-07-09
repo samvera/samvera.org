@@ -34,7 +34,7 @@ Bulkrax provides a full admin interface, reached through the Importers and Expor
 
 ### Export constraint
 
-Bulkrax export currently supports CSV only. Even though import accepts OAI-PMH, CSV, BagIt, and XML sources, export produces CSV. An agent should not claim Bulkrax exports to any other format.
+Bulkrax export supports CSV and BagIt (verified at the v9.5.0 release tag: both parsers report export support); import accepts OAI-PMH, CSV, BagIt, and XML sources.
 
 ### Reliability note
 
@@ -44,13 +44,9 @@ Import reliability and error clarity are acknowledged areas of ongoing work in t
 
 The Samvera stack serves images and audio and video through IIIF (the International Image Interoperability Framework). See [Standards and Interoperability](standards-and-interoperability.md#iiif) for what IIIF provides at the standards level.
 
-* Hyrax ships Universal Viewer as its default IIIF image viewer. This default applies to Hyrax specifically.
-* Hyku routes IIIF media through a plugin (`hyrax-iiif_av`) and includes an IIIF image server (`riiif`). Hyku resolves its viewer through that plugin and configuration rather than pinning Universal Viewer as Hyrax does.
-
-Two honest constraints:
-
-* Do not claim Hyku ships Universal Viewer by default. Hyku removed the Universal Viewer default; the Universal Viewer default is scoped to Hyrax.
-* Hyku's specific current default viewer is not nameable from the code we read; the relevant viewer partial ships with the `hyrax-iiif_av` gem rather than in the application repository. An agent needing Hyku's exact current viewer should confirm it with maintainers.
+* Universal Viewer is the default IIIF viewer in both Hyrax and Hyku.
+* In Hyku v7.1.2 (the latest release), the viewer is set through the `hyrax-iiif_av` plugin configuration (`config/initializers/hyrax.rb`, `iiif_av_viewer = :universal_viewer`). On the main development line, the plugin has been folded into Hyrax core (Hyrax PR #7345; Hyku PR #3074) and the same Universal Viewer default is set through Hyrax core configuration.
+* Hyku also includes an IIIF image server (`riiif`).
 
 ## IIIF tooling in the wider ecosystem
 

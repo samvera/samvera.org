@@ -3,11 +3,10 @@ import { prefix } from "prefix";
 
 export default function Document() {
   return (
-    <Html className="scroll-smooth">
+    <Html lang="en" className="scroll-smooth">
       <Head>
         <meta name="theme-color" content="#121212" />
         <link rel="icon" href={`${prefix}/images/favicon.ico`} />
-        <link rel="canonical" href="https://samvera.org/" />
         <meta name="twitter:card" content="summary_large_image" />
         <style
           dangerouslySetInnerHTML={{

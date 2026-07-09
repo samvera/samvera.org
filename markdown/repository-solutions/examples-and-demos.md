@@ -25,7 +25,7 @@ American Theological Library Association (ATLA) - [Atla Digital Library](https:/
 
 [Carolina Digital Repository (CDR)](https://cdr.lib.unc.edu/) - Institutional Repository for OA articles, journals, student papers, research data, posters, 3d objects, OER and more.
 
-Cincinnati University - [Scholar@UC](https://scholar.uc.edu/) - Self-submission institutional repository.
+University of Cincinnati - [Scholar@UC](https://scholar.uc.edu/) - Self-submission institutional repository.
 
 Cornell University - [Southeast Asia Visions](http://seasiavisions.library.cornell.edu/) - A collection of more than 350 European travel accounts of pre-modern Southeast Asia.
 

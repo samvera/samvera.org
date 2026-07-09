@@ -22,7 +22,7 @@ export default function BannerPartners() {
                 {url && (
                   <a
                     href={url}
-                    className="text-samGreyDark hover:text-samDarkRed"
+                    className="text-samGreyDark hover:text-samDarkRed hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

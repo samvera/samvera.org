@@ -5,6 +5,8 @@ date: "2017-02-13"
 
 ## ETD Application @ Emory University
 
+*Case study originally published 2018.*
+
 ### Overview
 
 Emory Libraries are recognized as an intellectual center, transforming teaching, learning, research, and patient care through innovative resources, services, and collections for the campus community and beyond.  Part of the Libraries’ mission includes:

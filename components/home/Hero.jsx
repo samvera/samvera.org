@@ -3,10 +3,10 @@ import Link from "next/link";
 import groupPhoto from "../../public/images/washu-samvera-group.jpeg";
 
 const lead =
-  "Every director who funds a repository has to answer two questions to a provost or a board. Will the platform still be supported in five years, and who decides where it goes? Samvera makes both answerable in the open. The software (Hyku, Hyrax, Avalon) is free to download and run on your own terms. What you fund is the community that maintains it, sets its direction, and keeps it here.";
+  "Every director who funds a repository has to answer two questions to a provost or a board. Will the platform still be supported in five years, and who sets its direction? Samvera makes both answerable in the open. The software (Hyku, Hyrax, Avalon) is free to download and run on your own terms. What you fund is the community of institutions that maintains the software and sets its direction.";
 
 const bodyOne =
-  "For consortia, one Samvera platform runs many institutions from a single installation, each with its own branding, access controls, and configuration, so the cost of shared infrastructure is shared across members. That's how most of the community already runs it.";
+  "For consortia, one Samvera platform runs many institutions from a single installation, each with its own branding, access controls, and configuration, so the cost of shared infrastructure is split across members.";
 
 const bodyTwo =
   "Your collections live in documented, interoperable standards (Dublin Core, IIIF, OAI-PMH, RDF), so your description and metadata stay yours and stay portable. Host it yourself or choose any service provider. You're never locked to one.";
@@ -21,7 +21,7 @@ export default function HomeHero() {
               Repository infrastructure your institution helps steer,
             </span>{" "}
             <span className="block text-samBlue xl:inline">
-              funded to outlast the next budget cycle.
+              funded by the institutions it serves.
             </span>
           </h1>
 

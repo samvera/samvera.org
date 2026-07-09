@@ -128,9 +128,9 @@ export default function Faq({ config, content, frontmatter }) {
 
                   <p>
                     Samvera software is free and open source, available under an
-                    Apache 2 license.  It offers flexible and rich user
-                    interfaces tailored to distinct content types on top of a
-                    robust back end – giving adopters the best of both worlds.
+                    Apache 2 license. It offers user interfaces tailored to
+                    distinct content types on top of a shared,
+                    community-maintained back end.
                   </p>
                 </Answer>
               </>
@@ -151,22 +151,19 @@ export default function Faq({ config, content, frontmatter }) {
                     resource the development of a full range of solutions on its
                     own. Samvera Community open-source repository solutions are
                     built collaboratively to address a broad range of repository
-                    needs. Rather than being one-size-fits-all, Samvera
-                    leverages an ecosystem of components that lets institutions
-                    assemble and deploy robust and durable repository
-                    applications that are tailored to their users&#39; needs and
-                    workflows.
+                    needs. Samvera draws on an ecosystem of components that lets
+                    institutions assemble and deploy repository applications
+                    tailored to their users&#39; needs and workflows.
                   </p>
                   <p>
                     Drawing on hard lessons learned in the past about developing
                     software locally rather than working with others, the
                     Samvera Community ensures that multiple hands are in play to
-                    keep the software growing and improving. While many systems
-                    offer specific abilities to deposit, manage, deliver or
-                    preserve digital content, the Samvera Community looks to
-                    provide effective combination of these tasks to enable
-                    flexible, extensible solutions that can contribute to a
-                    wider content management and preservation environment.
+                    keep the software growing and improving. Many systems focus on
+                    a single task, such as deposit, management, or delivery.
+                    The Samvera Community combines these tasks into flexible,
+                    extensible solutions that can contribute to a wider content
+                    management and preservation environment.
                     Managing digital collections in this way provides the
                     content with its context and value over time and reduces the
                     work and cost of maintaining it. We could create our own
@@ -177,12 +174,11 @@ export default function Faq({ config, content, frontmatter }) {
                   </p>
                   <p>
                     As a grass-roots, open-source software producer, the Samvera
-                    Community is accountable only to its users, which ensures
-                    its sustainability. This is in part a response to concerns
-                    raised about commercial software producers, which are liable
-                    to alter or even eliminate products based on profitability
-                    rather than the values of the cultural heritage and research
-                    communities.
+                    Community is accountable to its users, which supports its
+                    sustainability. Its direction is set by the institutions
+                    that rely on the software, through open governance, so
+                    decisions about the software&#39;s future stay with the
+                    community that runs it.
                   </p>
                 </Answer>
               </>
@@ -546,13 +542,13 @@ export default function Faq({ config, content, frontmatter }) {
                 </Question>
                 <Answer>
                   <p>
-                    Samvera leverages the convening power of institutions, which
-                    outlasts the ebb and flow of vendor cycles. Since the
+                    Samvera draws on the convening power of institutions, whose
+                    commitments outlast any single product cycle. Since the
                     founding of the Samvera Community in 2008, Partner
                     institutions have made substantial investments, both
                     financially and in terms of staff time, in the Samvera
-                    Community and technologies. There are now over thirty
-                    Partners who have contributed to sustainability-minded
+                    Community and technologies. There are now more than 25
+                    Partner institutions who have contributed to sustainability-minded
                     investments including funding to enable the hiring of a
                     Community Manager; moving to a 501(c)6 foundation model; and
                     moving to a fully elected Board.
@@ -560,9 +556,9 @@ export default function Faq({ config, content, frontmatter }) {
                   <p>
                     These investments, in addition to the steadily growing
                     number of Samvera Adopters, testify to the durability of
-                    Samvera as an avenue toward the future of accessible,
-                    open-access scholarly communications and digital
-                    preservation of our cultural heritage. The goal of the
+                    Samvera as an avenue toward accessible, open-access
+                    scholarly communications and the long-term stewardship of
+                    cultural heritage collections. The goal of the
                     Samvera community is to sustain the software its members
                     rely on through shared, transparent investment and open
                     governance.
@@ -587,10 +583,11 @@ export default function Faq({ config, content, frontmatter }) {
                     use of open source components, it is important that the
                     content being managed should be openly transferable to
                     facilitate its management over time regardless of the
-                    software being used.  To support this Samvera is developing
-                    bulk import and export capability: the latter will allow the
-                    contents of a Samvera repository to be exported in a way
-                    that might be migrated to other platforms.
+                    software being used. Because the solutions build on open
+                    standards, your content and metadata are portable. Bulk
+                    import and export ship today for Hyrax and Hyku through
+                    Bulkrax, with export to CSV and BagIt, and metadata moves
+                    in documented formats.
                   </p>
                 </Answer>
               </>
@@ -633,7 +630,7 @@ export default function Faq({ config, content, frontmatter }) {
                     Hyku is the product release from the Hydra-in-a-Box (HyBox)
                     project and it is built using Hyrax as its basis. Hyku is
                     designed to reduce barriers to effective asset management
-                    and preservation for collections and content types of many
+                    and access for collections and content types of many
                     kinds, and is of particular interest to hosted service
                     providers and consortia. The{" "}
                     <a href="https://samvera.atlassian.net/wiki/spaces/samvera/pages/419533203/Samvera+Hyku+Interest+Group">
