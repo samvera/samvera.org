@@ -3,6 +3,11 @@ export const siteNavigation = [
     label: "get started",
     items: [
       {
+        href: "/get-started/support-samvera",
+        label: "Support Samvera",
+        slug: "support-samvera",
+      },
+      {
         href: "/get-started/contact-us",
         label: "Contact Us",
         slug: "contact-us",
